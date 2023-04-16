@@ -1,0 +1,1793 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xDF13B02875E12B8D",
+      "device": "xc7z020clg400-1",
+      "name": "CPU_mips",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "instr_jumpdest": "",
+      "instr_rs": "",
+      "instr_rt": "",
+      "instr_rd": "",
+      "instr_funct": "",
+      "instr_imm": "",
+      "instr_opcode": "",
+      "instr_shamt": "",
+      "mux3_PCsrc": "",
+      "PC_31dt28": "",
+      "concat_jump": "",
+      "multiplier_0": "",
+      "mux2_mem2reg": "",
+      "mux2_RegDst": "",
+      "mux4_srcB": "",
+      "mux2_memaddr": "",
+      "mslice_0": "",
+      "mslice_1": "",
+      "MPL_reg_lo": "",
+      "memdata_reg": "",
+      "B_reg": "",
+      "A_reg": "",
+      "reg_instr": "",
+      "reg_ALU": "",
+      "MPL_reg_hi": "",
+      "reg_PC": "",
+      "regbank": "",
+      "mux4_srcA": "",
+      "ALU_0": "",
+      "shift": "",
+      "mux4_outbus": "",
+      "ShiftLeft_0": "",
+      "ShiftLeft_1": "",
+      "SignExt32_0": "",
+      "ZeroExt32_0": "",
+      "L1_counter": "",
+      "logicsrc_4": "",
+      "logicsrc_16": "",
+      "mips_controller_0": ""
+    },
+    "ports": {
+      "memoryDataIn": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "CPU_mips_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "memoryAddress": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "memoryData": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "memoryWrite": {
+        "direction": "O"
+      },
+      "memoryRead": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "instr_jumpdest": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "CPU_mips_instr_31dt26_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "25"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DOUT_WIDTH": {
+            "value": "26"
+          }
+        }
+      },
+      "instr_rs": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "CPU_mips_instr_31dt26_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "25"
+          },
+          "DIN_TO": {
+            "value": "21"
+          },
+          "DOUT_WIDTH": {
+            "value": "5"
+          }
+        }
+      },
+      "instr_rt": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "CPU_mips_instr_31dt26_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "20"
+          },
+          "DIN_TO": {
+            "value": "16"
+          },
+          "DOUT_WIDTH": {
+            "value": "5"
+          }
+        }
+      },
+      "instr_rd": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "CPU_mips_instr_31dt26_3",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "15"
+          },
+          "DIN_TO": {
+            "value": "11"
+          },
+          "DOUT_WIDTH": {
+            "value": "5"
+          }
+        }
+      },
+      "instr_funct": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "CPU_mips_instr_31dt26_4",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "5"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DOUT_WIDTH": {
+            "value": "6"
+          }
+        }
+      },
+      "instr_imm": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "CPU_mips_instr_31dt26_5",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "15"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "instr_opcode": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "CPU_mips_instr_25dt21_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
+          },
+          "DIN_TO": {
+            "value": "26"
+          },
+          "DOUT_WIDTH": {
+            "value": "6"
+          }
+        }
+      },
+      "instr_shamt": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "CPU_mips_instr_rd_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "10"
+          },
+          "DIN_TO": {
+            "value": "6"
+          },
+          "DOUT_WIDTH": {
+            "value": "5"
+          }
+        }
+      },
+      "mux3_PCsrc": {
+        "vlnv": "xilinx.com:module_ref:mux3:1.0",
+        "xci_name": "CPU_mips_mux3_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux3",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "mux_in0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "32",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "x": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "PC_31dt28": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "CPU_mips_instr_funct_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
+          },
+          "DIN_TO": {
+            "value": "28"
+          },
+          "DOUT_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "concat_jump": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "CPU_mips_xlconcat_0_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "28"
+          },
+          "IN1_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "multiplier_0": {
+        "vlnv": "xilinx.com:user:multiplier:1.0",
+        "xci_name": "CPU_mips_multiplier_0_1"
+      },
+      "mux2_mem2reg": {
+        "vlnv": "xilinx.com:module_ref:mux2:1.0",
+        "xci_name": "CPU_mips_mux2_0_1",
+        "parameters": {
+          "n": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "mux_in0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "x": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "mux2_RegDst": {
+        "vlnv": "xilinx.com:module_ref:mux2:1.0",
+        "xci_name": "CPU_mips_mux2_0_2",
+        "parameters": {
+          "n": {
+            "value": "5"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "mux_in0": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "mux_in1": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "x": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      },
+      "mux4_srcB": {
+        "vlnv": "xilinx.com:module_ref:mux4:1.0",
+        "xci_name": "CPU_mips_mux4_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux4",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "mux_in0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in3": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "x": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "mux2_memaddr": {
+        "vlnv": "xilinx.com:module_ref:mux2:1.0",
+        "xci_name": "CPU_mips_mux2_srcA_0",
+        "parameters": {
+          "n": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "mux_in0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "x": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "mslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "CPU_mips_xlslice_0_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "64"
+          },
+          "DOUT_WIDTH": {
+            "value": "32"
+          }
+        }
+      },
+      "mslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "CPU_mips_xlslice_0_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "63"
+          },
+          "DIN_TO": {
+            "value": "32"
+          },
+          "DIN_WIDTH": {
+            "value": "64"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "MPL_reg_lo": {
+        "vlnv": "xilinx.com:module_ref:reg:1.0",
+        "xci_name": "CPU_mips_MPL_reg_0",
+        "parameters": {
+          "n": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "CPU_mips_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "memdata_reg": {
+        "vlnv": "xilinx.com:module_ref:reg:1.0",
+        "xci_name": "CPU_mips_instr_reg_0",
+        "parameters": {
+          "n": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "CPU_mips_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "B_reg": {
+        "vlnv": "xilinx.com:module_ref:reg:1.0",
+        "xci_name": "CPU_mips_memdata_reg1_0",
+        "parameters": {
+          "n": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "CPU_mips_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "A_reg": {
+        "vlnv": "xilinx.com:module_ref:reg:1.0",
+        "xci_name": "CPU_mips_memdata_reg_0",
+        "parameters": {
+          "n": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "CPU_mips_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "reg_instr": {
+        "vlnv": "xilinx.com:module_ref:reg:1.0",
+        "xci_name": "CPU_mips_reg_0_0",
+        "parameters": {
+          "n": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "CPU_mips_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "reg_ALU": {
+        "vlnv": "xilinx.com:module_ref:reg:1.0",
+        "xci_name": "CPU_mips_reg_0_1",
+        "parameters": {
+          "n": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "CPU_mips_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "MPL_reg_hi": {
+        "vlnv": "xilinx.com:module_ref:reg:1.0",
+        "xci_name": "CPU_mips_reg_0_2",
+        "parameters": {
+          "n": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "CPU_mips_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "reg_PC": {
+        "vlnv": "xilinx.com:module_ref:reg:1.0",
+        "xci_name": "CPU_mips_reg_ALU_0",
+        "parameters": {
+          "n": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "CPU_mips_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "regbank": {
+        "vlnv": "xilinx.com:module_ref:reg_bank32x32:1.0",
+        "xci_name": "CPU_mips_reg_bank32x32_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "reg_bank32x32",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "CPU_mips_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "regwrite": {
+            "direction": "I"
+          },
+          "wrdata": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "waddr": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "raddr0": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "raddr1": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "x0": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "x1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "mux4_srcA": {
+        "vlnv": "xilinx.com:module_ref:mux4:1.0",
+        "xci_name": "CPU_mips_mux4_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux4",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "mux_in0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in3": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "x": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "ALU_0": {
+        "vlnv": "xilinx.com:module_ref:ALU:1.0",
+        "xci_name": "CPU_mips_ALU_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ALU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ALUOp": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "R": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "Zero": {
+            "direction": "O"
+          },
+          "Overflow": {
+            "direction": "O"
+          }
+        }
+      },
+      "shift": {
+        "vlnv": "xilinx.com:module_ref:mux3:1.0",
+        "xci_name": "CPU_mips_mux3_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux3",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "mux_in0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "x": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "mux4_outbus": {
+        "vlnv": "xilinx.com:module_ref:mux4:1.0",
+        "xci_name": "CPU_mips_mux4_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux4",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "mux_in0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mux_in3": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "x": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "ShiftLeft_0": {
+        "vlnv": "xilinx.com:module_ref:ShiftLeft:1.0",
+        "xci_name": "CPU_mips_ShiftLeft_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ShiftLeft",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "ShiftLeft_1": {
+        "vlnv": "xilinx.com:module_ref:ShiftLeft:1.0",
+        "xci_name": "CPU_mips_ShiftLeft_0_1",
+        "parameters": {
+          "n_in": {
+            "value": "26"
+          },
+          "n_out": {
+            "value": "28"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ShiftLeft",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "25",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "27",
+            "right": "0"
+          }
+        }
+      },
+      "SignExt32_0": {
+        "vlnv": "xilinx.com:module_ref:SignExt32:1.0",
+        "xci_name": "CPU_mips_SignExt32_0_0",
+        "parameters": {
+          "n_in": {
+            "value": "16"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "SignExt32",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "ZeroExt32_0": {
+        "vlnv": "xilinx.com:module_ref:ZeroExt32:1.0",
+        "xci_name": "CPU_mips_ZeroExt32_0_0",
+        "parameters": {
+          "n_in": {
+            "value": "5"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ZeroExt32",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "L1_counter": {
+        "vlnv": "xilinx.com:module_ref:leading_ones_counter:1.0",
+        "xci_name": "CPU_mips_leading_ones_counter_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "leading_ones_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "logicsrc_4": {
+        "vlnv": "xilinx.com:module_ref:logic_source:1.0",
+        "xci_name": "CPU_mips_logic_source_0_0",
+        "parameters": {
+          "value": {
+            "value": "4"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "logic_source",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sig": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "logicsrc_16": {
+        "vlnv": "xilinx.com:module_ref:logic_source:1.0",
+        "xci_name": "CPU_mips_logicsrc_4_1",
+        "parameters": {
+          "value": {
+            "value": "16"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "logic_source",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sig": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "mips_controller_0": {
+        "vlnv": "xilinx.com:module_ref:mips_controller:1.0",
+        "xci_name": "CPU_mips_mips_controller_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mips_controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "CPU_mips_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ALU_z": {
+            "direction": "I"
+          },
+          "MPLdone": {
+            "direction": "I"
+          },
+          "opcode": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "funct": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "MEMwr": {
+            "direction": "O"
+          },
+          "MEMrd": {
+            "direction": "O"
+          },
+          "RBwr": {
+            "direction": "O"
+          },
+          "mplrst": {
+            "direction": "O"
+          },
+          "PCwro": {
+            "direction": "O"
+          },
+          "MD_en": {
+            "direction": "O"
+          },
+          "IRwr": {
+            "direction": "O"
+          },
+          "A_en": {
+            "direction": "O"
+          },
+          "B_en": {
+            "direction": "O"
+          },
+          "ALUR_en": {
+            "direction": "O"
+          },
+          "MPLR_en": {
+            "direction": "O"
+          },
+          "IorD": {
+            "direction": "O"
+          },
+          "mem2rb": {
+            "direction": "O"
+          },
+          "regDst": {
+            "direction": "O"
+          },
+          "ALUsrcA": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "ALUsrcB": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "shift": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "PCsrc": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "MPL_ALU": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "ALUOp": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "bank_wraddr": {
+        "ports": [
+          "mux2_RegDst/x",
+          "regbank/waddr"
+        ]
+      },
+      "bank_wrdata": {
+        "ports": [
+          "mux2_mem2reg/x",
+          "regbank/wrdata"
+        ]
+      },
+      "MDR_out": {
+        "ports": [
+          "memdata_reg/Q",
+          "mux2_mem2reg/mux_in1"
+        ]
+      },
+      "IR_out": {
+        "ports": [
+          "reg_instr/Q",
+          "instr_jumpdest/Din",
+          "instr_rs/Din",
+          "instr_rt/Din",
+          "instr_rd/Din",
+          "instr_funct/Din",
+          "instr_imm/Din",
+          "instr_opcode/Din",
+          "instr_shamt/Din"
+        ]
+      },
+      "IR_rd": {
+        "ports": [
+          "instr_rd/Dout",
+          "mux2_RegDst/mux_in1"
+        ]
+      },
+      "IR_rt": {
+        "ports": [
+          "instr_rt/Dout",
+          "mux2_RegDst/mux_in0",
+          "regbank/raddr1"
+        ]
+      },
+      "bank_B": {
+        "ports": [
+          "regbank/x1",
+          "B_reg/D"
+        ]
+      },
+      "bank_A": {
+        "ports": [
+          "regbank/x0",
+          "A_reg/D"
+        ]
+      },
+      "imm_32": {
+        "ports": [
+          "SignExt32_0/dout",
+          "mux4_srcB/mux_in2",
+          "mux4_srcA/mux_in2",
+          "ShiftLeft_0/din"
+        ]
+      },
+      "imm_sl2": {
+        "ports": [
+          "ShiftLeft_0/dout",
+          "mux4_srcB/mux_in3"
+        ]
+      },
+      "IR_imm_16": {
+        "ports": [
+          "instr_imm/Dout",
+          "SignExt32_0/din"
+        ]
+      },
+      "srcA": {
+        "ports": [
+          "mux4_srcA/x",
+          "multiplier_0/A",
+          "ALU_0/A"
+        ]
+      },
+      "srcB": {
+        "ports": [
+          "mux4_srcB/x",
+          "multiplier_0/B",
+          "shift/mux_in0"
+        ]
+      },
+      "ALU_result": {
+        "ports": [
+          "ALU_0/R",
+          "mux3_PCsrc/mux_in0",
+          "reg_ALU/D"
+        ]
+      },
+      "IR_jump": {
+        "ports": [
+          "instr_jumpdest/Dout",
+          "ShiftLeft_1/din"
+        ]
+      },
+      "memdata_in": {
+        "ports": [
+          "memoryDataIn",
+          "memdata_reg/D",
+          "reg_instr/D"
+        ]
+      },
+      "clk": {
+        "ports": [
+          "clk",
+          "multiplier_0/clk",
+          "MPL_reg_lo/CLK",
+          "memdata_reg/CLK",
+          "B_reg/CLK",
+          "A_reg/CLK",
+          "reg_instr/CLK",
+          "reg_ALU/CLK",
+          "MPL_reg_hi/CLK",
+          "reg_PC/CLK",
+          "regbank/clk",
+          "mips_controller_0/clk"
+        ]
+      },
+      "PC_in": {
+        "ports": [
+          "mux3_PCsrc/x",
+          "reg_PC/D"
+        ]
+      },
+      "PC_out": {
+        "ports": [
+          "reg_PC/Q",
+          "PC_31dt28/Din",
+          "mux2_memaddr/mux_in0",
+          "mux4_srcA/mux_in0"
+        ]
+      },
+      "mux2_memaddr_x": {
+        "ports": [
+          "mux2_memaddr/x",
+          "memoryAddress"
+        ]
+      },
+      "rst": {
+        "ports": [
+          "rst",
+          "MPL_reg_lo/RST",
+          "memdata_reg/RST",
+          "B_reg/RST",
+          "A_reg/RST",
+          "reg_instr/RST",
+          "reg_ALU/RST",
+          "MPL_reg_hi/RST",
+          "reg_PC/RST",
+          "regbank/rst",
+          "mips_controller_0/rst"
+        ]
+      },
+      "B_out": {
+        "ports": [
+          "B_reg/Q",
+          "memoryData",
+          "mux4_srcB/mux_in0",
+          "mux4_srcA/mux_in3"
+        ]
+      },
+      "IR_rs": {
+        "ports": [
+          "instr_rs/Dout",
+          "regbank/raddr0"
+        ]
+      },
+      "IR_jump_SL2": {
+        "ports": [
+          "ShiftLeft_1/dout",
+          "concat_jump/In0"
+        ]
+      },
+      "PC_4msb": {
+        "ports": [
+          "PC_31dt28/Dout",
+          "concat_jump/In1"
+        ]
+      },
+      "jump_dest": {
+        "ports": [
+          "concat_jump/dout",
+          "mux3_PCsrc/mux_in2"
+        ]
+      },
+      "ALU_Zero": {
+        "ports": [
+          "ALU_0/Zero",
+          "mips_controller_0/ALU_z"
+        ]
+      },
+      "IR_opcode": {
+        "ports": [
+          "instr_opcode/Dout",
+          "mips_controller_0/opcode"
+        ]
+      },
+      "instr_OR_data": {
+        "ports": [
+          "mips_controller_0/IorD",
+          "mux2_memaddr/sel"
+        ]
+      },
+      "mem_write": {
+        "ports": [
+          "mips_controller_0/MEMwr",
+          "memoryWrite"
+        ]
+      },
+      "mem2reg": {
+        "ports": [
+          "mips_controller_0/mem2rb",
+          "mux2_mem2reg/sel"
+        ]
+      },
+      "IR_write": {
+        "ports": [
+          "mips_controller_0/IRwr",
+          "reg_instr/EN"
+        ]
+      },
+      "RegDst": {
+        "ports": [
+          "mips_controller_0/regDst",
+          "mux2_RegDst/sel"
+        ]
+      },
+      "bank_write": {
+        "ports": [
+          "mips_controller_0/RBwr",
+          "regbank/regwrite"
+        ]
+      },
+      "ALUsrcB_sel": {
+        "ports": [
+          "mips_controller_0/ALUsrcB",
+          "mux4_srcB/sel"
+        ]
+      },
+      "PCsrc_sel": {
+        "ports": [
+          "mips_controller_0/PCsrc",
+          "mux3_PCsrc/sel"
+        ]
+      },
+      "A_write": {
+        "ports": [
+          "mips_controller_0/A_en",
+          "A_reg/EN"
+        ]
+      },
+      "B_write": {
+        "ports": [
+          "mips_controller_0/B_en",
+          "B_reg/EN"
+        ]
+      },
+      "ALUOut_write": {
+        "ports": [
+          "mips_controller_0/ALUR_en",
+          "reg_ALU/EN"
+        ]
+      },
+      "memdata_write": {
+        "ports": [
+          "mips_controller_0/MD_en",
+          "memdata_reg/EN"
+        ]
+      },
+      "MPL_done": {
+        "ports": [
+          "multiplier_0/done",
+          "mips_controller_0/MPLdone"
+        ]
+      },
+      "MPL_rslt_64": {
+        "ports": [
+          "multiplier_0/R",
+          "mslice_0/Din",
+          "mslice_1/Din"
+        ]
+      },
+      "data_bus": {
+        "ports": [
+          "mux4_outbus/x",
+          "mux3_PCsrc/mux_in1",
+          "mux2_memaddr/mux_in1",
+          "mux2_mem2reg/mux_in0"
+        ]
+      },
+      "MPLOut_write": {
+        "ports": [
+          "mips_controller_0/MPLR_en",
+          "MPL_reg_lo/EN",
+          "MPL_reg_hi/EN"
+        ]
+      },
+      "PC_write": {
+        "ports": [
+          "mips_controller_0/PCwro",
+          "reg_PC/EN"
+        ]
+      },
+      "Lsrc4": {
+        "ports": [
+          "logicsrc_4/sig",
+          "mux4_srcB/mux_in1"
+        ]
+      },
+      "A_out": {
+        "ports": [
+          "A_reg/Q",
+          "mux4_srcA/mux_in1",
+          "L1_counter/din"
+        ]
+      },
+      "ALUsrcA_sel": {
+        "ports": [
+          "mips_controller_0/ALUsrcA",
+          "mux4_srcA/sel"
+        ]
+      },
+      "mem_read": {
+        "ports": [
+          "mips_controller_0/MEMrd",
+          "memoryRead"
+        ]
+      },
+      "ALUOp": {
+        "ports": [
+          "mips_controller_0/ALUOp",
+          "ALU_0/ALUOp"
+        ]
+      },
+      "IR_funct": {
+        "ports": [
+          "instr_funct/Dout",
+          "mips_controller_0/funct"
+        ]
+      },
+      "IR_shamt": {
+        "ports": [
+          "instr_shamt/Dout",
+          "ZeroExt32_0/din"
+        ]
+      },
+      "shift_x": {
+        "ports": [
+          "shift/x",
+          "ALU_0/B"
+        ]
+      },
+      "ZeroExt32_0_dout": {
+        "ports": [
+          "ZeroExt32_0/dout",
+          "shift/mux_in1"
+        ]
+      },
+      "logicsrc_5_sig": {
+        "ports": [
+          "logicsrc_16/sig",
+          "shift/mux_in2"
+        ]
+      },
+      "mips_controller_0_shift": {
+        "ports": [
+          "mips_controller_0/shift",
+          "shift/sel"
+        ]
+      },
+      "mips_controller_0_mplrst": {
+        "ports": [
+          "mips_controller_0/mplrst",
+          "multiplier_0/rst"
+        ]
+      },
+      "mslice_1_Dout": {
+        "ports": [
+          "mslice_1/Dout",
+          "MPL_reg_hi/D"
+        ]
+      },
+      "mslice_0_Dout": {
+        "ports": [
+          "mslice_0/Dout",
+          "MPL_reg_lo/D"
+        ]
+      },
+      "MPL_reg_hi_Q": {
+        "ports": [
+          "MPL_reg_hi/Q",
+          "mux4_outbus/mux_in0"
+        ]
+      },
+      "MPL_reg_lo_Q": {
+        "ports": [
+          "MPL_reg_lo/Q",
+          "mux4_outbus/mux_in1"
+        ]
+      },
+      "reg_ALU_Q": {
+        "ports": [
+          "reg_ALU/Q",
+          "mux4_outbus/mux_in2"
+        ]
+      },
+      "mips_controller_0_MPL_ALU": {
+        "ports": [
+          "mips_controller_0/MPL_ALU",
+          "mux4_outbus/sel"
+        ]
+      },
+      "leading_ones_counter_0_dout": {
+        "ports": [
+          "L1_counter/dout",
+          "mux4_outbus/mux_in3"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"CPU_mips": {
+			"proto_instances": {
+			}
+		}
+	}
+}

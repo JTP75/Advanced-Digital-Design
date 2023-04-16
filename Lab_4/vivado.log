@@ -1,0 +1,133 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 22 13:17:37 2023
+# Process ID: 332
+# Current directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4536 C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_4\lab_4.xpr
+# Log file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/vivado.log
+# Journal file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:CPU_mips_wrapper:1.0'. The one found in IP location 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1' will take precedence over the same IP in location c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 818.984 ; gain = 210.965
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_mem_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L xilinx_vip -prj CPU_mem_wrapper_vlog.prj"
+"xvhdl --incr --relax -prj CPU_mem_wrapper_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto bb599d76410348ccbe1024d234554e94 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_1 -L xlconcat_v2_1_1 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_mem_wrapper_behav xil_defaultlib.CPU_mem_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_mem_wrapper_behav -key {Behavioral:sim_1:Functional:CPU_mem_wrapper} -tclbatch {CPU_mem_wrapper.tcl} -protoinst "protoinst_files/CPU_mips.protoinst" -protoinst "protoinst_files/CPU_mem.protoinst" -protoinst "protoinst_files/CPU_mips.protoinst" -protoinst "protoinst_files/CPU_TL.protoinst" -protoinst "protoinst_files/CPU_mips.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mips.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mem.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mips.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_TL.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/CPU_TL.protoinst for the following reason(s):
+There are no instances of module "CPU_TL" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mips.protoinst
+Time resolution is 1 ps
+source CPU_mem_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:46 . Memory (MB): peak = 1568.727 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_mem_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:01:05 . Memory (MB): peak = 1568.727 ; gain = 0.000
+open_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+source CPU_mem_tb_1.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source CPU_mem_tb_1.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source CPU_mem_tb_1.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source CPU_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+ERROR: [Wavedata 42-471] Note: Nothing was found for the following items: /cpu_tb/U_1 
+ERROR: [Common 17-39] 'add_wave' failed due to earlier errors.
+
+    while executing
+"add_wave {{/cpu_tb/U_1}} "
+    (file "CPU_tb.tcl" line 7)
+source CPU_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+ERROR: [Simtcl 6-8] No such HDL object clock
+source CPU_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+ERROR: [Simtcl 6-8] No such HDL object reset
+source CPU_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+InCorrect! Test 0 didn't pass.
+InCorrect! Test 1 didn't pass.
+InCorrect! Test 2 didn't pass.
+InCorrect! Test 3 didn't pass.
+InCorrect! Test 4 didn't pass.
+InCorrect! Test 5 didn't pass.
+InCorrect! Test 6 didn't pass.
+InCorrect! Test 7 first SW didn't pass.
+InCorrect! Test 7 second SW didn't pass.
+InCorrect! Test 8 didn't pass.
+InCorrect! Test 9 first SW didn't pass.
+InCorrect! Test 9 second SW didn't pass.
+source CPU_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+InCorrect! Test 0 didn't pass.
+InCorrect! Test 1 didn't pass.
+InCorrect! Test 2 didn't pass.
+InCorrect! Test 3 didn't pass.
+InCorrect! Test 4 didn't pass.
+InCorrect! Test 5 didn't pass.
+InCorrect! Test 6 didn't pass.
+InCorrect! Test 7 first SW didn't pass.
+InCorrect! Test 7 second SW didn't pass.
+InCorrect! Test 8 didn't pass.
+InCorrect! Test 9 first SW didn't pass.
+InCorrect! Test 9 second SW didn't pass.
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1568.727 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 22 14:19:23 2023...

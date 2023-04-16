@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 21 15:33:37 2023
+# Process ID: 19000
+# Current directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4228 C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.xpr
+# Log file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/vivado.log
+# Journal file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:CPU_mips_wrapper:1.0'. The one found in IP location 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1' will take precedence over the same IP in location c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 786.145 ; gain = 184.539
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/lab_3.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- SHREC:SHREC:axi_regmap:1.0 - axi_regmap_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding cell -- xilinx.com:user:multiplier:1.0 - multiplier_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_regmap_0/REG2_OUT(undef) and /multiplier_0/rst(rst)
+Successfully read diagram <lab_3> from BD file <C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/lab_3.bd>
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1464.020 ; gain = 27.203
+file copy -force C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/lab_3_wrapper.sysdef C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+
+launch_sdk -workspace C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk -hwspec C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk -hwspec C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 21 15:37:07 2023...

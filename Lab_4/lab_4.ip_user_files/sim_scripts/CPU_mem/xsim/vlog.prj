@@ -1,0 +1,25 @@
+verilog xlslice_v1_0_1  \
+"../../../../lab_4.srcs/sources_1/bd/CPU_mem/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v" \
+
+verilog xil_defaultlib  \
+"../../../bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_31dt26_0.v" \
+"../../../bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_31dt26_1.v" \
+"../../../bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_31dt26_2.v" \
+"../../../bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_31dt26_3.v" \
+"../../../bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_31dt26_4.v" \
+"../../../bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_31dt26_5.v" \
+"../../../bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_25dt21_0.v" \
+"../../../bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_rd_0.v" \
+"../../../bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_funct_0.v" \
+
+verilog xlconcat_v2_1_1  \
+"../../../../lab_4.srcs/sources_1/bd/CPU_mem/ipshared/221d/sim/xlconcat_v2_1_1/xlconcat_v2_1_vl_rfs.v" \
+
+verilog xil_defaultlib  \
+"../../../bd/CPU_mem/ipshared/221d/sim/CPU_mips_xlconcat_0_0.v" \
+"../../../bd/CPU_mem/ipshared/221d/sim/CPU_mips_xlslice_0_1.v" \
+"../../../bd/CPU_mem/ipshared/221d/sim/CPU_mips_xlslice_0_2.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

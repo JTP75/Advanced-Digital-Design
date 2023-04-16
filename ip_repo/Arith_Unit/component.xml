@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>engineering.pitt.edu</spirit:vendor>
+  <spirit:library>ECE1195_repo</spirit:library>
+  <spirit:name>Arith_Unit</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>Arith_Unit</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>1ff62ea8</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>Arith_Unit</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>1ff62ea8</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>d5b54137</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>A</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.n&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>B</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.n&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>C_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>CO</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>OFL</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.n&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Z</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>n</spirit:name>
+        <spirit:displayName>N</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.n" spirit:minimum="0" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/Arith_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_1ff62ea8</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/Arith_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/Arith_Unit_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_d5b54137</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>Arithematic Unit (Signed/Unsigned Addition/Subtraction)</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>n</spirit:name>
+      <spirit:displayName>N</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.n" spirit:minimum="0" spirit:rangeType="long">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">Arith_Unit_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>Arith_Unit</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>xilinx.com:user:Arith_Unit:1.0</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2020-08-28T23:42:01Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b6a6dc4_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5db93185_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41f24f89_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@416ec20d_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@640a57b5_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ffef15a_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55f09e5c_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1766e223_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cc5c667_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@777d8ca4_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bfd00dc_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fbd2007_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5935b2c3_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e49d343_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@393b8589_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b891e8c_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@285c74fe_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24e6387f_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62f180d8_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2eb9b975_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@539e8321_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3729af2d_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c9fd43_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@440a7743_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2115133b_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d42a2d8_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14d55384_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14537e_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@344886ad_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77811864_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/Arith_Unit</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="16e94222"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="809ae38e"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="33697dd8"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="354ed3ef"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

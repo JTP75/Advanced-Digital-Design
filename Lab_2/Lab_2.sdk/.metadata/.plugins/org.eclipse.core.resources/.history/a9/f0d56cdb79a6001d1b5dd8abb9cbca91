@@ -1,0 +1,213 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+uint32_t *regmap = (uint32_t *) 0x70000000;
+// struct of output values from ALU (result, zero, & overflow)
+struct ALU_OUT{
+	int32_t R;
+	int Z;
+	int OF;
+};
+struct ALU_OUT ALU(int32_t A, int32_t B, int op, int shift);
+void LogicTest(int32_t A, int32_t B, int op2bit);
+void ArithTest(int32_t A, int32_t B, int op2bit);
+void CompTest(int32_t A, int32_t B, int op2bit);
+void ShiftTest(int32_t A, int op2bit, int shift);
+
+
+int main(){
+
+	srand(0);
+	int rtests_per_op = 1000;
+	printf("\n================================\nBeginning Tests...\n");
+	/*
+	// LU
+	for(int OP = 0; OP<=3; OP++){
+		for(int i=0; i<rtests_per_op; i++){
+			int32_t a = rand()-rand();
+			int32_t b = rand()-rand();
+			LogicTest(a,b,OP);
+		}
+	}
+	// AU
+	for(int OP = 0; OP<=3; OP++){
+		for(int i=0; i<rtests_per_op; i++){
+			int32_t a = rand()-rand();
+			int32_t b = rand()-rand();
+			ArithTest(a,b,OP);
+		}
+	}
+	// CM
+	for(int i=0; i<rtests_per_op; i++){
+		int32_t a = rand()-rand();
+		int32_t b = rand()-rand();
+		CompTest(a,b,0b10);
+	}for(int i=0; i<rtests_per_op; i++){
+		int32_t a = rand()-rand();
+		int32_t b = rand()-rand();
+		CompTest(a,b,0b11);
+	}
+	// SU
+	for(int i=0; i<rtests_per_op; i++){
+		int32_t a = rand()-rand();
+		uint s = rand()%32;
+		ShiftTest(a,0b00,s);
+	}for(int i=0; i<rtests_per_op; i++){
+		int32_t a = rand()-rand();
+		uint s = rand()%32;
+		ShiftTest(a,0b10,s);
+	}for(int i=0; i<rtests_per_op; i++){
+		int32_t a = rand()-rand();
+		uint s = rand()%32;
+		ShiftTest(a,0b11,s);
+	}*/
+
+	int a=10;
+	int b=0;
+	int op=0b1100;
+	int sh=0b00010;
+
+	regmap[0] = a;
+	regmap[1] = b;
+	regmap[2] = op;
+	regmap[3] = sh;
+
+	printf("%d<<%d = %d",a,sh,regmap[0]);
+	printf("\nactual is %d\n",a<<sh);
+
+	ShiftTest(a,0b00,sh);
+
+	printf("\nTests Complete!\n================================\n\n");
+	return 0;
+}
+
+
+struct ALU_OUT ALU(int32_t A, int32_t B, int op, int shift){
+
+	regmap[0] = A;
+	regmap[1] = B;
+	regmap[2] = op;
+	regmap[3] = shift;
+
+	printf("\n==========inside alu=========== R = %d\n",regmap[0]);
+
+	struct ALU_OUT s;
+	s.R = regmap[0];
+	s.Z = regmap[4];
+	s.OF = regmap[5];
+
+	return s;
+}
+void LogicTest(int32_t A, int32_t B, int op2bit){
+
+	int op4bit = 0b0011;
+	op4bit &= op2bit;
+	struct ALU_OUT out = ALU(A,B,op4bit,0b00000);
+
+	if(op2bit==0b00 && out.R!=(A&B))
+		printf("Failed Logical AND case!\n");
+	else if(op2bit==0b01 && out.R!=(A|B))
+		printf("Failed Logical OR case!\n");
+	else if(op2bit==0b10 && out.R!=(A^B))
+		printf("Failed Logical XOR case!\n");
+	else if(op2bit==0b11 && out.R!=~(A|B))
+		printf("Failed Logical NOR case!\n");
+}
+void ArithTest(int32_t A, int32_t B, int op2bit){
+
+	int op4bit = 0b0111;
+	op4bit &= op2bit;
+	struct ALU_OUT out = ALU(A,B,op4bit,0b00000);
+
+	if(op2bit == 0b00){
+		if(out.R != A+B && out.OF != 1)
+			printf("Failed Arithmetic ADD case! (Incorrect Result/Overflow)\n");
+		if(out.Z == 0b1 && out.R != 0)
+			printf("Failed Arithmetic ADDU case! (Incorrect Zero)\n");
+		if(out.Z == 0b0 && out.R == 0)
+			printf("Failed Arithmetic ADD case! (Incorrect Zero)\n");
+	}
+	else if(op2bit == 0b01){
+		A = (uint32_t)(A);
+		B = (uint32_t)(B);
+		if(out.R != A+B && out.OF != 1)
+			printf("Failed Arithmetic ADDU case! (Incorrect Result/Overflow)\n");
+		if(out.Z == 0b1 && out.R != 0)
+			printf("Failed Arithmetic ADDU case! (Incorrect Zero)\n");
+		if(out.Z == 0b0 && out.R == 0)
+			printf("Failed Arithmetic ADDU case! (Incorrect Zero)\n");
+	}
+	else if(op2bit == 0b10){
+		if(out.R != A-B && out.OF != 1)
+			printf("Failed Arithmetic SUB case! (Incorrect Result/Overflow)\n");
+		if(out.Z == 0b1 && out.R != 0)
+			printf("Failed Arithmetic SUB case! (Incorrect Zero)\n");
+		if(out.Z == 0b0 && out.R == 0)
+			printf("Failed Arithmetic SUB case! (Incorrect Zero)\n");
+	}
+	else if(op2bit == 0b11){
+		A = (uint32_t)(A);
+		B = (uint32_t)(B);
+		if(out.R != (uint32_t)(A-B) && out.OF != 1)
+			printf("Failed Arithmetic SUBU case! (Incorrect Result/Overflow)\n");
+		if(out.Z == 0b1 && out.R != 0)
+			printf("Failed Arithmetic SUBU case! (Incorrect Zero)\n");
+		if(out.Z == 0b0 && out.R == 0)
+			printf("Failed Arithmetic SUBU case! (Incorrect Zero)\n");
+	}
+}
+void CompTest(int32_t A, int32_t B, int op2bit){
+
+	int op4bit = 0b1011;
+	op4bit &= op2bit;
+	struct ALU_OUT out = ALU(A,B,op4bit,0b00000);
+
+	if(op2bit == 0b10){
+		if(out.R==1 && A>=B)
+			printf("Failed Comparison SLT case!\n");
+		if(out.R==0 && A<B)
+			printf("Failed Comparison SLT case!\n");
+	}else if(op2bit == 0b11){
+		A = (uint32_t)(A);
+		B = (uint32_t)(B);
+		if(out.R==1 && A>=B)
+			printf("Failed Comparison SLTU case!\n");
+		if(out.R==0 && A<B)
+			printf("Failed Comparison SLTU case!\n");
+	}
+}
+void ShiftTest(int32_t A, int op2bit, int shift){
+
+	int op4bit = 0b1111;
+	op4bit &= op2bit;
+	struct ALU_OUT out = ALU(A,0,op4bit,shift);
+
+	printf("a = %d\nop = %d\nshift = %d\nFPGAout = %d\nactual = %d\n",A,op4bit,shift,out.R,A<<shift);
+
+	if(op2bit==0b00 && out.R!=(A<<shift))
+		printf("Failed Shift Left Logical case!\t%d not equal to %d\tshift=%d\n",
+				out.R, (A<<shift), shift);
+	if(op2bit==0b10 && out.R!=((uint32_t)(A)>>shift))
+		printf("Failed Shift Right Logical case!\t%d not equal to %d\tshift=%d\n",
+				out.R, ((uint32_t)(A)>>shift), shift);
+	if(op2bit==0b11 && out.R!=(A>>shift))
+		printf("Failed Shift Right Arithmetic case!\t%d not equal to %d\tshift=%d\n",
+				out.R, (A>>shift), shift);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

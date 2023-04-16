@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr 15 02:21:51 2023
+# Process ID: 19528
+# Current directory: C:/Users/pacel/Documents/Spring_2023/ECE_1195/ip_repo/ip/example
+# Command line: vivado.exe -notrace -mode batch -source ipi_example.tcl -tclargs xc7z020clg400-1 ../xilinx_com_hls_hw_conv_1_0.zip
+# Log file: C:/Users/pacel/Documents/Spring_2023/ECE_1195/ip_repo/ip/example/vivado.log
+# Journal file: C:/Users/pacel/Documents/Spring_2023/ECE_1195/ip_repo/ip/example\vivado.jou
+#-----------------------------------------------------------
+source ipi_example.tcl -notrace

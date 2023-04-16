@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb  6 11:41:37 2023
+# Process ID: 47704
+# Current directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent38492 C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_2\Lab_2.xpr
+# Log file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/vivado.log
+# Journal file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 684.391 ; gain = 94.168
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name ALU_v1_0_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/ALU_v1_0_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'ALU_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+ipx::edit_ip_in_project -upgrade true -name ALU_v1_0_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/ALU_v1_0_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'ALU_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/Lab_2.bd}
+Adding cell -- SHREC:SHREC:axi_regmap:1.0 - axi_regmap_0
+Adding cell -- engineering.pitt.edu:ECE1195_repo:ALU:1.0 - ALU_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Successfully read diagram <Lab_2> from BD file <C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/Lab_2.bd>
+open_bd_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 830.730 ; gain = 92.270
+ipx::edit_ip_in_project -upgrade true -name ALU_v1_0_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/ALU_v1_0_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'ALU_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  6 11:44:15 2023...

@@ -1,0 +1,12 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'pacel' on host 'justin-laptop' (Windows NT_amd64 version 6.2) on Fri Apr 14 11:04:32 -0400 2023
+INFO: [HLS 200-10] In directory 'C:/Users/pacel/Documents/Spring_2023/ECE_1195/lab_6/lab_6'
+INFO: [HLS 200-10] Bringing up Vivado HLS GUI ... 
+INFO: [Common 17-206] Exiting vivado_hls at Sat Apr 15 01:57:38 2023...

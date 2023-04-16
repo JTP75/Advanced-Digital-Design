@@ -1,0 +1,1294 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar 20 09:55:19 2023
+# Process ID: 8048
+# Current directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21300 C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_4\lab_4.xpr
+# Log file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/vivado.log
+# Journal file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:CPU_mips_wrapper:1.0'. The one found in IP location 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1' will take precedence over the same IP in location c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 682.879 ; gain = 88.422
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd}
+Adding cell -- xilinx.com:module_ref:CPU_memory:1.0 - memory
+Adding cell -- xilinx.com:user:CPU_mips_wrapper:1.0 - CPU_mips_wrapper_0
+Successfully read diagram <CPU_mem> from BD file <C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 830.961 ; gain = 122.762
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name CPU_mips_wrapper_v1_0_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.tmp/CPU_mips_wrapper_v1_0_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:CPU_mips_wrapper:1.0'. The one found in IP location 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1' will take precedence over the same IP in location c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_instr_31dt26_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_instr_31dt26_1.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_instr_31dt26_2.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_instr_31dt26_3.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_instr_31dt26_4.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_instr_31dt26_5.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_instr_25dt21_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_instr_rd_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_instr_funct_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/xlconcat_v2_1_1/xlconcat_v2_1_vl_rfs.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_xlconcat_0_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_xlslice_0_1.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_xlslice_0_2.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 867.695 ; gain = 33.270
+update_compile_order -fileset sources_1
+current_project lab_4
+current_project CPU_mips_wrapper_v1_0_project
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project/CPU_mips_wrapper_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_mips_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project/CPU_mips_wrapper_v1_0_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_mips_wrapper_vlog.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_25dt21_0.v"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] CPU_mips_wrapper_vlog.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+"xvhdl --incr --relax -prj CPU_mips_wrapper_vhdl.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../ip_repo/CPU_mips1/src/ALU.vhd"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] CPU_mips_wrapper_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project/CPU_mips_wrapper_v1_0_project.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project/CPU_mips_wrapper_v1_0_project.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+subproj_sim
+invalid command name "subproj_sim"
+set_property library xil_defaultlib [get_files *.vhd]    
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project/CPU_mips_wrapper_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_mips_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project/CPU_mips_wrapper_v1_0_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_mips_wrapper_vlog.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_25dt21_0.v"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] CPU_mips_wrapper_vlog.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+"xvhdl --incr --relax -prj CPU_mips_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/Arith_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Arith_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_ALU_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ALU_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_MPL_reg_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_MPL_reg_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_ShiftLeft_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ShiftLeft_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_ShiftLeft_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ShiftLeft_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_SignExt32_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_SignExt32_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_ZeroExt32_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ZeroExt32_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_instr_reg_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_instr_reg_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_leading_ones_counter_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_leading_ones_counter_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_logic_source_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_logic_source_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_logicsrc_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_logicsrc_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_memdata_reg1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_memdata_reg1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_memdata_reg_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_memdata_reg_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_mips_controller_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mips_controller_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_multiplier_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_multiplier_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_mux2_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux2_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_mux2_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux2_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_mux2_srcA_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux2_srcA_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_mux3_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux3_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_mux3_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux3_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_mux4_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux4_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_mux4_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux4_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_mux4_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux4_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_reg_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_reg_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_reg_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_reg_ALU_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_ALU_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips_reg_bank32x32_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_bank32x32_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Comparator'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/Logic_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Logic_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/Shift_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Shift_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/mips_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mips_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux10'
+INFO: [VRFC 10-3107] analyzing entity 'mux2'
+INFO: [VRFC 10-3107] analyzing entity 'mux4'
+INFO: [VRFC 10-3107] analyzing entity 'mux3'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+INFO: [VRFC 10-3107] analyzing entity 'reg_bank32x32'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/util.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SignExt32'
+INFO: [VRFC 10-3107] analyzing entity 'ZeroExt32'
+INFO: [VRFC 10-3107] analyzing entity 'ShiftLeft'
+INFO: [VRFC 10-3107] analyzing entity 'logic_source'
+INFO: [VRFC 10-3107] analyzing entity 'leading_ones_counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/CPU_mips_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_wrapper'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 909.508 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project/CPU_mips_wrapper_v1_0_project.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project/CPU_mips_wrapper_v1_0_project.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 909.508 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property library xil_defaultlib [get_files *.vhd]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project/CPU_mips_wrapper_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_mips_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project/CPU_mips_wrapper_v1_0_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_mips_wrapper_vlog.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_25dt21_0.v"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] CPU_mips_wrapper_vlog.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+"xvhdl --incr --relax -prj CPU_mips_wrapper_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project/CPU_mips_wrapper_v1_0_project.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.tmp/cpu_mips_wrapper_v1_0_project/CPU_mips_wrapper_v1_0_project.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/CPU_mips.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/CPU_memory.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/Arith_Unit.vhd'.
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/component.xml' ignored by IP packager.
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project lab_4
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:CPU_mips_wrapper:1.0'. The one found in IP location 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1' will take precedence over the same IP in location c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo
+report_ip_status -name ip_status
+current_project CPU_mips_wrapper_v1_0_project
+current_project lab_4
+upgrade_ip -vlnv xilinx.com:user:CPU_mips_wrapper:1.0 [get_ips  CPU_mem_CPU_mips_wrapper_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd'
+INFO: [IP_Flow 19-3422] Upgraded CPU_mem_CPU_mips_wrapper_0_0 (CPU_mips_wrapper_v1_0 1.0) from revision 2 to revision 3
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_4\lab_4.srcs\sources_1\bd\CPU_mem\CPU_mem.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips CPU_mem_CPU_mips_wrapper_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+generate_target Simulation [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd]
+WARNING: [BD 41-927] Following properties on pin /memory/Clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=CPU_mem_clk 
+WARNING: [BD 41-927] Following properties on pin /CPU_mips_wrapper_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=CPU_mem_clk 
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_4\lab_4.srcs\sources_1\bd\CPU_mem\CPU_mem.bd> 
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/synth/CPU_mem.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/sim/CPU_mem.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hdl/CPU_mem_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block CPU_mips_wrapper_0 .
+Exporting to file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hw_handoff/CPU_mem.hwh
+Generated Block Design Tcl file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hw_handoff/CPU_mem_bd.tcl
+Generated Hardware Definition File C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/synth/CPU_mem.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd] -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files -ipstatic_source_dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/modelsim} {questa=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/questa} {riviera=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_mem_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_mem_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/ipshared/3303/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v" into library xlslice_v1_0_1
+INFO: [VRFC 10-311] analyzing module xlslice_v1_0_1_xlslice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_instr_31dt26_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_instr_31dt26_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_instr_31dt26_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_instr_31dt26_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_instr_31dt26_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_instr_31dt26_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_instr_25dt21_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_25dt21_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_instr_rd_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_rd_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_instr_funct_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_funct_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/ipshared/3303/sim/xlconcat_v2_1_1/xlconcat_v2_1_vl_rfs.v" into library xlconcat_v2_1_1
+INFO: [VRFC 10-311] analyzing module xlconcat_v2_1_1_xlconcat
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_xlslice_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_xlslice_0_2
+"xvhdl --incr --relax -prj CPU_mem_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips/src/mem/CPU_memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/sim/CPU_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mem'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_ALU_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ALU_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_reg_bank32x32_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_bank32x32_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_mux2_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux2_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_mux2_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux2_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_reg_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_instr_reg_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_instr_reg_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_memdata_reg_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_memdata_reg_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_memdata_reg1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_memdata_reg1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_mux4_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux4_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_SignExt32_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_SignExt32_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_ShiftLeft_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ShiftLeft_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_reg_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_mux3_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux3_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_ShiftLeft_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ShiftLeft_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_reg_ALU_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_ALU_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_mux2_srcA_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux2_srcA_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_mips_controller_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mips_controller_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/Arith_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Arith_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_multiplier_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_multiplier_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_reg_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_MPL_reg_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_MPL_reg_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_logic_source_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_logic_source_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_ZeroExt32_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ZeroExt32_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_mux4_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux4_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_mux3_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux3_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_logicsrc_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_logicsrc_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_mux4_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux4_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips_leading_ones_counter_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_leading_ones_counter_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/sim/CPU_mips.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/src/Arith_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Arith_Unit'
+WARNING: [VRFC 10-3608] overwriting existing secondary unit 'struct' [C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/src/Arith_Unit.vhd:27]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/src/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Comparator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/src/Logic_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Logic_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/src/Shift_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Shift_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/src/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/src/register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+INFO: [VRFC 10-3107] analyzing entity 'reg_bank32x32'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/src/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux10'
+INFO: [VRFC 10-3107] analyzing entity 'mux2'
+INFO: [VRFC 10-3107] analyzing entity 'mux4'
+INFO: [VRFC 10-3107] analyzing entity 'mux3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/src/util.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SignExt32'
+INFO: [VRFC 10-3107] analyzing entity 'ZeroExt32'
+INFO: [VRFC 10-3107] analyzing entity 'ShiftLeft'
+INFO: [VRFC 10-3107] analyzing entity 'logic_source'
+INFO: [VRFC 10-3107] analyzing entity 'leading_ones_counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/src/mips_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mips_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/src/CPU_mips_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/3303/src/CPU_memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ip/CPU_mem_CPU_mips_wrapper_0_0/sim/CPU_mem_CPU_mips_wrapper_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mem_CPU_mips_wrapper_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hdl/CPU_mem_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mem_wrapper'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1012.152 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto bb599d76410348ccbe1024d234554e94 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_1 -L xlconcat_v2_1_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_mem_wrapper_behav xil_defaultlib.CPU_mem_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture struct of entity xil_defaultlib.Logic_Unit [logic_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Shift_Unit [shift_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [arith_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture struct of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture cpu_mips_alu_0_0_arch of entity xil_defaultlib.CPU_mips_ALU_0_0 [cpu_mips_alu_0_0_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture cpu_mips_memdata_reg_0_arch of entity xil_defaultlib.CPU_mips_memdata_reg_0 [cpu_mips_memdata_reg_0_default]
+Compiling architecture cpu_mips_memdata_reg1_0_arch of entity xil_defaultlib.CPU_mips_memdata_reg1_0 [cpu_mips_memdata_reg1_0_default]
+Compiling architecture behav of entity xil_defaultlib.leading_ones_counter [leading_ones_counter_default]
+Compiling architecture cpu_mips_leading_ones_counter_0_0_arch of entity xil_defaultlib.CPU_mips_leading_ones_counter_0_0 [cpu_mips_leading_ones_counter_0_...]
+Compiling architecture cpu_mips_reg_0_2_arch of entity xil_defaultlib.CPU_mips_reg_0_2 [cpu_mips_reg_0_2_default]
+Compiling architecture cpu_mips_mpl_reg_0_arch of entity xil_defaultlib.CPU_mips_MPL_reg_0 [cpu_mips_mpl_reg_0_default]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_funct_0
+Compiling architecture behav of entity xil_defaultlib.ShiftLeft [shiftleft_default]
+Compiling architecture cpu_mips_shiftleft_0_0_arch of entity xil_defaultlib.CPU_mips_ShiftLeft_0_0 [cpu_mips_shiftleft_0_0_default]
+Compiling architecture behav of entity xil_defaultlib.ShiftLeft [\ShiftLeft(n_in=26,n_out=28)\]
+Compiling architecture cpu_mips_shiftleft_0_1_arch of entity xil_defaultlib.CPU_mips_ShiftLeft_0_1 [cpu_mips_shiftleft_0_1_default]
+Compiling architecture behav of entity xil_defaultlib.SignExt32 [\SignExt32(n_in=16)\]
+Compiling architecture cpu_mips_signext32_0_0_arch of entity xil_defaultlib.CPU_mips_SignExt32_0_0 [cpu_mips_signext32_0_0_default]
+Compiling architecture behav of entity xil_defaultlib.ZeroExt32 [\ZeroExt32(n_in=5)\]
+Compiling architecture cpu_mips_zeroext32_0_0_arch of entity xil_defaultlib.CPU_mips_ZeroExt32_0_0 [cpu_mips_zeroext32_0_0_default]
+Compiling module xlconcat_v2_1_1.xlconcat_v2_1_1_xlconcat(IN0_WID...
+Compiling module xil_defaultlib.CPU_mips_xlconcat_0_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_4
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_5
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_25dt21_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_3
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_1
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_2
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_rd_0
+Compiling architecture behav of entity xil_defaultlib.logic_source [\logic_source(value=16)\]
+Compiling architecture cpu_mips_logicsrc_4_1_arch of entity xil_defaultlib.CPU_mips_logicsrc_4_1 [cpu_mips_logicsrc_4_1_default]
+Compiling architecture behav of entity xil_defaultlib.logic_source [logic_source_default]
+Compiling architecture cpu_mips_logic_source_0_0_arch of entity xil_defaultlib.CPU_mips_logic_source_0_0 [cpu_mips_logic_source_0_0_defaul...]
+Compiling architecture cpu_mips_instr_reg_0_arch of entity xil_defaultlib.CPU_mips_instr_reg_0 [cpu_mips_instr_reg_0_default]
+Compiling architecture state_behav of entity xil_defaultlib.mips_controller [mips_controller_default]
+Compiling architecture cpu_mips_mips_controller_0_0_arch of entity xil_defaultlib.CPU_mips_mips_controller_0_0 [cpu_mips_mips_controller_0_0_def...]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CPU_mips_xlslice_0_1
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CPU_mips_xlslice_0_2
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier [multiplier_default]
+Compiling architecture cpu_mips_multiplier_0_1_arch of entity xil_defaultlib.CPU_mips_multiplier_0_1 [cpu_mips_multiplier_0_1_default]
+Compiling architecture behav of entity xil_defaultlib.mux2 [\mux2(n=5)\]
+Compiling architecture cpu_mips_mux2_0_2_arch of entity xil_defaultlib.CPU_mips_mux2_0_2 [cpu_mips_mux2_0_2_default]
+Compiling architecture behav of entity xil_defaultlib.mux2 [mux2_default]
+Compiling architecture cpu_mips_mux2_0_1_arch of entity xil_defaultlib.CPU_mips_mux2_0_1 [cpu_mips_mux2_0_1_default]
+Compiling architecture cpu_mips_mux2_srca_0_arch of entity xil_defaultlib.CPU_mips_mux2_srcA_0 [cpu_mips_mux2_srca_0_default]
+Compiling architecture behav of entity xil_defaultlib.mux3 [mux3_default]
+Compiling architecture cpu_mips_mux3_0_0_arch of entity xil_defaultlib.CPU_mips_mux3_0_0 [cpu_mips_mux3_0_0_default]
+Compiling architecture behav of entity xil_defaultlib.mux4 [mux4_default]
+Compiling architecture cpu_mips_mux4_0_2_arch of entity xil_defaultlib.CPU_mips_mux4_0_2 [cpu_mips_mux4_0_2_default]
+Compiling architecture cpu_mips_mux4_0_1_arch of entity xil_defaultlib.CPU_mips_mux4_0_1 [cpu_mips_mux4_0_1_default]
+Compiling architecture cpu_mips_mux4_0_0_arch of entity xil_defaultlib.CPU_mips_mux4_0_0 [cpu_mips_mux4_0_0_default]
+Compiling architecture cpu_mips_reg_0_1_arch of entity xil_defaultlib.CPU_mips_reg_0_1 [cpu_mips_reg_0_1_default]
+Compiling architecture cpu_mips_reg_alu_0_arch of entity xil_defaultlib.CPU_mips_reg_ALU_0 [cpu_mips_reg_alu_0_default]
+Compiling architecture cpu_mips_reg_0_0_arch of entity xil_defaultlib.CPU_mips_reg_0_0 [cpu_mips_reg_0_0_default]
+Compiling architecture struct of entity xil_defaultlib.reg_bank32x32 [reg_bank32x32_default]
+Compiling architecture cpu_mips_reg_bank32x32_0_0_arch of entity xil_defaultlib.CPU_mips_reg_bank32x32_0_0 [cpu_mips_reg_bank32x32_0_0_defau...]
+Compiling architecture cpu_mips_mux3_0_2_arch of entity xil_defaultlib.CPU_mips_mux3_0_2 [cpu_mips_mux3_0_2_default]
+Compiling architecture structure of entity xil_defaultlib.CPU_mips [cpu_mips_default]
+Compiling architecture structure of entity xil_defaultlib.CPU_mips_wrapper [cpu_mips_wrapper_default]
+Compiling architecture cpu_mem_cpu_mips_wrapper_0_0_arch of entity xil_defaultlib.CPU_mem_CPU_mips_wrapper_0_0 [cpu_mem_cpu_mips_wrapper_0_0_def...]
+Compiling architecture struct of entity xil_defaultlib.CPU_memory [cpu_memory_default]
+Compiling architecture cpu_mem_cpu_memory_0_0_arch of entity xil_defaultlib.CPU_mem_CPU_memory_0_0 [cpu_mem_cpu_memory_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.CPU_mem [cpu_mem_default]
+Compiling architecture structure of entity xil_defaultlib.cpu_mem_wrapper
+Built simulation snapshot CPU_mem_wrapper_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1012.152 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_mem_wrapper_behav -key {Behavioral:sim_1:Functional:CPU_mem_wrapper} -tclbatch {CPU_mem_wrapper.tcl} -protoinst "protoinst_files/CPU_mips.protoinst" -protoinst "protoinst_files/CPU_mem.protoinst" -protoinst "protoinst_files/CPU_mips.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mips.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mem.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mips.protoinst
+Time resolution is 1 ps
+source CPU_mem_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 1046.797 ; gain = 34.645
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_mem_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:51 . Memory (MB): peak = 1046.797 ; gain = 34.645
+current_project CPU_mips_wrapper_v1_0_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1046.797 ; gain = 0.000
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/CPU_mips.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/CPU_memory.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/Arith_Unit.vhd'.
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/component.xml' ignored by IP packager.
+set_property core_revision 4 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project lab_4
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:CPU_mips_wrapper:1.0'. The one found in IP location 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1' will take precedence over the same IP in location c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo
+report_ip_status -name ip_status
+current_project CPU_mips_wrapper_v1_0_project
+current_project lab_4
+upgrade_ip -vlnv xilinx.com:user:CPU_mips_wrapper:1.0 [get_ips  CPU_mem_CPU_mips_wrapper_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd'
+INFO: [IP_Flow 19-3422] Upgraded CPU_mem_CPU_mips_wrapper_0_0 (CPU_mips_wrapper_v1_0 1.0) from revision 3 to revision 4
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_4\lab_4.srcs\sources_1\bd\CPU_mem\CPU_mem.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips CPU_mem_CPU_mips_wrapper_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+generate_target Simulation [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd]
+WARNING: [BD 41-927] Following properties on pin /memory/Clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=CPU_mem_clk 
+WARNING: [BD 41-927] Following properties on pin /CPU_mips_wrapper_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=CPU_mem_clk 
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_4\lab_4.srcs\sources_1\bd\CPU_mem\CPU_mem.bd> 
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/synth/CPU_mem.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/sim/CPU_mem.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hdl/CPU_mem_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block CPU_mips_wrapper_0 .
+Exporting to file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hw_handoff/CPU_mem.hwh
+Generated Block Design Tcl file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hw_handoff/CPU_mem_bd.tcl
+Generated Hardware Definition File C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/synth/CPU_mem.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd] -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files -ipstatic_source_dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/modelsim} {questa=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/questa} {riviera=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_mem_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_mem_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/ipshared/1379/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v" into library xlslice_v1_0_1
+INFO: [VRFC 10-311] analyzing module xlslice_v1_0_1_xlslice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_instr_31dt26_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_instr_31dt26_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_instr_31dt26_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_instr_31dt26_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_instr_31dt26_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_instr_31dt26_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_instr_25dt21_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_25dt21_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_instr_rd_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_rd_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_instr_funct_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_funct_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/ipshared/1379/sim/xlconcat_v2_1_1/xlconcat_v2_1_vl_rfs.v" into library xlconcat_v2_1_1
+INFO: [VRFC 10-311] analyzing module xlconcat_v2_1_1_xlconcat
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_xlslice_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_xlslice_0_2
+"xvhdl --incr --relax -prj CPU_mem_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/sim/CPU_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mem'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_ALU_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ALU_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_reg_bank32x32_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_bank32x32_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_mux2_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux2_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_mux2_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux2_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_reg_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_instr_reg_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_instr_reg_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_memdata_reg_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_memdata_reg_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_memdata_reg1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_memdata_reg1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_mux4_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux4_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_SignExt32_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_SignExt32_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_ShiftLeft_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ShiftLeft_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_reg_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_mux3_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux3_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_ShiftLeft_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ShiftLeft_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_reg_ALU_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_ALU_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_mux2_srcA_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux2_srcA_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_mips_controller_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mips_controller_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/Arith_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Arith_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_multiplier_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_multiplier_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_reg_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_MPL_reg_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_MPL_reg_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_logic_source_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_logic_source_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_ZeroExt32_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ZeroExt32_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_mux4_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux4_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_mux3_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux3_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_logicsrc_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_logicsrc_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_mux4_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux4_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips_leading_ones_counter_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_leading_ones_counter_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/sim/CPU_mips.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/src/Arith_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Arith_Unit'
+WARNING: [VRFC 10-3608] overwriting existing secondary unit 'struct' [C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/src/Arith_Unit.vhd:27]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/src/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Comparator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/src/Logic_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Logic_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/src/Shift_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Shift_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/src/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/src/register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+INFO: [VRFC 10-3107] analyzing entity 'reg_bank32x32'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/src/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux10'
+INFO: [VRFC 10-3107] analyzing entity 'mux2'
+INFO: [VRFC 10-3107] analyzing entity 'mux4'
+INFO: [VRFC 10-3107] analyzing entity 'mux3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/src/util.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SignExt32'
+INFO: [VRFC 10-3107] analyzing entity 'ZeroExt32'
+INFO: [VRFC 10-3107] analyzing entity 'ShiftLeft'
+INFO: [VRFC 10-3107] analyzing entity 'logic_source'
+INFO: [VRFC 10-3107] analyzing entity 'leading_ones_counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/src/mips_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mips_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/src/CPU_mips_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/1379/src/CPU_memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ip/CPU_mem_CPU_mips_wrapper_0_0/sim/CPU_mem_CPU_mips_wrapper_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mem_CPU_mips_wrapper_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hdl/CPU_mem_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mem_wrapper'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1080.953 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto bb599d76410348ccbe1024d234554e94 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_1 -L xlconcat_v2_1_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_mem_wrapper_behav xil_defaultlib.CPU_mem_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture struct of entity xil_defaultlib.Logic_Unit [logic_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Shift_Unit [shift_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [arith_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture struct of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture cpu_mips_alu_0_0_arch of entity xil_defaultlib.CPU_mips_ALU_0_0 [cpu_mips_alu_0_0_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture cpu_mips_memdata_reg_0_arch of entity xil_defaultlib.CPU_mips_memdata_reg_0 [cpu_mips_memdata_reg_0_default]
+Compiling architecture cpu_mips_memdata_reg1_0_arch of entity xil_defaultlib.CPU_mips_memdata_reg1_0 [cpu_mips_memdata_reg1_0_default]
+Compiling architecture behav of entity xil_defaultlib.leading_ones_counter [leading_ones_counter_default]
+Compiling architecture cpu_mips_leading_ones_counter_0_0_arch of entity xil_defaultlib.CPU_mips_leading_ones_counter_0_0 [cpu_mips_leading_ones_counter_0_...]
+Compiling architecture cpu_mips_reg_0_2_arch of entity xil_defaultlib.CPU_mips_reg_0_2 [cpu_mips_reg_0_2_default]
+Compiling architecture cpu_mips_mpl_reg_0_arch of entity xil_defaultlib.CPU_mips_MPL_reg_0 [cpu_mips_mpl_reg_0_default]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_funct_0
+Compiling architecture behav of entity xil_defaultlib.ShiftLeft [shiftleft_default]
+Compiling architecture cpu_mips_shiftleft_0_0_arch of entity xil_defaultlib.CPU_mips_ShiftLeft_0_0 [cpu_mips_shiftleft_0_0_default]
+Compiling architecture behav of entity xil_defaultlib.ShiftLeft [\ShiftLeft(n_in=26,n_out=28)\]
+Compiling architecture cpu_mips_shiftleft_0_1_arch of entity xil_defaultlib.CPU_mips_ShiftLeft_0_1 [cpu_mips_shiftleft_0_1_default]
+Compiling architecture behav of entity xil_defaultlib.SignExt32 [\SignExt32(n_in=16)\]
+Compiling architecture cpu_mips_signext32_0_0_arch of entity xil_defaultlib.CPU_mips_SignExt32_0_0 [cpu_mips_signext32_0_0_default]
+Compiling architecture behav of entity xil_defaultlib.ZeroExt32 [\ZeroExt32(n_in=5)\]
+Compiling architecture cpu_mips_zeroext32_0_0_arch of entity xil_defaultlib.CPU_mips_ZeroExt32_0_0 [cpu_mips_zeroext32_0_0_default]
+Compiling module xlconcat_v2_1_1.xlconcat_v2_1_1_xlconcat(IN0_WID...
+Compiling module xil_defaultlib.CPU_mips_xlconcat_0_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_4
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_5
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_25dt21_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_3
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_1
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_2
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_rd_0
+Compiling architecture behav of entity xil_defaultlib.logic_source [\logic_source(value=16)\]
+Compiling architecture cpu_mips_logicsrc_4_1_arch of entity xil_defaultlib.CPU_mips_logicsrc_4_1 [cpu_mips_logicsrc_4_1_default]
+Compiling architecture behav of entity xil_defaultlib.logic_source [logic_source_default]
+Compiling architecture cpu_mips_logic_source_0_0_arch of entity xil_defaultlib.CPU_mips_logic_source_0_0 [cpu_mips_logic_source_0_0_defaul...]
+Compiling architecture cpu_mips_instr_reg_0_arch of entity xil_defaultlib.CPU_mips_instr_reg_0 [cpu_mips_instr_reg_0_default]
+Compiling architecture state_behav of entity xil_defaultlib.mips_controller [mips_controller_default]
+Compiling architecture cpu_mips_mips_controller_0_0_arch of entity xil_defaultlib.CPU_mips_mips_controller_0_0 [cpu_mips_mips_controller_0_0_def...]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CPU_mips_xlslice_0_1
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CPU_mips_xlslice_0_2
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier [multiplier_default]
+Compiling architecture cpu_mips_multiplier_0_1_arch of entity xil_defaultlib.CPU_mips_multiplier_0_1 [cpu_mips_multiplier_0_1_default]
+Compiling architecture behav of entity xil_defaultlib.mux2 [\mux2(n=5)\]
+Compiling architecture cpu_mips_mux2_0_2_arch of entity xil_defaultlib.CPU_mips_mux2_0_2 [cpu_mips_mux2_0_2_default]
+Compiling architecture behav of entity xil_defaultlib.mux2 [mux2_default]
+Compiling architecture cpu_mips_mux2_0_1_arch of entity xil_defaultlib.CPU_mips_mux2_0_1 [cpu_mips_mux2_0_1_default]
+Compiling architecture cpu_mips_mux2_srca_0_arch of entity xil_defaultlib.CPU_mips_mux2_srcA_0 [cpu_mips_mux2_srca_0_default]
+Compiling architecture behav of entity xil_defaultlib.mux3 [mux3_default]
+Compiling architecture cpu_mips_mux3_0_0_arch of entity xil_defaultlib.CPU_mips_mux3_0_0 [cpu_mips_mux3_0_0_default]
+Compiling architecture behav of entity xil_defaultlib.mux4 [mux4_default]
+Compiling architecture cpu_mips_mux4_0_2_arch of entity xil_defaultlib.CPU_mips_mux4_0_2 [cpu_mips_mux4_0_2_default]
+Compiling architecture cpu_mips_mux4_0_1_arch of entity xil_defaultlib.CPU_mips_mux4_0_1 [cpu_mips_mux4_0_1_default]
+Compiling architecture cpu_mips_mux4_0_0_arch of entity xil_defaultlib.CPU_mips_mux4_0_0 [cpu_mips_mux4_0_0_default]
+Compiling architecture cpu_mips_reg_0_1_arch of entity xil_defaultlib.CPU_mips_reg_0_1 [cpu_mips_reg_0_1_default]
+Compiling architecture cpu_mips_reg_alu_0_arch of entity xil_defaultlib.CPU_mips_reg_ALU_0 [cpu_mips_reg_alu_0_default]
+Compiling architecture cpu_mips_reg_0_0_arch of entity xil_defaultlib.CPU_mips_reg_0_0 [cpu_mips_reg_0_0_default]
+Compiling architecture struct of entity xil_defaultlib.reg_bank32x32 [reg_bank32x32_default]
+Compiling architecture cpu_mips_reg_bank32x32_0_0_arch of entity xil_defaultlib.CPU_mips_reg_bank32x32_0_0 [cpu_mips_reg_bank32x32_0_0_defau...]
+Compiling architecture cpu_mips_mux3_0_2_arch of entity xil_defaultlib.CPU_mips_mux3_0_2 [cpu_mips_mux3_0_2_default]
+Compiling architecture structure of entity xil_defaultlib.CPU_mips [cpu_mips_default]
+Compiling architecture structure of entity xil_defaultlib.CPU_mips_wrapper [cpu_mips_wrapper_default]
+Compiling architecture cpu_mem_cpu_mips_wrapper_0_0_arch of entity xil_defaultlib.CPU_mem_CPU_mips_wrapper_0_0 [cpu_mem_cpu_mips_wrapper_0_0_def...]
+Compiling architecture struct of entity xil_defaultlib.CPU_memory [cpu_memory_default]
+Compiling architecture cpu_mem_cpu_memory_0_0_arch of entity xil_defaultlib.CPU_mem_CPU_memory_0_0 [cpu_mem_cpu_memory_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.CPU_mem [cpu_mem_default]
+Compiling architecture structure of entity xil_defaultlib.cpu_mem_wrapper
+Built simulation snapshot CPU_mem_wrapper_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1080.953 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_mem_wrapper_behav -key {Behavioral:sim_1:Functional:CPU_mem_wrapper} -tclbatch {CPU_mem_wrapper.tcl} -protoinst "protoinst_files/CPU_mips.protoinst" -protoinst "protoinst_files/CPU_mem.protoinst" -protoinst "protoinst_files/CPU_mips.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mips.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mem.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mips.protoinst
+Time resolution is 1 ps
+source CPU_mem_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:31 . Memory (MB): peak = 1082.566 ; gain = 1.613
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_mem_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:58 . Memory (MB): peak = 1082.566 ; gain = 1.613
+open_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+source CPU_mem_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source CPU_mem_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source CPU_mem_tb.tcl -notrace
+couldn't read file "CPU_mem_tb.tcl": no such file or directory
+source CPU_mem_tb.tcl -notrace
+couldn't read file "CPU_mem_tb.tcl": no such file or directory
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source CPU_mem_tb.tcl -notrace
+couldn't read file "CPU_mem_tb.tcl": no such file or directory
+source CPU_mem_tb.tcl -notrace
+couldn't read file "CPU_mem_tb.tcl": no such file or directory
+source CPU_mem_tb.tcl -notrace
+couldn't read file "CPU_mem_tb.tcl": no such file or directory
+source CPU_mem_tb.tcl -notrace
+couldn't read file "CPU_mem_tb.tcl": no such file or directory
+source CPU_mem_tb.tcl -notrace
+couldn't read file "CPU_mem_tb.tcl": no such file or directory
+source CPU_mem_tb.tcl -notrace
+couldn't read file "CPU_mem_tb.tcl": no such file or directory
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force101
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force122
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force143
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force164
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force185
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force206
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force227
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force248
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force269
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force290
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force311
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd}
+close_bd_design [get_bd_designs CPU_mem]
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force332
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force353
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force374
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force395
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force416
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force437
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force458
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force479
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force500
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force521
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force542
+source Ex_program.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+ERROR: [Simtcl 6-8] No such HDL object rsst
+source Ex_program.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force584
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force605
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force626
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force647
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1251.465 ; gain = 0.000
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd}
+Adding cell -- xilinx.com:module_ref:CPU_memory:1.0 - memory
+Adding cell -- xilinx.com:user:CPU_mips_wrapper:1.0 - CPU_mips_wrapper_0
+Successfully read diagram <CPU_mem> from BD file <C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd>
+current_project CPU_mips_wrapper_v1_0_project
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/src/CPU_memory.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/Arith_Unit.vhd'.
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_anylanguagesynthesis (Synthesis)': File 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/sim/CPU_mips.vhd' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project lab_4
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:CPU_mips_wrapper:1.0'. The one found in IP location 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1' will take precedence over the same IP in location c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo
+report_ip_status -name ip_status
+current_project CPU_mips_wrapper_v1_0_project
+current_project lab_4
+upgrade_ip -vlnv xilinx.com:user:CPU_mips_wrapper:1.0 [get_ips  CPU_mem_CPU_mips_wrapper_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd'
+INFO: [IP_Flow 19-3422] Upgraded CPU_mem_CPU_mips_wrapper_0_0 (CPU_mips_wrapper_v1_0 1.0) from revision 4 to revision 5
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_4\lab_4.srcs\sources_1\bd\CPU_mem\CPU_mem.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips CPU_mem_CPU_mips_wrapper_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+generate_target Simulation [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd]
+WARNING: [BD 41-927] Following properties on pin /memory/Clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=CPU_mem_clk 
+WARNING: [BD 41-927] Following properties on pin /CPU_mips_wrapper_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=CPU_mem_clk 
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_4\lab_4.srcs\sources_1\bd\CPU_mem\CPU_mem.bd> 
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/synth/CPU_mem.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/sim/CPU_mem.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hdl/CPU_mem_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block CPU_mips_wrapper_0 .
+Exporting to file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hw_handoff/CPU_mem.hwh
+Generated Block Design Tcl file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hw_handoff/CPU_mem_bd.tcl
+Generated Hardware Definition File C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/synth/CPU_mem.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd] -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files -ipstatic_source_dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/modelsim} {questa=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/questa} {riviera=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_mem_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_mem_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v" into library xlslice_v1_0_1
+INFO: [VRFC 10-311] analyzing module xlslice_v1_0_1_xlslice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_31dt26_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_31dt26_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_31dt26_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_31dt26_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_31dt26_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_31dt26_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_31dt26_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_25dt21_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_25dt21_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_rd_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_rd_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_funct_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_instr_funct_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/ipshared/221d/sim/xlconcat_v2_1_1/xlconcat_v2_1_vl_rfs.v" into library xlconcat_v2_1_1
+INFO: [VRFC 10-311] analyzing module xlconcat_v2_1_1_xlconcat
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_xlslice_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_mips_xlslice_0_2
+"xvhdl --incr --relax -prj CPU_mem_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips/src/mem/CPU_memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/sim/CPU_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mem'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_ALU_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ALU_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_reg_bank32x32_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_bank32x32_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux2_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux2_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux2_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux2_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_reg_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_reg_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_instr_reg_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_memdata_reg_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_memdata_reg_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_memdata_reg1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_memdata_reg1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux4_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux4_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_SignExt32_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_SignExt32_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_ShiftLeft_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ShiftLeft_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_reg_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux3_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux3_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_ShiftLeft_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ShiftLeft_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_reg_ALU_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_ALU_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux2_srcA_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux2_srcA_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mips_controller_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mips_controller_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/Arith_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Arith_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_multiplier_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_multiplier_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_reg_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_reg_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_MPL_reg_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_MPL_reg_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_logic_source_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_logic_source_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_ZeroExt32_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_ZeroExt32_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux4_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux4_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux3_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux3_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_logicsrc_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_logicsrc_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux4_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_mux4_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_leading_ones_counter_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_leading_ones_counter_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/Arith_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Arith_Unit'
+WARNING: [VRFC 10-3608] overwriting existing secondary unit 'struct' [C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/Arith_Unit.vhd:27]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Comparator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/Logic_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Logic_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/Shift_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Shift_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+INFO: [VRFC 10-3107] analyzing entity 'reg_bank32x32'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux10'
+INFO: [VRFC 10-3107] analyzing entity 'mux2'
+INFO: [VRFC 10-3107] analyzing entity 'mux4'
+INFO: [VRFC 10-3107] analyzing entity 'mux3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/util.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SignExt32'
+INFO: [VRFC 10-3107] analyzing entity 'ZeroExt32'
+INFO: [VRFC 10-3107] analyzing entity 'ShiftLeft'
+INFO: [VRFC 10-3107] analyzing entity 'logic_source'
+INFO: [VRFC 10-3107] analyzing entity 'leading_ones_counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/mips_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mips_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/CPU_mips_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/CPU_memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/CPU_mips.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mips'
+WARNING: [VRFC 10-3608] overwriting existing secondary unit 'structure' [C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/CPU_mips.vhd:30]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/bd/CPU_mem/ip/CPU_mem_CPU_mips_wrapper_0_0/sim/CPU_mem_CPU_mips_wrapper_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mem_CPU_mips_wrapper_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hdl/CPU_mem_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU_mem_wrapper'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1554.441 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto bb599d76410348ccbe1024d234554e94 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_1 -L xlconcat_v2_1_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_mem_wrapper_behav xil_defaultlib.CPU_mem_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture struct of entity xil_defaultlib.Logic_Unit [logic_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Shift_Unit [shift_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [arith_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture struct of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture cpu_mips_alu_0_0_arch of entity xil_defaultlib.CPU_mips_ALU_0_0 [cpu_mips_alu_0_0_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture cpu_mips_memdata_reg_0_arch of entity xil_defaultlib.CPU_mips_memdata_reg_0 [cpu_mips_memdata_reg_0_default]
+Compiling architecture cpu_mips_memdata_reg1_0_arch of entity xil_defaultlib.CPU_mips_memdata_reg1_0 [cpu_mips_memdata_reg1_0_default]
+Compiling architecture behav of entity xil_defaultlib.leading_ones_counter [leading_ones_counter_default]
+Compiling architecture cpu_mips_leading_ones_counter_0_0_arch of entity xil_defaultlib.CPU_mips_leading_ones_counter_0_0 [cpu_mips_leading_ones_counter_0_...]
+Compiling architecture cpu_mips_reg_0_2_arch of entity xil_defaultlib.CPU_mips_reg_0_2 [cpu_mips_reg_0_2_default]
+Compiling architecture cpu_mips_mpl_reg_0_arch of entity xil_defaultlib.CPU_mips_MPL_reg_0 [cpu_mips_mpl_reg_0_default]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_funct_0
+Compiling architecture behav of entity xil_defaultlib.ShiftLeft [shiftleft_default]
+Compiling architecture cpu_mips_shiftleft_0_0_arch of entity xil_defaultlib.CPU_mips_ShiftLeft_0_0 [cpu_mips_shiftleft_0_0_default]
+Compiling architecture behav of entity xil_defaultlib.ShiftLeft [\ShiftLeft(n_in=26,n_out=28)\]
+Compiling architecture cpu_mips_shiftleft_0_1_arch of entity xil_defaultlib.CPU_mips_ShiftLeft_0_1 [cpu_mips_shiftleft_0_1_default]
+Compiling architecture behav of entity xil_defaultlib.SignExt32 [\SignExt32(n_in=16)\]
+Compiling architecture cpu_mips_signext32_0_0_arch of entity xil_defaultlib.CPU_mips_SignExt32_0_0 [cpu_mips_signext32_0_0_default]
+Compiling architecture behav of entity xil_defaultlib.ZeroExt32 [\ZeroExt32(n_in=5)\]
+Compiling architecture cpu_mips_zeroext32_0_0_arch of entity xil_defaultlib.CPU_mips_ZeroExt32_0_0 [cpu_mips_zeroext32_0_0_default]
+Compiling module xlconcat_v2_1_1.xlconcat_v2_1_1_xlconcat(IN0_WID...
+Compiling module xil_defaultlib.CPU_mips_xlconcat_0_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_4
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_5
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_25dt21_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_3
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_1
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_31dt26_2
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.CPU_mips_instr_rd_0
+Compiling architecture behav of entity xil_defaultlib.logic_source [\logic_source(value=16)\]
+Compiling architecture cpu_mips_logicsrc_4_1_arch of entity xil_defaultlib.CPU_mips_logicsrc_4_1 [cpu_mips_logicsrc_4_1_default]
+Compiling architecture behav of entity xil_defaultlib.logic_source [logic_source_default]
+Compiling architecture cpu_mips_logic_source_0_0_arch of entity xil_defaultlib.CPU_mips_logic_source_0_0 [cpu_mips_logic_source_0_0_defaul...]
+Compiling architecture cpu_mips_instr_reg_0_arch of entity xil_defaultlib.CPU_mips_instr_reg_0 [cpu_mips_instr_reg_0_default]
+Compiling architecture state_behav of entity xil_defaultlib.mips_controller [mips_controller_default]
+Compiling architecture cpu_mips_mips_controller_0_0_arch of entity xil_defaultlib.CPU_mips_mips_controller_0_0 [cpu_mips_mips_controller_0_0_def...]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CPU_mips_xlslice_0_1
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CPU_mips_xlslice_0_2
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier [multiplier_default]
+Compiling architecture cpu_mips_multiplier_0_1_arch of entity xil_defaultlib.CPU_mips_multiplier_0_1 [cpu_mips_multiplier_0_1_default]
+Compiling architecture behav of entity xil_defaultlib.mux2 [\mux2(n=5)\]
+Compiling architecture cpu_mips_mux2_0_2_arch of entity xil_defaultlib.CPU_mips_mux2_0_2 [cpu_mips_mux2_0_2_default]
+Compiling architecture behav of entity xil_defaultlib.mux2 [mux2_default]
+Compiling architecture cpu_mips_mux2_0_1_arch of entity xil_defaultlib.CPU_mips_mux2_0_1 [cpu_mips_mux2_0_1_default]
+Compiling architecture cpu_mips_mux2_srca_0_arch of entity xil_defaultlib.CPU_mips_mux2_srcA_0 [cpu_mips_mux2_srca_0_default]
+Compiling architecture behav of entity xil_defaultlib.mux3 [mux3_default]
+Compiling architecture cpu_mips_mux3_0_0_arch of entity xil_defaultlib.CPU_mips_mux3_0_0 [cpu_mips_mux3_0_0_default]
+Compiling architecture behav of entity xil_defaultlib.mux4 [mux4_default]
+Compiling architecture cpu_mips_mux4_0_2_arch of entity xil_defaultlib.CPU_mips_mux4_0_2 [cpu_mips_mux4_0_2_default]
+Compiling architecture cpu_mips_mux4_0_1_arch of entity xil_defaultlib.CPU_mips_mux4_0_1 [cpu_mips_mux4_0_1_default]
+Compiling architecture cpu_mips_mux4_0_0_arch of entity xil_defaultlib.CPU_mips_mux4_0_0 [cpu_mips_mux4_0_0_default]
+Compiling architecture cpu_mips_reg_0_1_arch of entity xil_defaultlib.CPU_mips_reg_0_1 [cpu_mips_reg_0_1_default]
+Compiling architecture cpu_mips_reg_alu_0_arch of entity xil_defaultlib.CPU_mips_reg_ALU_0 [cpu_mips_reg_alu_0_default]
+Compiling architecture cpu_mips_reg_0_0_arch of entity xil_defaultlib.CPU_mips_reg_0_0 [cpu_mips_reg_0_0_default]
+Compiling architecture struct of entity xil_defaultlib.reg_bank32x32 [reg_bank32x32_default]
+Compiling architecture cpu_mips_reg_bank32x32_0_0_arch of entity xil_defaultlib.CPU_mips_reg_bank32x32_0_0 [cpu_mips_reg_bank32x32_0_0_defau...]
+Compiling architecture cpu_mips_mux3_0_2_arch of entity xil_defaultlib.CPU_mips_mux3_0_2 [cpu_mips_mux3_0_2_default]
+Compiling architecture structure of entity xil_defaultlib.CPU_mips [cpu_mips_default]
+Compiling architecture structure of entity xil_defaultlib.CPU_mips_wrapper [cpu_mips_wrapper_default]
+Compiling architecture cpu_mem_cpu_mips_wrapper_0_0_arch of entity xil_defaultlib.CPU_mem_CPU_mips_wrapper_0_0 [cpu_mem_cpu_mips_wrapper_0_0_def...]
+Compiling architecture struct of entity xil_defaultlib.CPU_memory [cpu_memory_default]
+Compiling architecture cpu_mem_cpu_memory_0_0_arch of entity xil_defaultlib.CPU_mem_CPU_memory_0_0 [cpu_mem_cpu_memory_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.CPU_mem [cpu_mem_default]
+Compiling architecture structure of entity xil_defaultlib.cpu_mem_wrapper
+Built simulation snapshot CPU_mem_wrapper_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1554.441 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_mem_wrapper_behav -key {Behavioral:sim_1:Functional:CPU_mem_wrapper} -tclbatch {CPU_mem_wrapper.tcl} -protoinst "protoinst_files/CPU_mips.protoinst" -protoinst "protoinst_files/CPU_mem.protoinst" -protoinst "protoinst_files/CPU_mips.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mips.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mem.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CPU_mips.protoinst
+Time resolution is 1 ps
+source CPU_mem_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:29 . Memory (MB): peak = 1562.664 ; gain = 8.223
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_mem_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:54 . Memory (MB): peak = 1562.664 ; gain = 8.289
+open_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force668
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force689
+source CPU_mem_tb_2.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+force710
+current_project CPU_mips_wrapper_v1_0_project
+close_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1562.711 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 20 13:49:48 2023...

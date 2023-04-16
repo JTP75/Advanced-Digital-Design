@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 21 15:33:37 2023
+# Process ID: 19000
+# Current directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4228 C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.xpr
+# Log file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/vivado.log
+# Journal file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/lab_3.bd}
+file copy -force C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/lab_3_wrapper.sysdef C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+
+launch_sdk -workspace C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk -hwspec C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf

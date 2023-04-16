@@ -1,0 +1,44 @@
+#!/bin/sh
+exit #DNE
+
+### u-boot
+env default -a && saveenv
+boot
+
+
+
+### Linux
+# run FIFO accelerator (input: lena512.pgm (512x512 RGB), output: output.ppm (512x512 RGB)
+axidma 1 /dev/axidma0 ./lena512.ppm ./output.ppm 512 512 3
+md5sum ./lena512.ppm ./output.ppm
+
+# sample output:
+  # time:  0.013752
+  # root@zynqpeta:~# md5sum ./lena512.ppm ./output.ppm
+  # 34afdeb3527dde7e070ddf6ced346131  ./lena512.ppm
+  # 34afdeb3527dde7e070ddf6ced346131  ./output.ppm
+
+# mount sdcard; copy over output; unmount sdcard
+mount /dev/mmcblk0p1 /mnt
+cp output.ppm /mnt/fifo.ppm
+sync
+umount /mnt
+
+
+
+# run FIFO accelerator (input: rock512.pgm (512x512 Y), output: output.pgm (512x512 Y)
+axidma 1 /dev/axidma0 ./rock512.pgm ./output.pgm 512 512 1
+md5sum ./rock512.pgm ./output.pgm
+
+# sample output:
+  # time:  0.008509
+  # root@zynqpeta:~# md5sum ./rock512.pgm ./output.pgm
+  # da75974400f32531d207e5968ee53c3e  ./rock512.pgm
+  # da75974400f32531d207e5968ee53c3e  ./output.pgm
+
+# mount sdcard; copy over output; unmount sdcard
+mount /dev/mmcblk0p1 /mnt
+cp output.pgm /mnt/conv.pgm
+sync
+umount /mnt
+

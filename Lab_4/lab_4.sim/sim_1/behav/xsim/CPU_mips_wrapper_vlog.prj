@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab_4.ip_user_files/bd/CPU_mips/ip/CPU_mips_instr_31dt26_0/sim/CPU_mips_instr_31dt26_0.v" \
+"../../../../lab_4.ip_user_files/bd/CPU_mips/ip/CPU_mips_instr_31dt26_1/sim/CPU_mips_instr_31dt26_1.v" \
+"../../../../lab_4.ip_user_files/bd/CPU_mips/ip/CPU_mips_instr_31dt26_2/sim/CPU_mips_instr_31dt26_2.v" \
+"../../../../lab_4.ip_user_files/bd/CPU_mips/ip/CPU_mips_instr_31dt26_3/sim/CPU_mips_instr_31dt26_3.v" \
+"../../../../lab_4.ip_user_files/bd/CPU_mips/ip/CPU_mips_instr_31dt26_4/sim/CPU_mips_instr_31dt26_4.v" \
+"../../../../lab_4.ip_user_files/bd/CPU_mips/ip/CPU_mips_instr_31dt26_5/sim/CPU_mips_instr_31dt26_5.v" \
+"../../../../lab_4.ip_user_files/bd/CPU_mips/ip/CPU_mips_instr_25dt21_0/sim/CPU_mips_instr_25dt21_0.v" \
+"../../../../lab_4.ip_user_files/bd/CPU_mips/ip/CPU_mips_instr_rd_0/sim/CPU_mips_instr_rd_0.v" \
+"../../../../lab_4.ip_user_files/bd/CPU_mips/ip/CPU_mips_instr_funct_0/sim/CPU_mips_instr_funct_0.v" \
+"../../../../lab_4.ip_user_files/bd/CPU_mips/ip/CPU_mips_xlconcat_0_0/sim/CPU_mips_xlconcat_0_0.v" \
+"../../../../lab_4.ip_user_files/bd/CPU_mips/ip/CPU_mips_xlslice_0_1/sim/CPU_mips_xlslice_0_1.v" \
+"../../../../lab_4.ip_user_files/bd/CPU_mips/ip/CPU_mips_xlslice_0_2/sim/CPU_mips_xlslice_0_2.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(){
+	uint32_t *regmap = (uint32_t *) 0x70000000;
+	while(1){
+		size_t io = regmap[2];
+		if(io > 0)
+			printf("boop\n");
+		regmap[2] = io;
+	}
+	return 0;
+}

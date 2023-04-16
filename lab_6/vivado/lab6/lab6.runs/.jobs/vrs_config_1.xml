@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_PS7_0_synth_1" LaunchDir="C:/Users/pacel/Documents/Spring_2023/ECE_1195/lab_6/vivado/lab6/lab6.runs/system_PS7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_AXI_DMA_0_synth_1" LaunchDir="C:/Users/pacel/Documents/Spring_2023/ECE_1195/lab_6/vivado/lab6/lab6.runs/system_AXI_DMA_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_PL2PS_AXI_0_synth_1" LaunchDir="C:/Users/pacel/Documents/Spring_2023/ECE_1195/lab_6/vivado/lab6/lab6.runs/system_PL2PS_AXI_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_PSR_0_synth_1" LaunchDir="C:/Users/pacel/Documents/Spring_2023/ECE_1195/lab_6/vivado/lab6/lab6.runs/system_PSR_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_hw_conv_0_0_synth_1" LaunchDir="C:/Users/pacel/Documents/Spring_2023/ECE_1195/lab_6/vivado/lab6/lab6.runs/system_hw_conv_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_auto_pc_0_synth_1" LaunchDir="C:/Users/pacel/Documents/Spring_2023/ECE_1195/lab_6/vivado/lab6/lab6.runs/system_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/pacel/Documents/Spring_2023/ECE_1195/lab_6/vivado/lab6/lab6.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="system_PS7_0_synth_1"/>
+		<Parent Id="system_AXI_DMA_0_synth_1"/>
+		<Parent Id="system_PL2PS_AXI_0_synth_1"/>
+		<Parent Id="system_PSR_0_synth_1"/>
+		<Parent Id="system_hw_conv_0_0_synth_1"/>
+		<Parent Id="system_auto_pc_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/pacel/Documents/Spring_2023/ECE_1195/lab_6/vivado/lab6/lab6.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="system_PS7_0_synth_1"/>
+		<Parent Id="system_AXI_DMA_0_synth_1"/>
+		<Parent Id="system_PL2PS_AXI_0_synth_1"/>
+		<Parent Id="system_PSR_0_synth_1"/>
+		<Parent Id="system_hw_conv_0_0_synth_1"/>
+		<Parent Id="system_auto_pc_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

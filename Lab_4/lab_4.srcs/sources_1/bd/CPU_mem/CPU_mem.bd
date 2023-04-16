@@ -1,0 +1,142 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x824B0EC7366C152B",
+      "device": "xc7z020clg400-1",
+      "name": "CPU_mem",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "CPU_mips_wrapper_0": "",
+      "memory": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "CPU_mem_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "CPU_mips_wrapper_0": {
+        "vlnv": "xilinx.com:user:CPU_mips_wrapper:1.0",
+        "xci_name": "CPU_mem_CPU_mips_wrapper_0_0"
+      },
+      "memory": {
+        "vlnv": "xilinx.com:module_ref:CPU_memory:1.0",
+        "xci_name": "CPU_mem_CPU_memory_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CPU_memory",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "CPU_mem_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "MemWrite": {
+            "direction": "I"
+          },
+          "addr": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "dataIn": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "dataOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "CPU_mips_wrapper_0/clk",
+          "memory/Clk"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "CPU_mips_wrapper_0/rst"
+        ]
+      },
+      "CPU_mips_wrapper_0_memoryWrite": {
+        "ports": [
+          "CPU_mips_wrapper_0/memoryWrite",
+          "memory/MemWrite"
+        ]
+      },
+      "CPU_mips_wrapper_0_memoryAddress": {
+        "ports": [
+          "CPU_mips_wrapper_0/memoryAddress",
+          "memory/addr"
+        ]
+      },
+      "CPU_mips_wrapper_0_memoryData": {
+        "ports": [
+          "CPU_mips_wrapper_0/memoryData",
+          "memory/dataIn"
+        ]
+      },
+      "CPU_memory_0_dataOut": {
+        "ports": [
+          "memory/dataOut",
+          "CPU_mips_wrapper_0/memoryDataIn"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>multiplier</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>rst</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET">rst</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>multiplier</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f616b006</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>multiplier</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f616b006</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f64a5dae</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>A</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>B</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>R</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">63</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>done</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/Arith_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/controller.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/register.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/multiplier.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_7a42f8fb</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/Arith_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/controller.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/register.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/multiplier.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/multiplier_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>multiplier_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">multiplier_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>multiplier_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>5</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-02-20T15:53:58Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f57f2aa_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@385d875f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51935404_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66d162a9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@701d5366_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f9f389a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f19088d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f39479e_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cd9b7a1_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71a3ae96_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@777e9369_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b00d31f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6953084c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62594ab3_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fe216c8_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a36632c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e9ea9d9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c910a04_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2420d97f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dd32b69_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d84c09b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5259169d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45abdb49_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4568e55f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f31bc40_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21d8fcd5_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cd4f6f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2800736d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43fb4c5f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@769af649_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8707629_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74df5226_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8f0df41_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ae50815_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53b325f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2710a1b1_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5963684a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62015ea2_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@647cfcd9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c3acb5b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ffc1da2_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b92b18d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d72410_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f982e87_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f27d7d2_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eb64844_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24453412_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@391128eb_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b631c07_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e7e7178_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e29363d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23acba8c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29fef0e3_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ad27c31_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d67890f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4217431_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@284e8b54_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ace1bea_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e1e4a1d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eb838a7_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4405bfc3_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ff8b124_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6830d5_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1afcdf34_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b16e81_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1494fe9b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14ca25e6_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11221555_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ddda86e_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e810073_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fa97386_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a043bb9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26e90a9a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@713345db_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79521170_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d61db56_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="25031715"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="adc87975"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="11f63867"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="56e8c000"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

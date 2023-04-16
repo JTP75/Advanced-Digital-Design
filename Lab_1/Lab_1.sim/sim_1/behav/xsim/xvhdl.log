@@ -1,0 +1,27 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/ip/Lab_1_processing_system7_0_0/Lab_1_processing_system7_0_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_1_processing_system7_0_0_processing_system7_v5_5_processing_system7'
+INFO: [VRFC 10-3107] analyzing entity 'Lab_1_processing_system7_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/ipshared/5a01/src/mm_regmap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mm_regmap'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/ipshared/5a01/src/axi_regmap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axi_regmap'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/ip/Lab_1_axi_regmap_0_0/sim/Lab_1_axi_regmap_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_1_axi_regmap_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/ipshared/8088/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/ip/Lab_1_adder_0_0/sim/Lab_1_adder_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_1_adder_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/ip/Lab_1_rst_ps7_0_100M_0/sim/Lab_1_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_1_rst_ps7_0_100M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/ip/Lab_1_ila_0_0/sim/Lab_1_ila_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_1_ila_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/sim/Lab_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'm00_couplers_imp_1M2TKF0'
+INFO: [VRFC 10-3107] analyzing entity 'm01_couplers_imp_T1HILW'
+INFO: [VRFC 10-3107] analyzing entity 'm02_couplers_imp_XT1YQ5'
+INFO: [VRFC 10-3107] analyzing entity 's00_couplers_imp_11HVVQV'
+INFO: [VRFC 10-3107] analyzing entity 's01_couplers_imp_HG16SF'
+INFO: [VRFC 10-3107] analyzing entity 'Lab_1_ps7_0_axi_periph_0'
+INFO: [VRFC 10-3107] analyzing entity 'Lab_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/hdl/Lab_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_1_wrapper'

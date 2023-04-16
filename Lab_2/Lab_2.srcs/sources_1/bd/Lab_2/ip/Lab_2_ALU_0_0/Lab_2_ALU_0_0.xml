@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>engineering.pitt.edu</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>Lab_2_ALU_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>ALU</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 06 18:01:16 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:f067433e</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesiswrapper</spirit:name>
+        <spirit:displayName>VHDL Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>Lab_2_ALU_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 06 18:01:16 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:f067433e</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>ALU</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 06 18:01:16 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:e928b29a</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsimulationwrapper</spirit:name>
+        <spirit:displayName>VHDL Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>Lab_2_ALU_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 06 18:01:16 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:e928b29a</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 06 18:02:42 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:f067433e</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>A</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.n&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>B</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.n&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ALUOp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SHAMT</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>R</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.n&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Zero</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Overflow</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>n</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.n" spirit:minimum="0" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/4496/src/Arith_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/4496/src/Comparator.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/4496/src/Logic_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/4496/src/Shift_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/4496/src/ALU.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/Lab_2_ALU_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/4496/src/Arith_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/4496/src/Comparator.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/4496/src/Logic_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/4496/src/Shift_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/4496/src/ALU.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/Lab_2_ALU_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>Lab_2_ALU_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Lab_2_ALU_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Lab_2_ALU_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Lab_2_ALU_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Lab_2_ALU_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>Arithematic Logic Unit (Signed/Unsigned Addition/Subtraction, Comparison, and Logic)</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">Lab_2_ALU_0_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>n</spirit:name>
+      <spirit:displayName>N</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.n">32</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>ALU</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b6a6dc4_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5db93185_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41f24f89_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@416ec20d_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@640a57b5_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ffef15a_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55f09e5c_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1766e223_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cc5c667_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@777d8ca4_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bfd00dc_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fbd2007_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5935b2c3_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e49d343_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@393b8589_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b891e8c_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@285c74fe_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24e6387f_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62f180d8_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2eb9b975_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@539e8321_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3729af2d_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c9fd43_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@440a7743_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2115133b_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d42a2d8_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14d55384_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14537e_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@344886ad_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77811864_ARCHIVE_LOCATION">c:/Users/Amr/Box/Fall 2020/Teaching/ECE 1195/1502/COELib/ECE1195_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d553008_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fee6b81_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f406bd1_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@785081d2_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@559b9729_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53b4e339_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3492c6f7_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61a50fa0_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bc8b49d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c7d77ac_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e49da40_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50e6bfc_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65ecfc60_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@709f5af4_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d358af7_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56231c29_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@954c524_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e66957f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@240188d9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d8b9f6f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36817fed_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38cd0673_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ce440b0_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38097c5c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2643617a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c3ec21c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14cf46f2_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d929f9d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@211051a5_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ee91677_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62700d1f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50d2dfa9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65e0b45b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b669698_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d8a19c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d151f1f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@386fb478_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bef3f25_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52a3f810_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40da1bc4_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e5b04af_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@797155e3_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45c93b3c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@209dadce_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73c97405_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d91fa78_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13ef8ed5_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@409f1e98_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dfafcf3_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a68c746_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cd7de81_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@364fda32_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@273920f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75072f4a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25d878c0_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3469faac_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13f8448c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69da492d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78665b98_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3adad5bc_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34bb5c09_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22a7e6cd_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35155934_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e5611a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@684564f2_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ef56b9f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7772f50e_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bba072e_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2097966d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cea8ed4_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30c15797_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6911ca71_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@529d9315_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18fcbefc_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a6c1ec0_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37ebccac_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@411c1429_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b246e83_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cac0c80_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20b44503_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b8302c0_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7daeeed3_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44ae237f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@390901b0_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@624b9909_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@eacaf78_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d3de6b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@210a3b92_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10be2602_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73b85bbf_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35acf552_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3eafa0f9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6594516b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4effc0d9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4be10445_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71a71fba_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47d5744_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65ce6472_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@360147cc_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fad4fe6_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@685fe3d0_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e4900ea_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@847f0c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31c16acc_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78ea8fc2_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d2f6a4e_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a02d4e9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f8c4131_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@310d616f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@714161c9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4481607b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@270d011e_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e99ca1c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e05fac4_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13e30df6_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32c1ac21_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43200065_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69eb5302_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e3460db_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f7ed171_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@152ba87d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="145dc667"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="ebeaf192"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="02c21f1c"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="51e5bac6"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

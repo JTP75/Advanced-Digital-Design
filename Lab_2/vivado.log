@@ -1,0 +1,784 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb  6 11:47:00 2023
+# Process ID: 22444
+# Current directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19380 C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_2\Lab_2.xpr
+# Log file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/vivado.log
+# Journal file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name ALU_v1_0_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/ALU_v1_0_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 779.527 ; gain = 13.660
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 785.223 ; gain = 19.355
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj ALU_tb_vhdl.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../Lab_2_repo/ALU/src/ALU.vhd"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] ALU_tb_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property library xil_defaultlib [get_files *.vhd]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj ALU_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/Arith_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Arith_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Comparator'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/Logic_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Logic_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/Shift_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Shift_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1fb87a419fb04bc583e16b1fad77a1ab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Logic_Unit [logic_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Shift_Unit [shift_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [arith_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture struct of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture sim of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb  6 11:49:24 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 856.926 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: BEGINNING LU TESTS
+Time: 0 ps  Iteration: 0  Process: /ALU_tb/line__49  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd
+Note: LU TESTS COMPLETE
+Time: 80 ns  Iteration: 0  Process: /ALU_tb/line__49  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd
+Note: BEGINNING SU TESTS
+Time: 80 ns  Iteration: 0  Process: /ALU_tb/line__49  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd
+Error: Failed SRL Test (ten shift) (A<0)
+Time: 130 ns  Iteration: 0  Process: /ALU_tb/line__49  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd
+Error: Failed SRA Test (ten shift) (A<0)
+Time: 140 ns  Iteration: 0  Process: /ALU_tb/line__49  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd
+Error: Failed SRL Test (31 shift) (A<0)
+Time: 160 ns  Iteration: 0  Process: /ALU_tb/line__49  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd
+Error: Failed SRA Test (31 shift) (A<0)
+Time: 170 ns  Iteration: 0  Process: /ALU_tb/line__49  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd
+Error: Failed SRL Test (16 shift) (A>0)
+Time: 220 ns  Iteration: 0  Process: /ALU_tb/line__49  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd
+Error: Failed SRA Test (16 shift) (A>0)
+Time: 230 ns  Iteration: 0  Process: /ALU_tb/line__49  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd
+Error: Failed SRL Test (31 shift) (A>0)
+Time: 250 ns  Iteration: 0  Process: /ALU_tb/line__49  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd
+Note: SU TESTS COMPLETE
+Time: 260 ns  Iteration: 0  Process: /ALU_tb/line__49  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 871.047 ; gain = 14.121
+set_property top ALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 871.137 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj ALU_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1fb87a419fb04bc583e16b1fad77a1ab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot ALU_behav xil_defaultlib.ALU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Logic_Unit [logic_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Shift_Unit [shift_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [arith_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture struct of entity xil_defaultlib.alu
+Built simulation snapshot ALU_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/ALU_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb  6 11:50:14 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 871.137 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_behav -key {Behavioral:sim_1:Functional:ALU} -tclbatch {ALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source ALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 871.137 ; gain = 0.000
+source C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_2\Lab_2_repo\ALU\xgui\ALU_tb.tcl -notrace
+couldn't read file "C:UserspacelDesktopWorkPittsemestersSpring_2023ECE_1195Lab_2Lab_2_repoALUxguiALU_tb.tcl": no such file or directory
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/xgui/ALU_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Correct! SLL (16-bits)
+Wrong! SRL (16-bits)
+Wrong! SRA (16-bits)
+Correct! SLL (31-bits)
+Wrong! SRL (31-bits)
+Wrong! SRA (31-bits)
+Correct! AND
+Correct! OR
+Correct! XOR
+Correct! NOR
+Wrong! SLT
+Correct! SLTU
+Correct! ADD (S)
+Correct! ADD (Zero)
+Correct! ADD (Overflow)
+Correct! SUBU (S)
+Correct! SUBU (Zero)
+Correct! SUBU (Overflow)
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 914.191 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj ALU_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Comparator'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1fb87a419fb04bc583e16b1fad77a1ab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot ALU_behav xil_defaultlib.ALU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Logic_Unit [logic_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Shift_Unit [shift_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [arith_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture struct of entity xil_defaultlib.alu
+Built simulation snapshot ALU_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 914.191 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 914.191 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 914.191 ; gain = 0.000
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/xgui/ALU_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Correct! SLL (16-bits)
+Wrong! SRL (16-bits)
+Wrong! SRA (16-bits)
+Correct! SLL (31-bits)
+Wrong! SRL (31-bits)
+Wrong! SRA (31-bits)
+Correct! AND
+Correct! OR
+Correct! XOR
+Correct! NOR
+Correct! SLT
+Correct! SLTU
+Correct! ADD (S)
+Correct! ADD (Zero)
+Correct! ADD (Overflow)
+Correct! SUBU (S)
+Correct! SUBU (Zero)
+Correct! SUBU (Overflow)
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_testbench (Test Bench)': File 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU_tb.vhd' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/component.xml' ignored by IP packager.
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 914.191 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj ALU_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/Shift_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Shift_Unit'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1fb87a419fb04bc583e16b1fad77a1ab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot ALU_behav xil_defaultlib.ALU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Logic_Unit [logic_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Shift_Unit [shift_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [arith_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture struct of entity xil_defaultlib.alu
+Built simulation snapshot ALU_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 914.191 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 914.191 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 914.191 ; gain = 0.000
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/xgui/ALU_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Wrong! SLL (16-bits)
+Wrong! SRL (16-bits)
+Wrong! SRA (16-bits)
+Wrong! SLL (31-bits)
+Wrong! SRL (31-bits)
+Wrong! SRA (31-bits)
+Correct! AND
+Correct! OR
+Correct! XOR
+Correct! NOR
+Correct! SLT
+Correct! SLTU
+Correct! ADD (S)
+Correct! ADD (Zero)
+Correct! ADD (Overflow)
+Correct! SUBU (S)
+Correct! SUBU (Zero)
+Correct! SUBU (Overflow)
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 914.191 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj ALU_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/Shift_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Shift_Unit'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1fb87a419fb04bc583e16b1fad77a1ab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot ALU_behav xil_defaultlib.ALU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Logic_Unit [logic_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Shift_Unit [shift_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [arith_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture struct of entity xil_defaultlib.alu
+Built simulation snapshot ALU_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 914.191 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 914.191 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 914.191 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/xgui/ALU_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Correct! SLL (16-bits)
+Correct! SRL (16-bits)
+Correct! SRA (16-bits)
+Correct! SLL (31-bits)
+Correct! SRL (31-bits)
+Correct! SRA (31-bits)
+Correct! AND
+Correct! OR
+Correct! XOR
+Correct! NOR
+Correct! SLT
+Correct! SLTU
+Correct! ADD (S)
+Correct! ADD (Zero)
+Correct! ADD (Overflow)
+Correct! SUBU (S)
+Correct! SUBU (Zero)
+Correct! SUBU (Overflow)
+save_wave_config {c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 914.191 ; gain = 0.000
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/component.xml' ignored by IP packager.
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo'
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/Lab_2.bd}
+Adding cell -- SHREC:SHREC:axi_regmap:1.0 - axi_regmap_0
+Adding cell -- engineering.pitt.edu:ECE1195_repo:ALU:1.0 - ALU_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Successfully read diagram <Lab_2> from BD file <C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/Lab_2.bd>
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 960.809 ; gain = 46.617
+report_ip_status -name ip_status 
+upgrade_ip -vlnv engineering.pitt.edu:ECE1195_repo:ALU:1.0 [get_ips  Lab_2_ALU_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/Lab_2.bd'
+INFO: [IP_Flow 19-3422] Upgraded Lab_2_ALU_0_0 (ALU 1.0) from revision 2 to revision 3
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_2\Lab_2.srcs\sources_1\bd\Lab_2\Lab_2.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips Lab_2_ALU_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+set_property offset 0x70000000 [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_regmap_0_reg0}]
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-927] Following properties on pin /axi_regmap_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=Lab_2_processing_system7_0_0_FCLK_CLK0 
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/Lab_2.bd] -top
+INFO: [BD 41-1662] The design 'Lab_2.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_2\Lab_2.srcs\sources_1\bd\Lab_2\Lab_2.bd> 
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/synth/Lab_2.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/sim/Lab_2.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/hdl/Lab_2_wrapper.vhd
+add_files -norecurse C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/hdl/Lab_2_wrapper.vhd
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'Lab_2.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/synth/Lab_2.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/sim/Lab_2.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/hdl/Lab_2_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_regmap_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ALU_0 .
+WARNING: [IP_Flow 19-5160] IP 'Lab_2_processing_system7_0_0' detected simulation language mismatch. Simulation type 'rtl' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+WARNING: [IP_Flow 19-5160] IP 'Lab_2_processing_system7_0_0' detected simulation language mismatch. Simulation type 'tlm_dpi' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/ip/Lab_2_auto_pc_0/Lab_2_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/hw_handoff/Lab_2.hwh
+Generated Block Design Tcl file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/hw_handoff/Lab_2_bd.tcl
+Generated Hardware Definition File C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/synth/Lab_2.hwdef
+[Mon Feb  6 13:02:02 2023] Launched Lab_2_ALU_0_0_synth_1, Lab_2_rst_ps7_0_100M_0_synth_1, Lab_2_processing_system7_0_0_synth_1, Lab_2_axi_regmap_0_0_synth_1, Lab_2_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+Lab_2_ALU_0_0_synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.runs/Lab_2_ALU_0_0_synth_1/runme.log
+Lab_2_rst_ps7_0_100M_0_synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.runs/Lab_2_rst_ps7_0_100M_0_synth_1/runme.log
+Lab_2_processing_system7_0_0_synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.runs/Lab_2_processing_system7_0_0_synth_1/runme.log
+Lab_2_axi_regmap_0_0_synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.runs/Lab_2_axi_regmap_0_0_synth_1/runme.log
+Lab_2_auto_pc_0_synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.runs/Lab_2_auto_pc_0_synth_1/runme.log
+synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.runs/synth_1/runme.log
+[Mon Feb  6 13:02:02 2023] Launched impl_1...
+Run output will be captured here: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:46 . Memory (MB): peak = 1171.828 ; gain = 83.070
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.258 . Memory (MB): peak = 2025.410 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.258 . Memory (MB): peak = 2025.410 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2025.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 2130.574 ; gain = 906.219
+file mkdir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.sdk
+file copy -force C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.runs/impl_1/Lab_2_wrapper.sysdef C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.sdk/Lab_2_wrapper.hdf
+
+launch_sdk -workspace C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.sdk -hwspec C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.sdk/Lab_2_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.sdk -hwspec C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.sdk/Lab_2_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.srcs/sources_1/bd/Lab_2/Lab_2.bd}
+ipx::edit_ip_in_project -upgrade true -name ALU_v1_0_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/ALU_v1_0_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2236.090 ; gain = 2.273
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2236.090 ; gain = 2.273
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj ALU_vhdl.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../Lab_2_repo/ALU/src/Arith_Unit.vhd"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] ALU_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property library xil_defaultlib [get_files *.vhd]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj ALU_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/Arith_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Arith_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/Comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Comparator'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/Logic_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Logic_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/Shift_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Shift_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/src/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto a05b5926eaf848509c45a2fbe630d8e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot ALU_behav xil_defaultlib.ALU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Logic_Unit [logic_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Shift_Unit [shift_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [arith_unit_default]
+Compiling architecture struct of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture struct of entity xil_defaultlib.alu
+Built simulation snapshot ALU_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/ALU_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb  6 18:17:29 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2236.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_behav -key {Behavioral:sim_1:Functional:ALU} -tclbatch {ALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source ALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 2382.086 ; gain = 145.262
+source C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_2\Lab_2_repo\ALU\xgui\ALU_tb.tcl
+couldn't read file "C:UserspacelDesktopWorkPittsemestersSpring_2023ECE_1195Lab_2Lab_2_repoALUxguiALU_tb.tcl": no such file or directory
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/xgui/ALU_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Correct! SLL (16-bits)
+Correct! SRL (16-bits)
+Correct! SRA (16-bits)
+Correct! SLL (31-bits)
+Correct! SRL (31-bits)
+Correct! SRA (31-bits)
+Correct! AND
+Correct! OR
+Correct! XOR
+Correct! NOR
+Correct! SLT
+Correct! SLTU
+Correct! ADD (S)
+Correct! ADD (Zero)
+Correct! ADD (Overflow)
+Correct! SUBU (S)
+Correct! SUBU (Zero)
+Correct! SUBU (Overflow)
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+ipx::edit_ip_in_project -upgrade true -name ALU_v1_0_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/ALU_v1_0_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2589.859 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2589.859 ; gain = 0.000
+update_compile_order -fileset sources_1
+current_project Lab_2
+current_project ALU_v1_0_project
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  6 20:47:17 2023...

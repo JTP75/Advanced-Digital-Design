@@ -1,0 +1,28 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Note: TESTING CORNER CASES...
+Time: 0 ps  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd
+Note: ALL CORNER CASES PASSED\n
+Time: 60 ns  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd
+Note: TESTING PSEUDO-RANDOM CASES...
+Time: 60 ns  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd
+Note: TESTING CORNER CASES...
+Time: 0 ps  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd
+Note: ALL CORNER CASES PASSED\n
+Time: 60 ns  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd
+Note: TESTING PSEUDO-RANDOM CASES...
+Time: 60 ns  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd
+Note: ALL PSEUDO-RANDOM CASES PASSED\n
+Time: 2070 ns  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd
+Note: SIMULATION COMPLETE
+Time: 2070 ns  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd
+Note: TESTING CORNER CASES...
+Time: 0 ps  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd
+Note: ALL CORNER CASES PASSED\n
+Time: 60 ns  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd
+Note: TESTING PSEUDO-RANDOM CASES...
+Time: 60 ns  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd
+Note: ALL PSEUDO-RANDOM CASES PASSED\n
+Time: 2070 ns  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd
+Note: SIMULATION COMPLETE
+Time: 2070 ns  Iteration: 0  Process: /adder_tb/line__81  File: c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder/src/adder_tb.vhd

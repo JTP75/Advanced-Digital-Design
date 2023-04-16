@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'lbuf' (vhls/convolution.cpp:107) accessed through non-constant indices on dimension 1 (vhls/convolution.cpp:164:37), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="lab_6" solutionName="solution1" date="2023-04-15T12:29:01.768-0400" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] In file included from vhls/convolution.cpp:1:&#xD;&#xA;vhls/convolution.cpp:164:6: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]&#xD;&#xA;     auto tmp = lbuf[rk][i%(512 -3)];&#xD;&#xA;     ^&#xD;&#xA;1 warning generated." projectName="lab_6" solutionName="solution1" date="2023-04-15T12:28:57.080-0400" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'rock512.pgm'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="lab_6" solutionName="solution1" date="2023-04-15T12:28:50.975-0400" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

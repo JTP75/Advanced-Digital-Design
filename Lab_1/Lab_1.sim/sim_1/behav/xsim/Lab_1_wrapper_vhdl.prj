@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab_1.srcs/sources_1/bd/Lab_1/ip/Lab_1_processing_system7_0_0/Lab_1_processing_system7_0_0_sim_netlist.vhdl" \
+"../../../../Lab_1.srcs/sources_1/bd/Lab_1/ipshared/5a01/src/mm_regmap.vhd" \
+"../../../../Lab_1.srcs/sources_1/bd/Lab_1/ipshared/5a01/src/axi_regmap.vhd" \
+"../../../../Lab_1.srcs/sources_1/bd/Lab_1/ip/Lab_1_axi_regmap_0_0/sim/Lab_1_axi_regmap_0_0.vhd" \
+"../../../../Lab_1.srcs/sources_1/bd/Lab_1/ipshared/8088/adder.vhd" \
+"../../../../Lab_1.srcs/sources_1/bd/Lab_1/ip/Lab_1_adder_0_0/sim/Lab_1_adder_0_0.vhd" \
+"../../../../Lab_1.srcs/sources_1/bd/Lab_1/ip/Lab_1_rst_ps7_0_100M_0/sim/Lab_1_rst_ps7_0_100M_0.vhd" \
+"../../../../Lab_1.srcs/sources_1/bd/Lab_1/ip/Lab_1_ila_0_0/sim/Lab_1_ila_0_0.vhd" \
+"../../../../Lab_1.srcs/sources_1/bd/Lab_1/sim/Lab_1.vhd" \
+"../../../../Lab_1.srcs/sources_1/bd/Lab_1/hdl/Lab_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

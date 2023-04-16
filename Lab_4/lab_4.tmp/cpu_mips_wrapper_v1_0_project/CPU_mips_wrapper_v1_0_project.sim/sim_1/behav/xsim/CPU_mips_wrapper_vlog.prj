@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog   \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_25dt21_0.v" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_31dt26_0.v" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_31dt26_1.v" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_31dt26_2.v" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_31dt26_3.v" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_31dt26_4.v" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_31dt26_5.v" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_funct_0.v" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_rd_0.v" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_xlconcat_0_0.v" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_xlslice_0_1.v" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_xlslice_0_2.v" \
+
+verilog xlconcat_v2_1_1  \
+"../../../../../../../ip_repo/CPU_mips1/sim/xlconcat_v2_1_1/xlconcat_v2_1_vl_rfs.v" \
+
+verilog xlslice_v1_0_1  \
+"../../../../../../../ip_repo/CPU_mips1/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

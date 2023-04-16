@@ -1,0 +1,4 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Note: Warning on instance :Lab_1_wrapper:Lab_1_i:processing_system7_0:inst:PS7_i: The Zynq-7000 All Programmable SoC does not have a simulation model. Behavioral simulation of Zynq-7000 (e.g. Zynq PS7 block) is not supported in any simulator. Please use the AXI BFM simulation model to verify the AXI transactions
+Time: 0 ps  Iteration: 0  Process: /Lab_1_wrapper/Lab_1_i/processing_system7_0/inst/PS7_i/line__663  File: C:\Xilinx\Vivado\2018.3\data/vhdl/src/unisims/primitive/PS7.vhd

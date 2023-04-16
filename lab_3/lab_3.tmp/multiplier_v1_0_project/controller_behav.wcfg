@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="multiplier_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="multiplier" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1999000000000fs"></ZoomStartTime>
+      <ZoomEndTime time="2048200000001fs"></ZoomEndTime>
+      <Cursor1Time time="2040000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="160"></NameColumnWidth>
+      <ValueColumnWidth column_width="162"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/multiplier/CTRL/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier/CTRL/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier/CTRL/mpr0" type="logic">
+      <obj_property name="ElementShortName">mpr0</obj_property>
+      <obj_property name="ObjectShortName">mpr0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier/CTRL/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier/CTRL/shft" type="logic">
+      <obj_property name="ElementShortName">shft</obj_property>
+      <obj_property name="ObjectShortName">shft</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier/CTRL/pren" type="logic">
+      <obj_property name="ElementShortName">pren</obj_property>
+      <obj_property name="ObjectShortName">pren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier/CTRL/lrst" type="logic">
+      <obj_property name="ElementShortName">lrst</obj_property>
+      <obj_property name="ObjectShortName">lrst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier/CTRL/rrst" type="logic">
+      <obj_property name="ElementShortName">rrst</obj_property>
+      <obj_property name="ObjectShortName">rrst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier/CTRL/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+</wave_config>

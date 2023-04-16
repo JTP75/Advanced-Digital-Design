@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 22 13:17:37 2023
+# Process ID: 332
+# Current directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4536 C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_4\lab_4.xpr
+# Log file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/vivado.log
+# Journal file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source CPU_mem_wrapper.tcl
+open_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_tb.tcl -notrace
+source CPU_tb.tcl -notrace
+source CPU_tb.tcl -notrace
+source CPU_tb.tcl -notrace
+source CPU_tb.tcl -notrace
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+close_sim

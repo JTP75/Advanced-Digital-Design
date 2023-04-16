@@ -1,0 +1,21 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 235a120353c846b89b5f257e2ee014c8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier
+Built simulation snapshot multiplier_behav

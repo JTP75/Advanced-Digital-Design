@@ -1,0 +1,110 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Feb  6 13:06:20 2023
+| Host         : JUSTIN-LAPTOP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Lab_2_wrapper_control_sets_placed.rpt
+| Design       : Lab_2_wrapper
+| Device       : xc7z020
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    36 |
+| Unused register locations in slices containing registers |   106 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      2 |            1 |
+|      4 |            5 |
+|      5 |            4 |
+|      6 |            1 |
+|      8 |            1 |
+|     10 |            1 |
+|     12 |            4 |
+|     13 |            1 |
+|     14 |            4 |
+|    16+ |           13 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             109 |           29 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              26 |           14 |
+| Yes          | No                    | No                     |             384 |           90 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             103 |           48 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                 Clock Signal                 |                                                                        Enable Signal                                                                        |                                                                  Set/Reset Signal                                                                  | Slice Load Count | Bel Load Count |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awready_1                        | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awready_0               |                1 |              1 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/sel                                       |                                                                                                                                                    |                1 |              2 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | Lab_2_i/axi_regmap_0/U0/MM_i/SR[0]                                                                                                                 |                2 |              4 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | Lab_2_i/rst_ps7_0_100M/U0/EXT_LPF/lpf_int                                                                                                          |                2 |              4 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aresetn_d_reg[0]_0                       |                3 |              4 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/aresetn_d_reg[1]_inv_0                   |                3 |              4 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/axi_regmap_0/U0/MM_i/slv_out[2][3]_i_1_n_0                                                                                                          | Lab_2_i/axi_regmap_0/U0/MM_i/SR[0]                                                                                                                 |                2 |              4 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/axi_regmap_0/U0/MM_i/slv_out[3][4]_i_1_n_0                                                                                                          | Lab_2_i/axi_regmap_0/U0/MM_i/SR[0]                                                                                                                 |                2 |              5 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/m_valid_i_reg                          | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/FSM_sequential_state_reg[0]_0 |                2 |              5 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/E[0]                                  | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/areset_d1                                                  |                2 |              5 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/cnt_read[4]_i_1_n_0                   | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/areset_d1                                                  |                2 |              5 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/rst_ps7_0_100M/U0/SEQ/seq_cnt_en                                                                                                                    | Lab_2_i/rst_ps7_0_100M/U0/SEQ/SEQ_COUNTER/clear                                                                                                    |                1 |              6 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/mhandshake_r                                         | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/SR[0]                            |                4 |              8 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/areset_d1                                                  |                4 |             10 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[11]_i_1_n_0 |                                                                                                                                                    |                2 |             12 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/E[0]                                   |                                                                                                                                                    |                6 |             12 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/sel_first_reg[0]                       |                                                                                                                                                    |                2 |             12 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/E[0]                                   |                                                                                                                                                    |                4 |             12 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_push_r                                             |                                                                                                                                                    |                4 |             13 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/axi_regmap_0/U0/axi_araddr_1                                                                                                                        |                                                                                                                                                    |                5 |             14 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/axi_regmap_0/U0/axi_awaddr[15]_i_1_n_0                                                                                                              |                                                                                                                                                    |                3 |             14 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/p_1_in                                              |                                                                                                                                                    |                2 |             14 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/s_ready_i_reg_0                                     |                                                                                                                                                    |                2 |             14 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/b_push                                 |                                                                                                                                                    |                3 |             16 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/m_valid_i_reg                          |                                                                                                                                                    |                7 |             21 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awready_1                        |                                                                                                                                                    |               10 |             25 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/wr_en0                                |                                                                                                                                                    |                8 |             32 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/axi_regmap_0/U0/MM_i/slv_out[1][31]_i_1_n_0                                                                                                         | Lab_2_i/axi_regmap_0/U0/MM_i/SR[0]                                                                                                                 |               14 |             32 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/axi_regmap_0/U0/MM_i/write                                                                                                                          | Lab_2_i/axi_regmap_0/U0/MM_i/SR[0]                                                                                                                 |               18 |             32 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/FSM_sequential_state_reg[1]_0[0]       |                                                                                                                                                    |                9 |             36 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/s_ready_i_reg_0                                   |                                                                                                                                                    |                6 |             36 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/s_ready_i_reg_0                                   |                                                                                                                                                    |                7 |             36 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_valid_i_reg[0]                       |                                                                                                                                                    |                8 |             36 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r.r_pipe/p_1_in                                              |                                                                                                                                                    |                8 |             45 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 | Lab_2_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r.r_pipe/s_ready_i_reg_0                                     |                                                                                                                                                    |                9 |             45 |
+|  Lab_2_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             |                                                                                                                                                    |               30 |            110 |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,1325 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 25668
+License: Customer
+
+Current time: 	Mon Jan 23 15:09:04 EST 2023
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 43 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	pacel
+User home directory: C:/Users/pacel
+User working directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/pacel/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/pacel/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/pacel/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/vivado.log
+Vivado journal file location: 	C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/vivado.jou
+Engine tmp dir: 	C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/.Xil/Vivado-25668-JUSTIN-LAPTOP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 570 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_1\Lab_1.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 578 MB. GUI used memory: 47 MB. Current time: 1/23/23, 3:09:06 PM EST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 102 MB (+104857kb) [00:00:13]
+// [Engine Memory]: 651 MB (+531556kb) [00:00:13]
+// [Engine Memory]: 686 MB (+2477kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  3322 ms.
+// Tcl Message: open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// [GUI Memory]: 114 MB (+6559kb) [00:00:16]
+// [Engine Memory]: 763 MB (+44651kb) [00:00:16]
+// [GUI Memory]: 121 MB (+1871kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  1099 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 783.176 ; gain = 212.277 
+// Project name: Lab_1; location: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1; part: xc7z020clg400-1
+// [Engine Memory]: 1,076 MB (+287460kb) [00:00:18]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 1,135 MB (+6237kb) [00:00:43]
+// Elapsed time: 55 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bx (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // bx (SwingUtilities.SharedOwnerFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // O (Q, cp)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, false, true); // O (Q, cp) - Double Click
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // O (Q, cp) - Popup Trigger
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // O (Q, cp)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 3); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, false, true); // O (Q, cp) - Double Click
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // O (Q, cp) - Popup Trigger
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // O (Q, cp) - Popup Trigger
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, false, false, false, false, true, false); // O (Q, cp) - Popup Trigger
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // O (Q, cp) - Popup Trigger
+// Elapsed time: 26 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, false, true); // O (Q, cp) - Double Click
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // O (Q, cp) - Popup Trigger
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // O (Q, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Properties..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // Z
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,172 MB. GUI used memory: 63 MB. Current time: 1/23/23, 3:11:41 PM EST
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_SPECIFIED_DIRECTORY_CHOOSE, "Package a specified directory. Choose a directory as the source for creating a new IP Definition."); // b (a, Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // q (ak, Q)
+// Elapsed time: 17 seconds
+setFolderChooser("C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/genadder_1.0");
+// bx (cp):  Open IP-XACT File : addNotify
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Open", "Open"); // JButton (C, I)
+dismissDialog("Create and Package New IP"); // Q (cp)
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// WARNING: HEventQueue.dispatchEvent() is taking  1334 ms.
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::open_ipxact_file {C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\ip_repo\genadder_1.0\component.xml} 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+// 'q' command handler elapsed time: 34 seconds
+dismissDialog("Open IP-XACT File"); // bx (cp)
+// Elapsed time: 40 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar (Q, cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar (Q, cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // ar (Q, cp)
+// TclEventType: IP_LOCK_CHANGE
+selectCheckBox(PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", false); // g (as, cp): FALSE
+selectCheckBox(PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", true); // g (as, cp): TRUE
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 3); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 3); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+// [GUI Memory]: 132 MB (+4539kb) [00:04:57]
+// Elapsed time: 24 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+// TclEventType: IP_LOCK_CHANGE
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, Lab_1]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, Lab_1, Synthesis]", 2); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, Lab_1, Synthesis]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, Lab_1, Implementation]", 3); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, Lab_1, Implementation]", 3); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, Lab_1, Simulation]", 4); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, Lab_1, Simulation]", 4); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs]", 0); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - genadder", 1); // k (j, cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ar (Q, cp)
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "AXI_Peripheral", 0); // v (Q, cp)
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "AXI_Peripheral", 0, false, false, false, true, false); // v (Q, cp) - Popup Trigger
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "AXI_Peripheral", 0); // v (Q, cp)
+// Elapsed time: 12 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// [GUI Memory]: 140 MB (+1423kb) [00:05:50]
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // O (Q, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IP_SETTINGS, "IP Settings..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// F (cp): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1402 ms.
+// Elapsed time: 18 seconds
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Project]", 0, false); // L (C, F)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Settings"); // F (cp)
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - genadder", 1); // k (j, cp)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - genadder", 1, true, false); // k (j, cp) - Popup Trigger
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // Z
+// TclEventType: PACKAGER_UNLOAD_CORE
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - genadder"); // ac
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - genadder"); // ac
+// Tcl Message: ipx::unload_core c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/genadder_1.0/component.xml 
+// [GUI Memory]: 154 MB (+7799kb) [00:07:25]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// Tcl Message: open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/Lab_1.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding cell -- SHREC:SHREC:axi_regmap:1.0 - axi_regmap_0 Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M Adding cell -- xilinx.com:ip:ila:6.2 - ila_0 
+// Tcl Message: INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details. 
+// Tcl Message: Adding cell -- xilinx.com:user:adder:1.0 - adder_0 Successfully read diagram <Lab_1> from BD file <C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/Lab_1.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1066 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1493.469 ; gain = 0.000 
+// 'bA' command handler elapsed time: 6 seconds
+dismissDialog("Open Block Design"); // bx (cp)
+selectButton(PAResourceQtoS.SystemBuilderView_SEARCH, "System_RSB_SYSTEM_TREE_POPUP"); // B (f, cp)
+setText("PAResourceQtoS.SystemTreePopup_DESIGN_HIERARCHY_TREE_SEARCH_FIELD", "genadder_1.0", true); // OverlayTextField (v, ResizableWindow)
+selectTree(PAResourceQtoS.SystemTreePopup_DESIGN_HIERARCHY_TREE, "[Lab_1]", 0, true); // ht (Q, ResizableWindow) - Node
+applyEscape(PAResourceQtoS.SystemTreePopup_DESIGN_HIERARCHY_TREE, (String) null); // ht (Q, ResizableWindow)
+// Elapsed time: 55 seconds
+expandTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[Lab_1, adder_0]", 5); // i (Q, cp)
+collapseTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[Lab_1, adder_0]", 5); // i (Q, cp)
+// Elapsed time: 10 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_CREATE_NEW_AXI4_IP_CREATE_AXI4, "Create a new AXI4 peripheral. Create an AXI4 IP, driver, software test application, IP Integrator AXI4 VIP simulation and debug demonstration design."); // b (a, Q)
+// Elapsed time: 17 seconds
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+setText(PAResourceItoN.NewIpWizard_NAME_MYIP, "genadder"); // Y (Q)
+setText(PAResourceItoN.NewIpWizard_VERSION, (String) null); // Y (Q)
+setText(PAResourceItoN.NewIpWizard_VERSION, (String) null); // Y (Q)
+setText(PAResourceItoN.NewIpWizard_DISPLAY_NAME, "genadder"); // Y (Q)
+// Elapsed time: 15 seconds
+setText(PAResourceItoN.NewIpWizard_DESCRIPTION_MY_NEW_AXI_IP, "32 bit signed adder"); // Y (Q)
+// Elapsed time: 11 seconds
+setText(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo"); // al (ak, Q)
+// HOptionPane Error: 'Error'
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("PAResourceItoN.NewIpWizard_ERROR_OK", "OK"); // JButton (C, J)
+setText(PAResourceItoN.NewIpWizard_VERSION, "1"); // Y (Q)
+setText(PAResourceItoN.NewIpWizard_DISPLAY_NAME, "genadder"); // Y (Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectTree(PAResourceItoN.NewIpWizard_INTERFACES_TREE, "[Interfaces, S00_AXI]", 1, false, false, false, false, true, false); // ax (C, Q) - Popup Trigger
+// Elapsed time: 10 seconds
+setText(PAResourceItoN.NewIpWizard_NAME, "A"); // Y (C, Q)
+selectButton(PAResourceItoN.NewIpWizard_ADD_NEW_INTERFACE, (String) null); // k (f, Q)
+// Elapsed time: 11 seconds
+setText(PAResourceItoN.NewIpWizard_NAME, "B"); // Y (C, Q)
+selectButton(PAResourceItoN.NewIpWizard_ADD_NEW_INTERFACE, (String) null); // k (f, Q)
+setText(PAResourceItoN.NewIpWizard_NAME, "C"); // Y (C, Q)
+selectComboBox(PAResourceItoN.NewIpWizard_INTERFACE_MODE, "Master", 0); // e (C, Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 119 seconds
+dismissDialog("Create and Package New IP"); // Q (cp)
+// Tcl Message: create_peripheral xilinx.com user genadder 1 -dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo 
+// Tcl Message: add_peripheral_interface A -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:genadder:1] 
+// Tcl Message: add_peripheral_interface B -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:genadder:1] 
+// Tcl Message: add_peripheral_interface C -interface_mode master -axi_type lite [ipx::find_open_core xilinx.com:user:genadder:1] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:genadder:1] 
+// Tcl Message: write_peripheral [ipx::find_open_core xilinx.com:user:genadder:1] 
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Create Peripheral IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo/genadder_1 C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/genadder_1.0 C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/ip_repo} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo/genadder_1'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/ip_repo'. 
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+dismissDialog("Create Peripheral IP"); // bx (cp)
+// Elapsed time: 14 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 762, 235, 1085, 494, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 1,202 MB. GUI used memory: 107 MB. Current time: 1/23/23, 3:20:22 PM EST
+// [Engine Memory]: 1,202 MB (+10575kb) [00:11:26]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 761, 203, 1085, 494, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ac (al, Popup.HeavyWeightWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cp)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cp)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cp)
+// Elapsed time: 10 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "adder"); // OverlayTextField (ay, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "genadder", 2, "genadder", 0, false); // O (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "genadder", 2, "genadder", 0, false); // O (Q, ResizableWindow)
+// [GUI Memory]: 163 MB (+1412kb) [00:12:11]
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:genadder:1 genadder_0 
+// Tcl Message: endgroup 
+// Elapsed time: 23 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 665, 248, 1085, 494, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cp): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (cp):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name genadder_v1_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.tmp/genadder_v1_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo/genadder_1/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_1/lab_1.tmp/genadder_v1_project' 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1728 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [GUI Memory]: 179 MB (+7863kb) [00:12:50]
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo/genadder_1'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1493.469 ; gain = 0.000 
+// 'i' command handler elapsed time: 15 seconds
+dismissDialog("Edit in IP Packager"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genadder_v1(arch_imp) (genadder_v1.vhd)]", 1, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genadder_v1(arch_imp) (genadder_v1.vhd)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genadder_v1(arch_imp) (genadder_v1.vhd)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// [GUI Memory]: 188 MB (+75kb) [00:13:17]
+// Elapsed time: 30 seconds
+selectCodeEditor("genadder_v1.vhd", 266, 159); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 456, 144); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("genadder_v1.vhd", 424, 176); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("genadder_v1.vhd", 460, 220); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 43, 88); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("genadder_v1.vhd", 327, 205); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("genadder_v1.vhd", 296, 239); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 426, 117); // cl (w, cp)
+typeControlKey((HResource) null, "genadder_v1.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 420, 123); // cl (w, cp)
+typeControlKey((HResource) null, "genadder_v1.vhd", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "genadder_v1.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 80, 135); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 129, 139); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 114, 157); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 114, 157, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("genadder_v1.vhd", 185, 161); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 440, 137); // cl (w, cp)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 49 seconds
+selectCodeEditor("genadder_v1.vhd", 182, 179); // cl (w, cp)
+// Elapsed time: 61 seconds
+selectCodeEditor("genadder_v1.vhd", 107, 198); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 98, 278); // cl (w, cp)
+// Elapsed time: 145 seconds
+selectCodeEditor("genadder_v1.vhd", 87, 290); // cl (w, cp)
+// Elapsed time: 67 seconds
+selectCodeEditor("genadder_v1.vhd", 330, 350); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("genadder_v1.vhd", 43, 367); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 87, 351); // cl (w, cp)
+// Elapsed time: 63 seconds
+selectCodeEditor("genadder_v1.vhd", 109, 240); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 109, 240, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("genadder_v1.vhd", 55, 241); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 259, 232); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 0, 239); // cl (w, cp)
+// Elapsed time: 103 seconds
+selectCodeEditor("genadder_v1.vhd", 331, 242); // cl (w, cp)
+// Elapsed time: 69 seconds
+selectCodeEditor("genadder_v1.vhd", 103, 365); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 281, 372); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("genadder_v1.vhd", 281, 330); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("genadder_v1.vhd", 253, 162); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("genadder_v1.vhd", 371, 181); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 337, 245); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("genadder_v1.vhd", 291, 205); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 345, 314); // cl (w, cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("genadder_v1.vhd", 244, 308); // cl (w, cp)
+typeControlKey((HResource) null, "genadder_v1.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 144, 329); // cl (w, cp)
+typeControlKey((HResource) null, "genadder_v1.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("genadder_v1.vhd", 354, 188); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("genadder_v1.vhd", 266, 163); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("genadder_v1.vhd", 353, 232); // cl (w, cp)
+// Elapsed time: 72 seconds
+selectCodeEditor("genadder_v1.vhd", 120, 266); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 438, 267); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("genadder_v1.vhd", 425, 193); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("genadder_v1.vhd", 236, 177); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("genadder_v1.vhd", 0, 176); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 31, 203); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 41, 220); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 1, 264); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 209, 255); // cl (w, cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("genadder_v1.vhd", 197, 304); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("genadder_v1.vhd", 406, 254); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 649, 288); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("genadder_v1.vhd", 291, 187); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 363, 138); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("genadder_v1.vhd", 361, 257); // cl (w, cp)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 27 seconds
+selectCodeEditor("genadder_v1.vhd", 240, 225); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 240, 225, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("genadder_v1.vhd", 240, 225); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 240, 225); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 177, 290); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 177, 290, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("genadder_v1.vhd", 69, 224); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 178, 269); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 78, 220); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 259, 284); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 222, 289); // cl (w, cp)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - genadder", 1); // k (j, cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar (Q, cp)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from Customization Parameters Wizard"); // h (M, cp)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes hdl_parameters [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-3166] Bus Interface 'A': References existing memory map 'A'. INFO: [IP_Flow 19-3166] Bus Interface 'B': References existing memory map 'B'. INFO: [IP_Flow 19-3164] Bus Interface 'C': References existing address space 'C'. 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_IP_THAT_REQUIRE, "IP has been modified."); // h (M, cp)
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (C, I)
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,202 MB. GUI used memory: 130 MB. Current time: 1/23/23, 3:44:49 PM EST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bx (cp)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo/genadder_1 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo/genadder_1' 
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 675, 229, 1085, 457, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// HOptionPane Warning: ''genadder_0' is locked. Customization changes are not allowed. You should upgrade the IP using 'Report IP Status' from Reports menu. (Vivado)'
+selectButton("PAResourceAtoD.CustomizeRSBBlock_IP_LOCKED_CUSTOMIZATION_CHANGES_OK", "OK"); // JButton (C, I)
+selectButton(PAResourceQtoS.SystemTab_REPORT_IP_STATUS, "Report IP Status"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// bx (cp):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // bx (cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectButton((HResource) null, "/genadder_0"); // h (cQ, cp)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 633, 242, 1085, 457, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cp)
+expandTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "genadder_0 ;  ;  ;  ;  ; ", 3); // g (Q, cp)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "C (32 address bits : 4G) ;  ;  ;  ;  ; ", 4, "C (32 address bits : 4G)", 0, false); // g (Q, cp)
+collapseTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "genadder_0 ;  ;  ;  ;  ; ", 3); // g (Q, cp)
+expandTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Unconnected Slaves ;  ;  ;  ;  ; ", 4); // g (Q, cp)
+collapseTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Unconnected Slaves ;  ;  ;  ;  ; ", 4); // g (Q, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cp)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Upgrade IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: upgrade_ip [get_ips  Lab_1_genadder_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/Lab_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded Lab_1_genadder_0_0 (genadder 1) from revision 1 to revision 2 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// CommandFailedException: Access violation - no RTTI data!
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2018.3 (64-bit)
+# SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Current time: Mon Jan 23 15:45:53 EST 2023
+# Process ID (PID): 25668
+# OS: Windows 10
+# User: pacel
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.frmwork.CommandFailedException: Access violation - no RTTI data! (See C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/vivado_pid25668.debug)
+*/
+// Tcl Message: Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_1\Lab_1.srcs\sources_1\bd\Lab_1\Lab_1.bd>  Wrote  : <C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/ui/bd_58637fdf.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_upgrade.log'. 
+// HOptionPane Error: 'Access violation - no RTTI data! (Vivado v2018.3 (64-bit))'
+// Tcl Message: export_ip_user_files -of_objects [get_ips Lab_1_genadder_0_0] -no_script -sync -force -quiet 
+// a (cp): Critical Messages: addNotify
+// aI (cp): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // JButton (C, I)
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Skip"); // a (aI)
+dismissDialog("Generate Output Products"); // aI (cp)
+selectButton("RDIResource.MainWindowUtils_ERROR_OK", "OK"); // JButton (C, I)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+// Elapsed time: 12 seconds
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "IP revision change. IP definition 'genadder (1)' changed on disk"); // N (B, cp)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; true ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ;  ; genadder ; 1 (Rev. 1) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; xc7z020clg400-1", 1, "Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk)", 2, false); // B (Q, cp)
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "Upgrade IP"); // N (B, cp)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; true ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ;  ; genadder ; 1 (Rev. 1) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; xc7z020clg400-1", 1, "Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk)", 3, false); // B (Q, cp)
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "Upgrade IP"); // N (B, cp)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; true ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ;  ; genadder ; 1 (Rev. 1) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; xc7z020clg400-1", 1, "Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk)", 3, false); // B (Q, cp)
+expandTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; true ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ;  ; genadder ; 1 (Rev. 1) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; xc7z020clg400-1", 1); // B (Q, cp)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; true ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ;  ; genadder ; 1 (Rev. 1) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; xc7z020clg400-1", 1, "Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk)", 3, false, false, false, false, false, true); // B (Q, cp) - Double Click
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "IP revision change. IP definition 'genadder (1)' changed on disk"); // N (B, cp)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; true ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ;  ; genadder ; 1 (Rev. 1) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; xc7z020clg400-1", 1, "Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk)", 2, false); // B (Q, cp)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; true ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ;  ; genadder ; 1 (Rev. 1) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; xc7z020clg400-1", 1, "/genadder_0", 0, false); // B (Q, cp)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; true ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ;  ; genadder ; 1 (Rev. 1) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; xc7z020clg400-1", 1, "true", 1, false); // B (Q, cp)
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cp)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+selectButton("PAResourceTtoZ.UpgradeIP_SELECTED_IPS_CANT_BE_UPGRADED_OK", "OK"); // JButton (C, I)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cp)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+selectButton("PAResourceTtoZ.UpgradeIP_SELECTED_IPS_CANT_BE_UPGRADED_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; true ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ;  ; genadder ; 1 (Rev. 1) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; xc7z020clg400-1", 1, (String) null, 4, false); // B (Q, cp)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; true ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ;  ; genadder ; 1 (Rev. 1) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; xc7z020clg400-1", 1, (String) null, 4, false, false, false, false, true, false); // B (Q, cp) - Popup Trigger
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cQ, cp)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTab((HResource) null, (HResource) null, "Reports", 4); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Design Runs", 5); // aI (aF, cp)
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (ct, cp)
+// w (cp): Run Connection Automation: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,222 MB. GUI used memory: 126 MB. Current time: 1/23/23, 3:47:22 PM EST
+// Elapsed time: 11 seconds
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (3 out of 3 selected), genadder_0]", 1, true, true, ui.utils.TriState.True); // K (Q, w) - Node
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (w)
+dismissDialog("Run Connection Automation"); // w (cp)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/genadder_0/A} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins genadder_0/A] 
+// bx (cp):  Run Connection Automation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: </genadder_0/A/A_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]> 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/genadder_0/B} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins genadder_0/B] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: </genadder_0/B/B_reg> is being mapped into </processing_system7_0/Data> at <0x43C10000 [ 64K ]> 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/genadder_0/C} Slave {/axi_regmap_0/S_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins genadder_0/C] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: </axi_regmap_0/S_AXI/reg0> is being mapped into </genadder_0/C> at <0x70000000 [ 64K ]> </genadder_0/A/A_reg> is being mapped into </genadder_0/C> at <0x43C00000 [ 64K ]> </genadder_0/B/B_reg> is being mapped into </genadder_0/C> at <0x43C10000 [ 64K ]> 
+// Tcl Message: endgroup 
+dismissDialog("Run Connection Automation"); // bx (cp)
+// Elapsed time: 20 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 531, 205, 1085, 530, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Properties..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTab((HResource) null, (HResource) null, "IP Status", 3); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Signals", 2); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Design", 1); // aI (aF, cp)
+expandTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[Lab_1, genadder_0]", 10); // i (Q, cp)
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[Lab_1, genadder_0, A]", 11, false, false, false, false, true, false); // i (Q, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC, "Customize Block..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+// Elapsed time: 39 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 631, 145, 1085, 530, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cp): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (cp):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name genadder_v1_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.tmp/genadder_v1_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo/genadder_1/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_1/lab_1.tmp/genadder_v1_project' 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1518 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo/genadder_1'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// [GUI Memory]: 198 MB (+1118kb) [00:40:24]
+// 'i' command handler elapsed time: 7 seconds
+dismissDialog("Edit in IP Packager"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genadder_v1(arch_imp) (genadder_v1.vhd)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genadder_v1(arch_imp) (genadder_v1.vhd)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 28 seconds
+closeMainWindow("genadder_v1_project - [c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_1/lab_1.tmp/genadder_v1_project/genadder_v1_project.xpr] - Vivado 2018.3"); // cp
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cp): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Project : addNotify
+dismissDialog("Close Project"); // A (cp)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,222 MB. GUI used memory: 136 MB. Current time: 1/23/23, 3:50:00 PM EST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (cp)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 463, 207, 1085, 530, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+// Elapsed time: 10 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 427, 177, 1085, 530, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Pin Properties..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 440, 170, 1085, 530, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_SETTINGS, "IP Settings..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_IP_SETTINGS
+// F (cp): Settings: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Settings"); // F (cp)
+// [GUI Memory]: 211 MB (+2464kb) [00:41:38]
+// [GUI Memory]: 224 MB (+2583kb) [00:41:42]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 440, 175, 1085, 530, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Pin Properties..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectButton((HResource) null, "Properties_settings"); // u (f, cp): TRUE
+selectCheckBox(RDIResource.PropertiesView_AUTOMATICALLY_UPDATE, "Automatically update", false); // g (Q, ResizableWindow): FALSE
+selectCheckBox(RDIResource.PropertiesView_AUTOMATICALLY_UPDATE, "Automatically update", true); // g (Q, ResizableWindow): TRUE
+selectButton((HResource) null, "Properties_settings"); // u (f, cp): FALSE
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, cp)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Interface", 2); // i (c, cp)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // i (c, cp)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 444, 210, 1085, 530, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_SETTINGS, "IP Settings..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_IP_SETTINGS
+// F (cp): Settings: addNotify
+dismissDialog("Settings"); // F (cp)
+// [GUI Memory]: 235 MB (+124kb) [00:42:22]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 537, 204, 1085, 530, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+// Elapsed time: 69 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// Tcl Command: 'set_property location {4 1244 -424} [get_bd_cells genadder_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1244 -424} [get_bd_cells genadder_0] 
+// Elapsed time: 44 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 920, 334, 1085, 530, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+// Elapsed time: 74 seconds
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cQ, cp)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: connect_bd_net [get_bd_pins genadder_0/A] [get_bd_pins axi_regmap_0/REG0_OUT] 
+// Tcl Message: connect_bd_net [get_bd_pins axi_regmap_0/REG0_OUT] [get_bd_pins genadder_0/B] 
+// Tcl Message: endgroup 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+// Elapsed time: 75 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'endgroup' INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins axi_regmap_0/REG0_OUT] [get_bd_pins genadder_0/B]' INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins genadder_0/A] [get_bd_pins axi_regmap_0/REG0_OUT]' INFO: [Common 17-17] undo 'startgroup' 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins genadder_0/A] [get_bd_pins axi_regmap_0/REG0_OUT] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins genadder_0/B] [get_bd_pins axi_regmap_0/REG1_OUT] 
+// Elapsed time: 98 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab_1_wrapper(STRUCTURE) (Lab_1_wrapper.vhd)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab_1_wrapper(STRUCTURE) (Lab_1_wrapper.vhd)]", 1, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // af (al, Popup.HeavyWeightWindow)
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab_1_wrapper(STRUCTURE) (Lab_1_wrapper.vhd)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab_1_wrapper(STRUCTURE) (Lab_1_wrapper.vhd)]", 1); // B (D, cp)
+// Elapsed time: 25 seconds
+selectTab((HResource) null, (HResource) null, "Design", 1); // aI (aF, cp)
+collapseTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[Lab_1, Nets]", 4); // i (Q, cp)
+collapseTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[Lab_1, adder_0]", 5); // i (Q, cp)
+collapseTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[Lab_1, genadder_0]", 7); // i (Q, cp)
+expandTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[Lab_1, genadder_0]", 7); // i (Q, cp)
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[Lab_1, genadder_0, A]", 11, false); // i (Q, cp)
+selectButton((HResource) null, "Properties_settings"); // u (f, cp): TRUE
+selectButton((HResource) null, "Properties_settings"); // u (f, cp): FALSE
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Interface", 2); // i (c, cp)
+selectTableHeader(PAResourceQtoS.RSBBlockPortPropPanels_INTERFACE_PIN_TABLE, "Port Width", 1); // cW (Q, cp)
+selectTableHeader(PAResourceQtoS.RSBBlockPortPropPanels_INTERFACE_PIN_TABLE, "Port Width", 1); // cW (Q, cp)
+selectTableHeader(PAResourceQtoS.RSBBlockPortPropPanels_INTERFACE_PIN_TABLE, "Port Width", 1); // cW (Q, cp)
+selectTableHeader(PAResourceQtoS.RSBBlockPortPropPanels_INTERFACE_PIN_TABLE, "Interface Pin", 0); // cW (Q, cp)
+selectTableHeader(PAResourceQtoS.RSBBlockPortPropPanels_INTERFACE_PIN_TABLE, "Interface Pin", 0); // cW (Q, cp)
+selectTableHeader(PAResourceQtoS.RSBBlockPortPropPanels_INTERFACE_PIN_TABLE, "Interface Pin", 0, false, false, false, false, true); // cW (Q, cp) - Double Click
+selectButton(RDIResource.PropertiesView_PREVIOUS_OBJECT, "Properties_backward"); // B (f, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cp)
+// Elapsed time: 13 seconds
+expandTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "genadder_0 ;  ;  ;  ;  ; ", 5); // g (Q, cp)
+expandTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "C (32 address bits : 4G) ;  ;  ;  ;  ; ", 6); // g (Q, cp)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Lab_1_wrapper.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cp)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 711, 255, 1085, 530, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cp): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (cp):  Edit in IP Packager : addNotify
+selectButton("PAResourceEtoH.EditIPProjectNameChooser_PROJECT_FOLDER_ALREADY_EXISTS_OK_OK", "OK"); // JButton (C, J)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name genadder_v1_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.tmp/genadder_v1_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo/genadder_1/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_1/lab_1.tmp/genadder_v1_project' 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1421 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo/genadder_1'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'i' command handler elapsed time: 12 seconds
+dismissDialog("Edit in IP Packager"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genadder_v1(arch_imp) (genadder_v1.vhd)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genadder_v1(arch_imp) (genadder_v1.vhd)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("genadder_v1.vhd", 223, 181); // cl (w, cp)
+selectCodeEditor("genadder_v1.vhd", 223, 181, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - genadder", 1); // k (j, cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar (Q, cp)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from Customization Parameters Wizard"); // h (M, cp)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes hdl_parameters [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-3166] Bus Interface 'A': References existing memory map 'A'. INFO: [IP_Flow 19-3166] Bus Interface 'B': References existing memory map 'B'. INFO: [IP_Flow 19-3164] Bus Interface 'C': References existing address space 'C'. 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_IP_THAT_REQUIRE, "IP has been modified."); // h (M, cp)
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 3 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (C, I)
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,222 MB. GUI used memory: 164 MB. Current time: 1/23/23, 4:00:26 PM EST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bx (cp)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo/genadder_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_repo/genadder_1' 
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+// Elapsed time: 10 seconds
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; false ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; No changes required ;  ; genadder ; 1 (Rev. 2) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; xc7z020clg400-1", 2, "/genadder_0", 0, false); // B (Q, cp)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; false ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; No changes required ;  ; genadder ; 1 (Rev. 2) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; xc7z020clg400-1", 2, "/genadder_0", 0, false, false, false, false, true, false); // B (Q, cp) - Popup Trigger
+selectCheckBox(PAResourceItoN.IPStatusSectionPanel_IP_UP_TO_DATE, (String) null, false); // g (p, cp): FALSE
+selectCheckBox(PAResourceItoN.IPStatusSectionPanel_IP_UP_TO_DATE, (String) null, true); // g (p, cp): TRUE
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; false ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; No changes required ;  ; genadder ; 1 (Rev. 2) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; xc7z020clg400-1", 2, "/genadder_0", 0, false); // B (Q, cp)
+expandTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; false ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; No changes required ;  ; genadder ; 1 (Rev. 2) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; xc7z020clg400-1", 2); // B (Q, cp)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; false ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; No changes required ;  ; genadder ; 1 (Rev. 2) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; xc7z020clg400-1", 2, "/genadder_0", 0, false, false, false, false, false, true); // B (Q, cp) - Double Click
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cp)
+selectButton((HResource) null, "/genadder_0"); // h (cQ, cp)
+selectButton((HResource) null, "/genadder_0"); // h (cQ, cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cQ, cp)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; false ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; No changes required ;  ; genadder ; 1 (Rev. 2) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; xc7z020clg400-1", 2, "/genadder_0", 0, false, false, false, false, true, false); // B (Q, cp) - Popup Trigger
+collapseTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "Lab_1 ; false ;  ; Lab_1 ;  ;  ;  ;  ;  ; ", 0); // B (Q, cp)
+expandTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "Lab_1 ; false ;  ; Lab_1 ;  ;  ;  ;  ;  ; ", 0); // B (Q, cp)
+// Elapsed time: 23 seconds
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; false ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; No changes required ;  ; genadder ; 1 (Rev. 2) ; 1 (Rev. 2) ; Lab_1_genadder_0_0 [genadder] (Up-to-date) ; xc7z020clg400-1", 2, (String) null, 4, false); // B (Q, cp)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cQ, cp)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cp)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// bx (cp):  Upgrade IP : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:genadder:1 [get_ips  Lab_1_genadder_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/Lab_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded Lab_1_genadder_0_0 (genadder 1) from revision 2 to revision 3 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_1\Lab_1.srcs\sources_1\bd\Lab_1\Lab_1.bd>  Wrote  : <C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/ui/bd_58637fdf.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips Lab_1_genadder_0_0] -no_script -sync -force -quiet 
+// aI (cp): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // JButton (C, I)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Skip"); // a (aI)
+dismissDialog("Generate Output Products"); // aI (cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets genadder_0_C] [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_cells genadder_0] 
+// Elapsed time: 427 seconds
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/genadder_0 ; true ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ;  ; genadder ; 1 (Rev. 2) ; 1 (Rev. 3) ; Lab_1_genadder_0_0 [genadder] (IP revision change. IP definition 'genadder (1)' changed on disk) ; xc7z020clg400-1", 1, "/genadder_0", 0, false); // B (Q, cp)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aI (aF, cp)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (cQ, cp)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// bx (cp):  Refresh IP Catalog : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/ip_repo'. 
+// TclEventType: IP_SUMMARY_RESULTS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,290 MB. GUI used memory: 158 MB. Current time: 1/23/23, 4:09:23 PM EST
+// TclEventType: IP_SUMMARY_RESULTS
+// [Engine Memory]: 1,290 MB (+28905kb) [01:00:26]
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // bx (cp)
+// Elapsed time: 31 seconds
+selectTab((HResource) null, (HResource) null, "Reports", 4); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aI (aF, cp)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 749, 111, 1085, 338, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 747, 104, 1085, 338, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cp): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (cp):  Edit in IP Packager : addNotify
+selectButton("PAResourceEtoH.EditIPProjectNameChooser_PROJECT_FOLDER_ALREADY_EXISTS_OK_OK", "OK"); // JButton (C, J)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name adder_v1_0_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.tmp/adder_v1_0_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_1/lab_1.tmp/adder_v1_0_project' 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1503 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'i' command handler elapsed time: 9 seconds
+dismissDialog("Edit in IP Packager"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // ar (Q, cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ar (Q, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, adder(rtl) (adder.vhd)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, adder(rtl) (adder.vhd)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("adder.vhd", 501, 311); // cl (w, cp)
+selectCodeEditor("adder.vhd", 311, 267); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("adder.vhd", 173, 327); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("adder.vhd", 268, 355); // cl (w, cp)
+selectCodeEditor("adder.vhd", 265, 366); // cl (w, cp)
+selectCodeEditor("adder.vhd", 261, 347); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("adder.vhd", 263, 342); // cl (w, cp)
+selectCodeEditor("adder.vhd", 141, 348); // cl (w, cp)
+selectCodeEditor("adder.vhd", 410, 356); // cl (w, cp)
+selectCodeEditor("adder.vhd", 404, 367); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("adder.vhd", 200, 309); // cl (w, cp)
+selectCodeEditor("adder.vhd", 289, 284); // cl (w, cp)
+selectCodeEditor("adder.vhd", 429, 270); // cl (w, cp)
+selectCodeEditor("adder.vhd", 270, 286); // cl (w, cp)
+selectCodeEditor("adder.vhd", 393, 245); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("adder.vhd", 235, 238); // cl (w, cp)
+selectCodeEditor("adder.vhd", 505, 171); // cl (w, cp)
+selectCodeEditor("adder.vhd", 262, 277); // cl (w, cp)
+// Elapsed time: 73 seconds
+selectCodeEditor("adder.vhd", 148, 286); // cl (w, cp)
+selectCodeEditor("adder.vhd", 440, 285); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("adder.vhd", 565, 296); // cl (w, cp)
+selectCodeEditor("adder.vhd", 571, 284); // cl (w, cp)
+selectCodeEditor("adder.vhd", 530, 327); // cl (w, cp)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 36 seconds
+selectCodeEditor("adder.vhd", 261, 218); // cl (w, cp)
+selectCodeEditor("adder.vhd", 231, 337); // cl (w, cp)
+selectCodeEditor("adder.vhd", 231, 337); // cl (w, cp)
+selectCodeEditor("adder.vhd", 374, 272); // cl (w, cp)
+selectCodeEditor("adder.vhd", 609, 333); // cl (w, cp)
+selectCodeEditor("adder.vhd", 609, 333); // cl (w, cp)
+selectCodeEditor("adder.vhd", 585, 204); // cl (w, cp)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_1/lab_1.tmp/adder_v1_0_project/adder_v1_0_project.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'adder_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_1/lab_1.tmp/adder_v1_0_project/adder_v1_0_project.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj adder_tb_vhdl.prj" ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../Lab_1_repo/resources/adder/adder.vhd"' should not contain white space, new line, /, \, = or . ERROR: [XSIM 43-3217] adder_tb_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.tmp/adder_v1_0_project/adder_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.tmp/adder_v1_0_project/adder_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 5 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (C, I)
+// a (cp): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aI (aF, cp)
+// Elapsed time: 127 seconds
+selectCodeEditor("adder.vhd", 505, 203); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  284944 ms.
+// Elapsed time: 1005 seconds
+closeMainWindow("adder_v1_0_project - [c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_1/lab_1.tmp/adder_v1_0_project/adder_v1_0_project.xpr] - Vivado 2018.3"); // cp
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cp): Close Project: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,290 MB. GUI used memory: 168 MB. Current time: 1/23/23, 4:39:28 PM EST
+// Elapsed time: 1345 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+// 'b' command handler elapsed time: 1345 seconds
+dismissDialog("Close Project"); // A (cp)
+selectCodeEditor("adder.vhd", 514, 273); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_1/lab_1.tmp/adder_v1_0_project/adder_v1_0_project.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'adder_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_1/lab_1.tmp/adder_v1_0_project/adder_v1_0_project.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj adder_tb_vhdl.prj" ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../Lab_1_repo/resources/adder/adder.vhd"' should not contain white space, new line, /, \, = or . ERROR: [XSIM 43-3217] adder_tb_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.tmp/adder_v1_0_project/adder_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.tmp/adder_v1_0_project/adder_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 4 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (C, I)
+// a (cp): Critical Messages: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,290 MB. GUI used memory: 165 MB. Current time: 1/23/23, 5:09:28 PM EST
+// WARNING: HEventQueue.dispatchEvent() is taking  1709 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1042 ms. Increasing delay to 3126 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1440 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,290 MB. GUI used memory: 165 MB. Current time: 1/23/23, 5:39:28 PM EST
+// WARNING: HEventQueue.dispatchEvent() is taking  557158 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,290 MB. GUI used memory: 165 MB. Current time: 1/23/23, 6:09:29 PM EST
+// WARNING: HEventQueue.dispatchEvent() is taking  1700 ms.
+// Elapsed time: 5823 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1169 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,290 MB. GUI used memory: 165 MB. Current time: 1/23/23, 6:39:30 PM EST
+// WARNING: HEventQueue.dispatchEvent() is taking  1161 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,290 MB. GUI used memory: 165 MB. Current time: 1/23/23, 7:09:33 PM EST

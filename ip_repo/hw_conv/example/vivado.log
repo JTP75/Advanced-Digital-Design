@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr 15 02:21:51 2023
+# Process ID: 19528
+# Current directory: C:/Users/pacel/Documents/Spring_2023/ECE_1195/ip_repo/ip/example
+# Command line: vivado.exe -notrace -mode batch -source ipi_example.tcl -tclargs xc7z020clg400-1 ../xilinx_com_hls_hw_conv_1_0.zip
+# Log file: C:/Users/pacel/Documents/Spring_2023/ECE_1195/ip_repo/ip/example/vivado.log
+# Journal file: C:/Users/pacel/Documents/Spring_2023/ECE_1195/ip_repo/ip/example\vivado.jou
+#-----------------------------------------------------------
+source ipi_example.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Documents/Spring_2023/ECE_1195/ip_repo/ip/example/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1666] Failed to add IP '../xilinx_com_hls_hw_conv_1_0.zip' to repository './repo' because the specified IP file does not exist. Please specify the path to the component.xml or a zip file for the IP that is to be added.
+0
+    while executing
+"update_ip_catalog -add_ip $zipfile -repo_path $repo_dir"
+    (procedure "import_hls_ip" line 11)
+    invoked from within
+"import_hls_ip $zipfile"
+    (procedure "HLS::create_ipi_example" line 4)
+    invoked from within
+"HLS::create_ipi_example $part $zipfile"
+    (file "ipi_example.tcl" line 487)
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 15 02:21:56 2023...

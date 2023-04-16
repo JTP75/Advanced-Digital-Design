@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../ip_repo/multiplier/src/Arith_Unit.vhd" \
+"../../../../../../../ip_repo/multiplier/src/controller.vhd" \
+"../../../../../../../ip_repo/multiplier/src/register.vhd" \
+"../../../../../../../ip_repo/multiplier/src/multiplier.vhd" \
+
+# Do not sort compile order
+nosort

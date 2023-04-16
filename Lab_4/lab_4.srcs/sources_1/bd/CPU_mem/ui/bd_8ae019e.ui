@@ -1,0 +1,18 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port rst -pg 1 -y -430 -defaultsOSRD
+preplace port clk -pg 1 -y -490 -defaultsOSRD
+preplace inst memory -pg 1 -lvl 1 -y -510 -defaultsOSRD
+preplace inst CPU_mips_wrapper_0 -pg 1 -lvl 1 -y -80 -defaultsOSRD -resize 400 380
+preplace netloc CPU_mips_wrapper_0_memoryWrite 1 0 2 -560 -610 190
+preplace netloc clk_0_1 1 0 1 -600J
+preplace netloc rst_1 1 0 1 -610
+preplace netloc CPU_mips_wrapper_0_memoryData 1 0 2 -570 -600 160
+preplace netloc CPU_mips_wrapper_0_memoryAddress 1 0 2 -580 -620 170
+preplace netloc CPU_memory_0_dataOut 1 0 2 -590 -630 180
+levelinfo -pg 1 -630 -60 1670 -top -740 -bot 330
+"
+}
+0

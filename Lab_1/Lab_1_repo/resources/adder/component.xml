@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>adder</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>adder</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>bde1e89f</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>adder</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>bde1e89f</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>03b001a3</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_testbench</spirit:name>
+        <spirit:displayName>Test Bench</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
+        <spirit:modelName>adder_tb</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>8d91667d</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>A</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WIDTH&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>B</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WIDTH&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WIDTH&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>k</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>C_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>WIDTH</spirit:name>
+        <spirit:displayName>Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.WIDTH" spirit:minimum="0" spirit:rangeType="long">8</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/FA.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>adder.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f5495af1</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/FA.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>adder.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/adder_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_03b001a3</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_testbench_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/adder_tb.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../../../../../../../../users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_1/lab_1.tmp/adder_v1_0_project/adder_tb_behav.wcfg</spirit:name>
+        <spirit:fileType>unknown</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>adder_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>WIDTH</spirit:name>
+      <spirit:displayName>Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WIDTH" spirit:minimum="0" spirit:rangeType="long">8</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">adder_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>adder_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>10</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-01-29T23:00:15Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ead96a5_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f0e0e0c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12695b88_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c96f272_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1285074f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68735be5_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77e2cd2_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23b9436d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a2b812f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8f7e996_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4db1b048_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@495551e6_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c90906c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@589bcadc_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e298599_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25158943_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16262afb_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@688ded84_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15c388cf_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e9c943f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39bc8315_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ba75c5b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aeb687_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35e1201e_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3277a6ea_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@701b6b78_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring 2023/ECE 1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ccfd705_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22d25328_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c13fdf0_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@434eeef_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68b06f89_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1587c230_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5acaa675_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1675fe33_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3041aafb_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b1fed16_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22a4941e_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17d61ea2_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50bcc2fd_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cacd784_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2df06f74_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3efe20e9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ae14ac1_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56b40601_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d5c35d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53ea5f84_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b813d62_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64032e5_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30b3c0ab_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e676b7f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4743af06_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e8fcea7_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b58ec35_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b5aff5c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1559832a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a4c9388_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b17cd93_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f6ac865_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69fcf70c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e8e59f8_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61e5d188_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b59597a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32679efa_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ad0479a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d685816_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4436e64c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b8fb30a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f51b605_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1296d380_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70e0f0bb_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e0d3301_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46294c83_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ea9712f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b1de6c3_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c3f6db6_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56a9ecde_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22c76895_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c7f1384_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4313083e_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@330c0430_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52df6dea_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ef2f633_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ecbd74f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7acb40f2_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@af24855_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f70a9d4_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@195c6ddf_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aec051a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@415e7353_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19cf39a0_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5822babf_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fc8cd08_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@290a49c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15e66162_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73feec64_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b4f5cf1_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@406bd0d2_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@231c82d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a9468ea_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fcdb9c4_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21c3f353_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d876313_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71dc3483_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cba1620_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54a1345_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f149774_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76ce35e1_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3179e08b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57516e50_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4921b530_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@856cfb8_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@240ac2f4_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@651ebbf1_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b8e9a8_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@149d3c9c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38ec348d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f148d6b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6528c77b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cb75d2f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@589ce30d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e83a1c9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7814e7c3_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75db2598_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fd6a3ba_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c83d81_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79d05d6b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@674bb36c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48cb1cd1_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fdd7ad7_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42b17cef_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14b4bd91_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b7fe27f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71b2c996_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1902836b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41b04f2d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bdeb2ef_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33ab54a1_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a941479_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@443d88fe_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@633b2e30_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5de27e17_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@351caaa7_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fa8de3b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29a055df_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6137b36b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53210426_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48b72568_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e17cae5_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cc80fef_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@678ba1de_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b46b4df_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@701c4b72_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c5efd10_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@454cf17b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5417cd3_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a88e2af_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1da0b962_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@620fdbd3_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@649232ed_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15b0f6d4_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5be3bb80_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b0c81ef_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23060a37_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c2489d6_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70f0a476_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fd33529_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@121444fc_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fd953b8_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5aa65740_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a1674fe_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71f45330_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c7d69fe_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5800486c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f11a0ed_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@368b34bd_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33019ae9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c2a88d5_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47157cd6_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14a02260_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b18734c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48bd7e40_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a3465f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3265bcbd_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d123f1a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e80d891_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2781301d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ed25f22_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@415f8023_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a98543a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25e1528b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c99213c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@597c2b7_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62d4980f_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ebbe704_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@327ab668_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31196f65_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4eb1f36b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@226c9e36_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35387c85_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21b7a5af_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4208a57b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e3fc693_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36136015_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f37a86c_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@482054d0_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@de4879b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29a3477d_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5386c396_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13c8198b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c97c4ac_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47ce769a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b676128_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fc52df_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b92b2f9_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bf380bc_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ab9df71_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@597f1e81_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6984cc5b_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2094ef87_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6591c61a_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2119a2f2_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1db0e4e3_ARCHIVE_LOCATION">c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1_repo/resources/adder</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="fd86c910"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="6b3118be"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="75cd9533"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="9ff202e0"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

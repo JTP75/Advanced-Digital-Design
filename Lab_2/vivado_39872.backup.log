@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb  6 11:44:49 2023
+# Process ID: 39872
+# Current directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33332 C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_2\Lab_2.xpr
+# Log file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/vivado.log
+# Journal file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name ALU_v1_0_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2.tmp/ALU_v1_0_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_2/Lab_2_repo/ALU/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_2/lab_2.tmp/alu_v1_0_project/ALU_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'ALU_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  6 11:46:46 2023...

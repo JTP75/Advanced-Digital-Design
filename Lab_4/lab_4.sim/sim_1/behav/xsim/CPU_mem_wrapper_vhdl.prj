@@ -1,0 +1,54 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../ip_repo/CPU_mips/src/mem/CPU_memory.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/sim/CPU_mem.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_ALU_0_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_reg_bank32x32_0_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux2_0_1.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux2_0_2.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_reg_0_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_instr_reg_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_memdata_reg_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_memdata_reg1_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux4_0_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_SignExt32_0_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_ShiftLeft_0_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_reg_0_1.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux3_0_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_ShiftLeft_0_1.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_reg_ALU_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux2_srcA_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mips_controller_0_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/Arith_Unit.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/controller.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/register.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/multiplier.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_multiplier_0_1.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_reg_0_2.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_MPL_reg_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_logic_source_0_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_ZeroExt32_0_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux4_0_1.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux3_0_2.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_logicsrc_4_1.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_mux4_0_2.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips_leading_ones_counter_0_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/sim/CPU_mips.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/Arith_Unit.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/Comparator.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/Logic_Unit.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/Shift_Unit.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/ALU.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/register.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/mux.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/util.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/mips_controller.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/CPU_mips_wrapper.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/CPU_memory.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ipshared/221d/src/CPU_mips.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ip/CPU_mem_CPU_mips_wrapper_0_0/sim/CPU_mem_CPU_mips_wrapper_0_0.vhd" \
+"../../../../lab_4.ip_user_files/bd/CPU_mem/ip/CPU_mem_CPU_memory_0_1/sim/CPU_mem_CPU_memory_0_1.vhd" \
+"../../../../lab_4.srcs/sources_1/bd/CPU_mem/hdl/CPU_mem_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

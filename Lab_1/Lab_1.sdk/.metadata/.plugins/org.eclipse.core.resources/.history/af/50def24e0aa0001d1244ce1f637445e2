@@ -1,0 +1,89 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define INT32_MAX 2147483647	// 0x7FFFFFFF
+#define INT32_MIN -2147483648	// 0x80000000 ( = -0x80000000 )
+
+// register map at address 0x70000000
+uint32_t *regmap = (uint32_t *) 0x70000000;
+
+
+// fully checks a single addition/subtraction operation
+int check_adder(int a, int b, int k);
+void print(int a,int b,int k,int s,int c);
+
+
+int main()
+{
+	printf("\nBEGINNING TESTS:\n================================\n");
+
+	// ================ corner cases
+	check_adder(INT32_MAX,0,0);				// MAX + 0 = MAX, carry = 0
+	check_adder(INT32_MAX,1,0);				// MAX + 1 = MIN, carry = 1
+	check_adder(INT32_MIN,0,0);				// MIN + 0 = MIN, carry = 0
+	check_adder(INT32_MIN,-1,0);			// MIN + -1 = MAX, carry = 1
+
+	check_adder(INT32_MAX,0,1);				// MAX - 0 = MAX, carry = 1
+	check_adder(INT32_MAX,-1,1);			// MAX - -1 = MIN, carry = 0
+	check_adder(INT32_MIN,0,1);				// MIN - 0 = MIN, carry = 1
+	check_adder(INT32_MIN,1,1);				// MIN - 1 = MAX, carry = 0
+
+	// ================ random cases
+	int num_tests = 100;
+	int failed_tests = 0;
+	srand(0);
+	for(int i=0; i<num_tests; i++){
+		int a = rand() - 1000000000;
+		int b = rand() - 1000000000;
+		int k = rand() % 2;
+		if(!check_adder(a,b,k)) ++failed_tests;
+	}
+	printf("\nFailed %d out of %d tests.\n",failed_tests,num_tests);
+
+	printf("\n================================\nTESTS COMPLETE\n");
+	return 0;
+}
+
+int check_adder(int a, int b, int k)
+{
+	int success;
+
+	// ================ obtain adder result
+	regmap[0] = a;
+	regmap[1] = b;
+	regmap[3] = k;
+	int result = regmap[0];
+	int carry = regmap[3];
+
+	// ================ checks
+	if(k == 0){						// addition case
+		if(a+b == result)
+			success = carry == 0;
+		else
+			success = carry == 1;
+	}else{							// subtraction case
+		if(a-b == result)
+			success = carry == 1;
+		else
+			success = carry == 0;
+	}
+
+	if(success==0){
+		printf("\nFAILURE:\n");
+		print(a,b,k,result,carry);
+	}
+	return success;
+}
+
+void print(int a, int b, int k, int s, int c)
+{
+	if(k == 0)
+		printf("%d + %d\t= %d\ncout\t\t= %d\n",a,b,s,c);
+	else
+		printf("%d - %d\t= %d\ncout\t\t= %d\n",a,b,s,!c);
+}
+
+
+
+
+

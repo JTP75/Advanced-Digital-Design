@@ -1,0 +1,24 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 70 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 100 -defaultsOSRD
+preplace inst ACCEL -pg 1 -lvl 1 -y 122 -defaultsOSRD
+preplace inst SYSTEM -pg 1 -lvl 2 -y 120 -defaultsOSRD
+preplace inst ACCEL|hw_conv_0 -pg 1 -lvl 1 -y 152 -defaultsOSRD
+preplace netloc ACCEL|S_AXIS_ACLK_1 1 0 1 N
+preplace netloc ACCEL_M_AXIS 1 1 1 280
+preplace netloc ACCEL|hw_conv_0_sout 1 1 1 N
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 3 -170 252 N 252 560
+preplace netloc SYSTEM_FIXED_IO 1 2 1 N
+preplace netloc ACCEL|S_AXIS_ARESETN_1 1 0 1 N
+preplace netloc ACCEL|S_AXIS_1 1 0 1 N
+preplace netloc SYSTEM_DDR 1 2 1 580
+preplace netloc S_AXIS_1 1 0 3 -180 10 N 10 570
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 -170 20 N 20 560
+levelinfo -pg 1 -200 50 420 600 -top -50 -bot 450
+levelinfo -hier ACCEL * 80 *
+"
+}
+

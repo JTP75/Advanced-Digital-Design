@@ -1,0 +1,46 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../ip_repo/CPU_mips1/src/ALU.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/src/Arith_Unit.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_ALU_0_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_MPL_reg_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_ShiftLeft_0_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_ShiftLeft_0_1.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_SignExt32_0_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_ZeroExt32_0_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_instr_reg_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_leading_ones_counter_0_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_logic_source_0_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_logicsrc_4_1.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_memdata_reg1_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_memdata_reg_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_mips_controller_0_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_multiplier_0_1.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_mux2_0_1.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_mux2_0_2.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_mux2_srcA_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_mux3_0_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_mux3_0_2.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_mux4_0_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_mux4_0_1.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_mux4_0_2.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_reg_0_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_reg_0_1.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_reg_0_2.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_reg_ALU_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/CPU_mips_reg_bank32x32_0_0.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/src/Comparator.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/src/Logic_Unit.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/src/Shift_Unit.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/controller.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/src/mips_controller.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/multiplier.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/src/mux.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/sim/register.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/src/register.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/src/util.vhd" \
+"../../../../../../../ip_repo/CPU_mips1/src/CPU_mips_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

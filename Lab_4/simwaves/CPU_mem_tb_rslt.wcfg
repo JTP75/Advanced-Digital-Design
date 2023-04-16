@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CPU_mem_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CPU_mem_wrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="5613600000fs"></ZoomStartTime>
+      <ZoomEndTime time="5949600001fs"></ZoomEndTime>
+      <Cursor1Time time="5840000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="212"></NameColumnWidth>
+      <ValueColumnWidth column_width="119"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/CPU_mips_wrapper_0/U0/CPU_mips_i/mips_controller_0/U0/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/CPU_mips_wrapper_0/U0/CPU_mips_i/PC_out" type="array">
+      <obj_property name="ElementShortName">PC_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/CPU_mips_wrapper_0/memoryRead" type="logic">
+      <obj_property name="ElementShortName">memoryRead</obj_property>
+      <obj_property name="ObjectShortName">memoryRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/memory/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/memory/addr" type="array">
+      <obj_property name="ElementShortName">addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/memory/dataIn" type="array">
+      <obj_property name="ElementShortName">dataIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/memory/dataOut" type="array">
+      <obj_property name="ElementShortName">dataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/CPU_mips_wrapper_0/U0/CPU_mips_i/IR_out" type="array">
+      <obj_property name="ElementShortName">IR_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/memory/U0/mw_U_0ram_table" type="array">
+      <obj_property name="ElementShortName">mw_U_0ram_table[15:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mw_U_0ram_table[15:0][31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/CPU_mips_wrapper_0/U0/CPU_mips_i/regbank/U0/regs_out" type="array">
+      <obj_property name="ElementShortName">regs_out[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regs_out[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/CPU_mips_wrapper_0/U0/CPU_mips_i/ALU_0/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/CPU_mips_wrapper_0/U0/CPU_mips_i/ALU_0/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/CPU_mips_wrapper_0/U0/CPU_mips_i/ALU_0/ALUOp" type="array">
+      <obj_property name="ElementShortName">ALUOp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_mem_wrapper/CPU_mem_i/CPU_mips_wrapper_0/U0/CPU_mips_i/ALU_result" type="array">
+      <obj_property name="ElementShortName">ALU_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_result[31:0]</obj_property>
+   </wvobject>
+</wave_config>

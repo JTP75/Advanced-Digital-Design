@@ -1,0 +1,1573 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 19 11:04:15 2023
+# Process ID: 5928
+# Current directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15972 C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.xpr
+# Log file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/vivado.log
+# Journal file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 723.691 ; gain = 144.016
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/lab_3.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- SHREC:SHREC:axi_regmap:1.0 - axi_regmap_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding cell -- xilinx.com:user:multiplier:1.0 - multiplier_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_regmap_0/REG1_RD(undef) and /multiplier_0/rst(rst)
+Successfully read diagram <lab_3> from BD file <C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/lab_3.bd>
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1100.793 ; gain = 58.430
+ipx::edit_ip_in_project -upgrade true -name multiplier_v1_0_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.tmp/multiplier_v1_0_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1100.793 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1100.793 ; gain = 0.000
+update_compile_order -fileset sources_1
+current_project lab_3
+set_property library xil_defaultlib [get_files *.vhd]
+current_project multiplier_v1_0_project
+set_property library xil_defaultlib [get_files *.vhd]
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/xgui/multiplier_tb.tcl -notrace
+couldn't read file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/xgui/multiplier_tb.tcl": no such file or directory
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+ERROR: [Simulator 45-6] No active Vivado Simulator simulation.  To use this command you must first start a simulation using Vivado Simulator.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/Arith_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Arith_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7b4d1bf5790a40c4991771dc71d0bcf2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier
+Built simulation snapshot multiplier_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/multiplier_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 19 11:09:01 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1100.793 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multiplier_behav -key {Behavioral:sim_1:Functional:multiplier} -tclbatch {multiplier.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source multiplier.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplier_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1100.793 ; gain = 0.000
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1100.793 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -copy_to c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl}
+ERROR: [Vivado 12-3630] The destination file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl' already exists, please use -force if you want to overwrite!
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7b4d1bf5790a40c4991771dc71d0bcf2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multiplier_behav -key {Behavioral:sim_1:Functional:multiplier} -tclbatch {multiplier.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source multiplier.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplier_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Assertion failed: [get_value -radix unsigned R] == [expr {$A_val * $B_val}]
+    while executing
+"assert {[get_value -radix unsigned R] == [expr {$A_val * $B_val}]}"
+    (procedure "test_unsigned" line 5)
+    invoked from within
+"test_unsigned 1 1"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl" line 28)
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1353.293 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7b4d1bf5790a40c4991771dc71d0bcf2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier
+Built simulation snapshot multiplier_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1353.293 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multiplier_behav -key {Behavioral:sim_1:Functional:multiplier} -tclbatch {multiplier.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source multiplier.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplier_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1353.293 ; gain = 0.000
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+invalid bareword "U"
+in expression "U == 0";
+should be "$U" or "{U}" or "U(...)" or ...
+    (parsing expression "U == 0")
+    invoked from within
+"expr [get_value -radix unsigned R] == [expr {$A_val * $B_val}]"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 expr $condition"
+    (procedure "assert" line 2)
+    invoked from within
+"assert {[get_value -radix unsigned R] == [expr {$A_val * $B_val}]}"
+    (procedure "test_unsigned" line 5)
+    invoked from within
+"test_unsigned 0 0"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl" line 26)
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/multiplier/CTRL}} 
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+invalid bareword "U"
+in expression "U == 0";
+should be "$U" or "{U}" or "U(...)" or ...
+    (parsing expression "U == 0")
+    invoked from within
+"expr [get_value -radix unsigned R] == [expr {$A_val * $B_val}]"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 expr $condition"
+    (procedure "assert" line 2)
+    invoked from within
+"assert {[get_value -radix unsigned R] == [expr {$A_val * $B_val}]}"
+    (procedure "test_unsigned" line 5)
+    invoked from within
+"test_unsigned 0 0"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl" line 26)
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1353.293 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7b4d1bf5790a40c4991771dc71d0bcf2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier
+Built simulation snapshot multiplier_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1353.293 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multiplier_behav -key {Behavioral:sim_1:Functional:multiplier} -tclbatch {multiplier.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source multiplier.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplier_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1353.293 ; gain = 0.000
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+invalid bareword "U"
+in expression "U == 0";
+should be "$U" or "{U}" or "U(...)" or ...
+    (parsing expression "U == 0")
+    invoked from within
+"expr [get_value -radix unsigned R] == [expr {$A_val * $B_val}]"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 expr $condition"
+    (procedure "assert" line 2)
+    invoked from within
+"assert {[get_value -radix unsigned R] == [expr {$A_val * $B_val}]}"
+    (procedure "test_unsigned" line 5)
+    invoked from within
+"test_unsigned 0 0"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl" line 26)
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+invalid bareword "U"
+in expression "U == 0";
+should be "$U" or "{U}" or "U(...)" or ...
+    (parsing expression "U == 0")
+    invoked from within
+"expr [get_value -radix unsigned R] == [expr {$A_val * $B_val}]"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 expr $condition"
+    (procedure "assert" line 2)
+    invoked from within
+"assert {[get_value -radix unsigned R] == [expr {$A_val * $B_val}]}"
+    (procedure "test_unsigned" line 5)
+    invoked from within
+"test_unsigned 0 0"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl" line 26)
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1353.293 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7b4d1bf5790a40c4991771dc71d0bcf2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier
+Built simulation snapshot multiplier_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1353.293 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multiplier_behav -key {Behavioral:sim_1:Functional:multiplier} -tclbatch {multiplier.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source multiplier.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplier_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1353.293 ; gain = 0.000
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1761.766 ; gain = 0.000
+set_property top control [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7b4d1bf5790a40c4991771dc71d0bcf2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multiplier_behav -key {Behavioral:sim_1:Functional:multiplier} -tclbatch {multiplier.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source multiplier.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplier_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.766 ; gain = 0.000
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+add_bp {c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller.vhd} 65
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Stopped at time : 20 us : File "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller.vhd" Line 65
+Stopped at time : 20 us : File "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller.vhd" Line 65
+step
+Stopped at time : 1030 us : File "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register.vhd" Line 22
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Stopped at time : 20 us : File "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller.vhd" Line 65
+Stopped at time : 20 us : File "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller.vhd" Line 65
+remove_bps -file {c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller.vhd} -line 65
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+ERROR: [Simtcl 6-8] No such HDL object pren
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Assertion failed: [get_value /multiplier/CTRL/pren] == 0
+    while executing
+"assert {[get_value /multiplier/CTRL/pren] == 0}"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl" line 39)
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Assertion failed: [get_value /multiplier/CTRL/pren] == 0
+    while executing
+"assert {[get_value /multiplier/CTRL/pren] == 0}"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl" line 39)
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Assertion failed: [get_value /multiplier/CTRL/pren] == 0
+    while executing
+"assert {[get_value /multiplier/CTRL/pren] == 0}"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl" line 39)
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+save_wave_config {c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/controller_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1761.766 ; gain = 0.000
+set_property top reg [current_fileset]
+set_property top_lib xil_defaultlib [current_fileset]
+set_property top_arch struct [current_fileset]
+set_property top_file c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register.vhd [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7b4d1bf5790a40c4991771dc71d0bcf2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multiplier_behav -key {Behavioral:sim_1:Functional:multiplier} -tclbatch {multiplier.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source multiplier.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplier_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl
+# restart
+INFO: [Simtcl 6-17] Simulation restarted
+# proc assert condition {
+#     if {![uplevel 1 expr $condition]} {
+#         return -code error "Assertion failed: $condition"
+#     }
+# }
+# add_force {/multiplier/MPL64/clk} -radix hex {1 0ns} {0 10us} -repeat_every 20us
+# add_force {/multiplier/MPL64/rst} 1
+# run 100 us
+# add_force {/multiplier/MPL64/rst} 0
+# add_force {/multiplier/MPL64/D} -radix hex [expr {0xAAAA7777}]
+# add_force {/multiplier/MPL64/rst} 0
+# add_force {/multiplier/MPL64/en} 0
+# run 100 us
+# assert {[get_value /multiplier/MPL64/Q] == 0}
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+invalid bareword "0000002863298423"
+in expression "0000002863298423 == 2863298423";
+should be "$0000002863298423" or "{0000002863298423}" or "0000002863298423(...)" or ... (invalid octal number?)
+    (parsing expression "0000002863298423 == 28...")
+    invoked from within
+"expr [get_value /multiplier/MPL64/Q] == [expr {0xAAAA7777}]"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 expr $condition"
+    (procedure "assert" line 2)
+    invoked from within
+"assert {[get_value /multiplier/MPL64/Q] == [expr {0xAAAA7777}]}"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl" line 24)
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+invalid bareword "0000002863298423"
+in expression "0000002863298423 == $2863298423";
+should be "$0000002863298423" or "{0000002863298423}" or "0000002863298423(...)" or ... (invalid octal number?)
+    (parsing expression "0000002863298423 == $2...")
+    invoked from within
+"expr [get_value /multiplier/MPL64/Q] == $[expr {0xAAAA7777}]"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 expr $condition"
+    (procedure "assert" line 2)
+    invoked from within
+"assert {[get_value /multiplier/MPL64/Q] == $[expr {0xAAAA7777}]}"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl" line 24)
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+invalid bareword "0000002863298423"
+in expression "0000002863298423 == -radix hex 2863298...";
+should be "$0000002863298423" or "{0000002863298423}" or "0000002863298423(...)" or ... (invalid octal number?)
+    (parsing expression "0000002863298423 == -r...")
+    invoked from within
+"expr [get_value /multiplier/MPL64/Q] == -radix hex [expr {0xAAAA7777}]"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 expr $condition"
+    (procedure "assert" line 2)
+    invoked from within
+"assert {[get_value /multiplier/MPL64/Q] == -radix hex [expr {0xAAAA7777}]}"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl" line 24)
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+invalid bareword "0000002863298423"
+in expression "0000002863298423 == 2863298423";
+should be "$0000002863298423" or "{0000002863298423}" or "0000002863298423(...)" or ... (invalid octal number?)
+    (parsing expression "0000002863298423 == 28...")
+    invoked from within
+"expr [get_value -radix hex /multiplier/MPL64/Q] == [expr {0xAAAA7777}]"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 expr $condition"
+    (procedure "assert" line 2)
+    invoked from within
+"assert {[get_value -radix hex /multiplier/MPL64/Q] == [expr {0xAAAA7777}]}"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl" line 24)
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+invalid bareword "0000002863298423"
+in expression "0000002863298423 == 2863298423";
+should be "$0000002863298423" or "{0000002863298423}" or "0000002863298423(...)" or ... (invalid octal number?)
+    (parsing expression "0000002863298423 == 28...")
+    invoked from within
+"expr [get_value -radix hex {/multiplier/MPL64/Q}] == [expr {0xAAAA7777}]"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 expr $condition"
+    (procedure "assert" line 2)
+    invoked from within
+"assert {[get_value -radix hex {/multiplier/MPL64/Q}] == [expr {0xAAAA7777}]}"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl" line 24)
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Assertion failed: [get_value {/multiplier/MPL64/Q}] == 10
+    while executing
+"assert {[get_value {/multiplier/MPL64/Q}] == 10}"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl" line 34)
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1761.766 ; gain = 0.000
+set_property top multiplier [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7b4d1bf5790a40c4991771dc71d0bcf2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multiplier_behav -key {Behavioral:sim_1:Functional:multiplier} -tclbatch {multiplier.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source multiplier.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplier_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/component.xml' ignored by IP packager.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/component.xml' ignored by IP packager.
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim'. The directory might be in use by some other process.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:multiplier:1.0 [get_ips  lab_3_multiplier_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/lab_3.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/lab_3_multiplier_0_1_synth_1
+
+INFO: [IP_Flow 19-3422] Upgraded lab_3_multiplier_0_1 (multiplier_v1_0 1.0) from revision 2 to revision 3
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_regmap_0/REG1_RD(undef) and /multiplier_0_upgraded_ipi/rst(rst)
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips lab_3_multiplier_0_1] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_nets axi_regmap_0_REG1_RD]
+connect_bd_net [get_bd_pins multiplier_0/rst] [get_bd_pins axi_regmap_0/REG2_OUT]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /multiplier_0/rst(rst) and /axi_regmap_0/REG2_OUT(undef)
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_EN_CLK1_PORT {1} CONFIG.PCW_EN_CLK2_PORT {0}] [get_bd_cells processing_system7_0]
+endgroup
+delete_bd_objs [get_bd_nets axi_regmap_0_REG0_RD]
+connect_bd_net [get_bd_pins multiplier_0/B] [get_bd_pins axi_regmap_0/REG1_OUT]
+save_bd_design
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+Wrote  : <C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/ui/bd_1ebd6f01.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-927] Following properties on pin /axi_regmap_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=lab_3_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /multiplier_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=lab_3_processing_system7_0_0_FCLK_CLK1 
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/synth/lab_3.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/sim/lab_3.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hdl/lab_3_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_regmap_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block multiplier_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/ip/lab_3_auto_pc_0/lab_3_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hw_handoff/lab_3.hwh
+Generated Block Design Tcl file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hw_handoff/lab_3_bd.tcl
+Generated Hardware Definition File C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/synth/lab_3.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab_3_auto_pc_0, cache-ID = b06d29d4be7f4ec1; cache size = 3.143 MB.
+[Sun Feb 19 12:48:32 2023] Launched lab_3_multiplier_0_1_synth_1, synth_1...
+Run output will be captured here:
+lab_3_multiplier_0_1_synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/lab_3_multiplier_0_1_synth_1/runme.log
+synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/synth_1/runme.log
+[Sun Feb 19 12:48:32 2023] Launched impl_1...
+Run output will be captured here: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1761.766 ; gain = 0.000
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.251 . Memory (MB): peak = 2132.141 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.251 . Memory (MB): peak = 2132.141 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2132.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 2270.512 ; gain = 508.746
+report_ip_status -name ip_status 
+file mkdir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk
+file copy -force C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/lab_3_wrapper.sysdef C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+
+launch_sdk -workspace C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk -hwspec C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk -hwspec C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/lab_3.bd}
+set_property offset 0x70000000 [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_regmap_0_reg0}]
+save_bd_design
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-927] Following properties on pin /axi_regmap_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=lab_3_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /multiplier_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=lab_3_processing_system7_0_0_FCLK_CLK1 
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/synth/lab_3.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/sim/lab_3.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hdl/lab_3_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_regmap_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block multiplier_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/ip/lab_3_auto_pc_0/lab_3_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hw_handoff/lab_3.hwh
+Generated Block Design Tcl file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hw_handoff/lab_3_bd.tcl
+Generated Hardware Definition File C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/synth/lab_3.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab_3_auto_pc_0, cache-ID = b06d29d4be7f4ec1; cache size = 3.390 MB.
+[Sun Feb 19 13:16:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/synth_1/runme.log
+[Sun Feb 19 13:16:53 2023] Launched impl_1...
+Run output will be captured here: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 2504.539 ; gain = 33.805
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {25}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+save_bd_design
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/synth_1
+
+reset_run lab_3_processing_system7_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/lab_3_processing_system7_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-927] Following properties on pin /axi_regmap_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=lab_3_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /multiplier_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=lab_3_processing_system7_0_0_FCLK_CLK1 
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/synth/lab_3.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/sim/lab_3.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hdl/lab_3_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_regmap_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block multiplier_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/ip/lab_3_auto_pc_0/lab_3_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hw_handoff/lab_3.hwh
+Generated Block Design Tcl file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hw_handoff/lab_3_bd.tcl
+Generated Hardware Definition File C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/synth/lab_3.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab_3_auto_pc_0, cache-ID = b06d29d4be7f4ec1; cache size = 3.390 MB.
+[Sun Feb 19 15:05:07 2023] Launched lab_3_processing_system7_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab_3_processing_system7_0_0_synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/lab_3_processing_system7_0_0_synth_1/runme.log
+synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/synth_1/runme.log
+[Sun Feb 19 15:05:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:38 . Memory (MB): peak = 2598.230 ; gain = 84.590
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Feb 19 15:09:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 2600.484 ; gain = 0.000
+file copy -force C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/lab_3_wrapper.sysdef C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+
+startgroup
+set_property -dict [list CONFIG.WIDTH3 {1} CONFIG.NUM_REGS {4}] [get_bd_cells axi_regmap_0]
+endgroup
+delete_bd_objs [get_bd_nets multiplier_0_done]
+connect_bd_net [get_bd_pins multiplier_0/done] [get_bd_pins axi_regmap_0/REG3_IN]
+save_bd_design
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+Wrote  : <C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/ui/bd_1ebd6f01.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/synth_1
+
+reset_run lab_3_axi_regmap_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/lab_3_axi_regmap_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-927] Following properties on pin /axi_regmap_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=lab_3_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /multiplier_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=lab_3_processing_system7_0_0_FCLK_CLK1 
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/synth/lab_3.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/sim/lab_3.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hdl/lab_3_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_regmap_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block multiplier_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/ip/lab_3_auto_pc_0/lab_3_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hw_handoff/lab_3.hwh
+Generated Block Design Tcl file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hw_handoff/lab_3_bd.tcl
+Generated Hardware Definition File C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/synth/lab_3.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab_3_auto_pc_0, cache-ID = b06d29d4be7f4ec1; cache size = 4.095 MB.
+[Sun Feb 19 15:31:17 2023] Launched lab_3_axi_regmap_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab_3_axi_regmap_0_0_synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/lab_3_axi_regmap_0_0_synth_1/runme.log
+synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/synth_1/runme.log
+[Sun Feb 19 15:31:17 2023] Launched impl_1...
+Run output will be captured here: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 2634.496 ; gain = 34.012
+file copy -force C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/lab_3_wrapper.sysdef C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+
+ipx::edit_ip_in_project -upgrade true -name multiplier_v1_0_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.tmp/multiplier_v1_0_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_0_project/multiplier_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'multiplier_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+ipx::edit_ip_in_project -upgrade true -name multiplier_v1_2_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.tmp/multiplier_v1_2_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2637.918 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2637.918 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2739.090 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../ip_repo/multiplier/src/Arith_Unit.vhd"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] multiplier_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property library xil_defaultlib [get_files *.vhd]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/Arith_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Arith_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d1041d5359c24a5f90e7fb3972e208cf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier
+Built simulation snapshot multiplier_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim/xsim.dir/multiplier_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 19 15:46:15 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2739.090 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multiplier_behav -key {Behavioral:sim_1:Functional:multiplier} -tclbatch {multiplier.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source multiplier.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplier_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 2739.766 ; gain = 0.676
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+invalid bareword "U"
+in expression "U == 0";
+should be "$U" or "{U}" or "U(...)" or ...
+    (parsing expression "U == 0")
+    invoked from within
+"expr [get_value -radix unsigned R] == [expr {$A_val * $B_val}]"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 expr $condition"
+    (procedure "assert" line 2)
+    invoked from within
+"assert {[get_value -radix unsigned R] == [expr {$A_val * $B_val}]}"
+    (procedure "test_unsigned" line 8)
+    invoked from within
+"test_unsigned 0 0"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl" line 29)
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2742.273 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d1041d5359c24a5f90e7fb3972e208cf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier
+Built simulation snapshot multiplier_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2742.273 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2742.273 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 2742.273 ; gain = 0.000
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+invalid bareword "U"
+in expression "U == 0";
+should be "$U" or "{U}" or "U(...)" or ...
+    (parsing expression "U == 0")
+    invoked from within
+"expr [get_value -radix unsigned R] == [expr {$A_val * $B_val}]"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 expr $condition"
+    (procedure "assert" line 2)
+    invoked from within
+"assert {[get_value -radix unsigned R] == [expr {$A_val * $B_val}]}"
+    (procedure "test_unsigned" line 8)
+    invoked from within
+"test_unsigned 0 0"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl" line 29)
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2743.703 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d1041d5359c24a5f90e7fb3972e208cf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier
+Built simulation snapshot multiplier_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2743.703 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2743.703 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 2743.703 ; gain = 0.000
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Assertion failed: [get_value -radix unsigned R] == [expr {$A_val * $B_val}]
+    while executing
+"assert {[get_value -radix unsigned R] == [expr {$A_val * $B_val}]}"
+    (procedure "test_unsigned" line 8)
+    invoked from within
+"test_unsigned 1 1"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl" line 31)
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2743.855 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d1041d5359c24a5f90e7fb3972e208cf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier
+Built simulation snapshot multiplier_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2743.855 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2743.855 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 2743.855 ; gain = 0.000
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Assertion failed: [get_value -radix unsigned R] == [expr {$A_val * $B_val}]
+    while executing
+"assert {[get_value -radix unsigned R] == [expr {$A_val * $B_val}]}"
+    (procedure "test_unsigned" line 8)
+    invoked from within
+"test_unsigned 1 1"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl" line 31)
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2745.293 ; gain = 0.000
+launch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj multiplier_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d1041d5359c24a5f90e7fb3972e208cf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplier_behav xil_defaultlib.multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [\Arith_Unit(n=64)\]
+Compiling architecture struct of entity xil_defaultlib.reg [reg_default]
+Compiling architecture struct of entity xil_defaultlib.reg [\reg(n=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture struct of entity xil_defaultlib.multiplier
+Built simulation snapshot multiplier_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2745.293 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multiplier_behav -key {Behavioral:sim_1:Functional:multiplier} -tclbatch {multiplier.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source multiplier.tcl
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplier_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2745.293 ; gain = 0.000
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+Assertion failed: [get_value done] == 1
+    while executing
+"assert {[get_value done] == 1}"
+    (procedure "test_unsigned" line 7)
+    invoked from within
+"test_unsigned 0 0"
+    (file "C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl" line 29)
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/multiplier_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+current_wave_config {Untitled 10}
+Untitled 10
+add_wave {{/multiplier/CTRL}} 
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+ERROR: [Simtcl 6-8] No such HDL object /multiplier.CTRL/prst
+source C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/src/controller_tb.tcl -notrace
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2745.641 ; gain = 0.000
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/component.xml' ignored by IP packager.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/multiplier/component.xml' ignored by IP packager.
+set_property core_revision 4 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/lab_3/lab_3.tmp/multiplier_v1_2_project/multiplier_v1_2_project.sim'. The directory might be in use by some other process.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:multiplier:1.0 [get_ips  lab_3_multiplier_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/lab_3.bd'
+INFO: [IP_Flow 19-3422] Upgraded lab_3_multiplier_0_1 (multiplier_v1_0 1.0) from revision 3 to revision 4
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_regmap_0/REG2_OUT(undef) and /multiplier_0_upgraded_ipi/rst(rst)
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips lab_3_multiplier_0_1] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-927] Following properties on pin /axi_regmap_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=lab_3_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /multiplier_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=lab_3_processing_system7_0_0_FCLK_CLK1 
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/synth/lab_3.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/sim/lab_3.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hdl/lab_3_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_regmap_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block multiplier_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/ip/lab_3_auto_pc_0/lab_3_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hw_handoff/lab_3.hwh
+Generated Block Design Tcl file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hw_handoff/lab_3_bd.tcl
+Generated Hardware Definition File C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/synth/lab_3.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab_3_auto_pc_0, cache-ID = b06d29d4be7f4ec1; cache size = 4.241 MB.
+[Sun Feb 19 16:22:43 2023] Launched lab_3_multiplier_0_1_synth_1, synth_1...
+Run output will be captured here:
+lab_3_multiplier_0_1_synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/lab_3_multiplier_0_1_synth_1/runme.log
+synth_1: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/synth_1/runme.log
+[Sun Feb 19 16:22:43 2023] Launched impl_1...
+Run output will be captured here: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 2775.121 ; gain = 29.480
+file copy -force C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/lab_3_wrapper.sysdef C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+
+report_ip_status -name ip_status 
+launch_sdk -workspace C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk -hwspec C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk -hwspec C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {50}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+save_bd_design
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+reset_run synth_1
+reset_run lab_3_processing_system7_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-927] Following properties on pin /axi_regmap_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=lab_3_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /multiplier_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=lab_3_processing_system7_0_0_FCLK_CLK1 
+Wrote  : <C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\lab_3\lab_3.srcs\sources_1\bd\lab_3\lab_3.bd> 
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/synth/lab_3.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/sim/lab_3.vhd
+VHDL Output written to : C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hdl/lab_3_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_regmap_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block multiplier_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/ip/lab_3_auto_pc_0/lab_3_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hw_handoff/lab_3.hwh
+Generated Block Design Tcl file C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/hw_handoff/lab_3_bd.tcl
+Generated Hardware Definition File C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.srcs/sources_1/bd/lab_3/synth/lab_3.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab_3_auto_pc_0, cache-ID = b06d29d4be7f4ec1; cache size = 4.500 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab_3_processing_system7_0_0, cache-ID = 956c934b4cbc1db4; cache size = 4.500 MB.
+[Sun Feb 19 16:41:23 2023] Launched synth_1...
+Run output will be captured here: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/synth_1/runme.log
+[Sun Feb 19 16:41:23 2023] Launched impl_1...
+Run output will be captured here: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:44 . Memory (MB): peak = 2878.176 ; gain = 82.066
+report_ip_status -name ip_status 
+file copy -force C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.runs/impl_1/lab_3_wrapper.sysdef C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/lab_3/lab_3.sdk/lab_3_wrapper.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 19 16:50:55 2023...

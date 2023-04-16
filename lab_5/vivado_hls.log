@@ -1,0 +1,94 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'pacel' on host 'justin-laptop' (Windows NT_amd64 version 6.2) on Sun Apr 02 15:44:52 -0400 2023
+INFO: [HLS 200-10] In directory 'C:/Users/pacel/Documents/Spring_2023/ECE_1195/lab_5'
+INFO: [HLS 200-10] Opening project 'C:/Users/pacel/Documents/Spring_2023/ECE_1195/lab_5/lab_5'.
+INFO: [HLS 200-10] Adding design file 'vhls/mmult.h' to the project
+INFO: [HLS 200-10] Adding design file 'vhls/mmult_accel.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'vhls/mmult_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'vhls/mmult_test.cpp' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/pacel/Documents/Spring_2023/ECE_1195/lab_5/lab_5/sln1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'vhls/mmult_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'vhls/mmult_accel.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 103.055 ; gain = 17.797
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 103.055 ; gain = 17.797
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1' (vhls/mmult.h:82) in function 'void mmult_hw<float, 32>(FORWARD_REFERENCE (*) [FORWARD_REFERENCE], FORWARD_REFERENCE (*) [FORWARD_REFERENCE], FORWARD_REFERENCE (*) [FORWARD_REFERENCE])': changing partial unrolling into complete unrolling since the unrolling factor (=32) is no less than the loop trip count (=32).
+INFO: [XFORM 203-603] Inlining function 'pop_stream<float, 4, 5, 5>' into 'wrapped_mmult_hw<float, 32, 1024, 4, 5, 5>' (vhls/mmult.h:181).
+INFO: [XFORM 203-603] Inlining function 'pop_stream<float, 4, 5, 5>' into 'wrapped_mmult_hw<float, 32, 1024, 4, 5, 5>' (vhls/mmult.h:171).
+INFO: [XFORM 203-603] Inlining function 'mmult_hw<float, 32>' into 'wrapped_mmult_hw<float, 32, 1024, 4, 5, 5>' (vhls/mmult.h:185).
+INFO: [XFORM 203-603] Inlining function 'push_stream<float, 4, 5, 5>' into 'wrapped_mmult_hw<float, 32, 1024, 4, 5, 5>' (vhls/mmult.h:193).
+INFO: [XFORM 203-603] Inlining function 'wrapped_mmult_hw<float, 32, 1024, 4, 5, 5>' into 'HLS_accel' (vhls/mmult_accel.cpp:36).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 108.914 ; gain = 23.656
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 110.984 ; gain = 25.727
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'OUTPUT_STREAM.data.V' (vhls/mmult_accel.cpp:21).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'INPUT_STREAM.data.V' (vhls/mmult_accel.cpp:21).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3.1' (vhls/mmult.h:79) in function 'HLS_accel' for pipelining.
+WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'Loop-3.1.1' (vhls/mmult.h:82) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1' (vhls/mmult.h:82) in function 'HLS_accel' completely with a factor of 32.
+INFO: [XFORM 203-101] Partitioning array 'a' (vhls/mmult.h:159) in dimension 2 with a block factor 16.
+INFO: [XFORM 203-101] Partitioning array 'b' (vhls/mmult.h:160) in dimension 1 with a block factor 16.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 134.641 ; gain = 49.383
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (vhls/mmult.h:166:13) in function 'HLS_accel'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (vhls/mmult.h:176:14) in function 'HLS_accel'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3' (vhls/mmult.h:78:13) in function 'HLS_accel'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-4' (vhls/mmult.h:188:15) in function 'HLS_accel'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 134.785 ; gain = 49.527
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'HLS_accel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'HLS_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 167.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.701 seconds; current allocated memory: 90.346 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.742 seconds; current allocated memory: 93.586 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'HLS_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'HLS_accel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CONTROL_BUS.
+INFO: [SYN 201-210] Renamed object name 'HLS_accel_fadd_32ns_32ns_32_5_full_dsp_1' to 'HLS_accel_fadd_32bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'HLS_accel_fmul_32ns_32ns_32_4_max_dsp_1' to 'HLS_accel_fmul_32cud' due to the length limit 20
+INFO: [RTGEN 206-104] Estimated max fanout for 'HLS_accel' is 30763 from HDL expression: ((1'b1 == ap_CS_fsm_pp2_stage0) & (1'b0 == ap_block_pp2_stage0_11001))
+INFO: [RTGEN 206-100] Generating core module 'HLS_accel_fadd_32bkb': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'HLS_accel_fmul_32cud': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'HLS_accel'.
+INFO: [HLS 200-111]  Elapsed time: 1.334 seconds; current allocated memory: 100.656 MB.
+INFO: [RTMG 210-278] Implementing memory 'HLS_accel_a_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'HLS_accel_out_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:24 . Memory (MB): peak = 163.930 ; gain = 78.672
+INFO: [SYSC 207-301] Generating SystemC RTL for HLS_accel.
+INFO: [VHDL 208-304] Generating VHDL RTL for HLS_accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for HLS_accel.
+INFO: [HLS 200-112] Total elapsed time: 23.638 seconds; peak allocated memory: 100.656 MB.

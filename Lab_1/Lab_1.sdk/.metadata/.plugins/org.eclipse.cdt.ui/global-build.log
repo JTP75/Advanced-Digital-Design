@@ -1,0 +1,970 @@
+13:56:59 **** Clean-only build of configuration Debug for project sadder ****
+make clean 
+rm -rf  ./src/signed_adder.o  ./src/signed_adder.d  sadder.elf.size  sadder.elf
+' '
+
+13:57:00 Build Finished (took 429ms)
+
+13:57:00 **** Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text+0x24): undefined reference to `_gettimeofday'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: sadder.elf] Error 1
+13:58:18 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:33:8: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+  srand(time(NULL));
+        ^~~~
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text+0x24): undefined reference to `_gettimeofday'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: sadder.elf] Error 1
+13:59:33 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71524	   2580	  23328	  97432	  17c98	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+13:59:45 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:03:00 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71524	   2580	  23328	  97432	  17c98	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:03:45 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:35:30: warning: integer overflow in expression [-Woverflow]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:35:18: warning: division by zero [-Wdiv-by-zero]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+../src/signed_adder.c:36:30: warning: integer overflow in expression [-Woverflow]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:36:18: warning: division by zero [-Wdiv-by-zero]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71456	   2580	  23328	  97364	  17c54	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:04:10 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:35:30: warning: integer overflow in expression [-Woverflow]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:35:18: warning: division by zero [-Wdiv-by-zero]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+../src/signed_adder.c:36:30: warning: integer overflow in expression [-Woverflow]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:36:18: warning: division by zero [-Wdiv-by-zero]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+../src/signed_adder.c:38:10: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+   printf(k);
+          ^
+In file included from c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/signed_adder.c:1:
+c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:181:5: note: expected 'const char * restrict' but argument is of type 'int'
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71520	   2580	  23328	  97428	  17c94	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:04:56 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:35:30: warning: integer overflow in expression [-Woverflow]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:35:18: warning: division by zero [-Wdiv-by-zero]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+../src/signed_adder.c:36:30: warning: integer overflow in expression [-Woverflow]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:36:18: warning: division by zero [-Wdiv-by-zero]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+../src/signed_adder.c:38:10: error: too few arguments to function 'itoa'
+   printf(itoa(k));
+          ^~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/signed_adder.c:1:
+c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdlib.h:200:8: note: declared here
+ char * _EXFUN(itoa,(int, char *, int));
+        ^
+make: *** [src/subdir.mk:23: src/signed_adder.o] Error 1
+14:05:24 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:35:30: warning: integer overflow in expression [-Woverflow]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:35:18: warning: division by zero [-Wdiv-by-zero]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+../src/signed_adder.c:36:30: warning: integer overflow in expression [-Woverflow]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:36:18: warning: division by zero [-Wdiv-by-zero]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71520	   2580	  23328	  97428	  17c94	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:06:15 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:08:55 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:36:30: warning: integer overflow in expression [-Woverflow]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:36:18: warning: division by zero [-Wdiv-by-zero]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+../src/signed_adder.c:37:30: warning: integer overflow in expression [-Woverflow]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:37:18: warning: division by zero [-Wdiv-by-zero]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+../src/signed_adder.c:43:2: error: expected ';' before 'printf'
+  printf("\n================================\nTESTS COMPLETE\n");
+  ^~~~~~
+make: *** [src/subdir.mk:23: src/signed_adder.o] Error 1
+14:08:58 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:36:30: warning: integer overflow in expression [-Woverflow]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:36:18: warning: division by zero [-Wdiv-by-zero]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+../src/signed_adder.c:37:30: warning: integer overflow in expression [-Woverflow]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:37:18: warning: division by zero [-Wdiv-by-zero]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71552	   2580	  23328	  97460	  17cb4	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:10:05 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:19:23: warning: integer overflow in expression [-Woverflow]
+  print("%d",(INT32_MAX+1-INT32_MIN))
+                       ^
+../src/signed_adder.c:19:8: warning: passing argument 1 of 'print' makes integer from pointer without a cast [-Wint-conversion]
+  print("%d",(INT32_MAX+1-INT32_MIN))
+        ^~~~
+../src/signed_adder.c:13:6: note: expected 'int' but argument is of type 'char *'
+ void print(int a,int b,int k,int s,int c);
+      ^~~~~
+../src/signed_adder.c:19:2: error: too few arguments to function 'print'
+  print("%d",(INT32_MAX+1-INT32_MIN))
+  ^~~~~
+../src/signed_adder.c:13:6: note: declared here
+ void print(int a,int b,int k,int s,int c);
+      ^~~~~
+../src/signed_adder.c:22:2: error: expected ';' before 'check_adder'
+  check_adder(INT32_MAX,0,0);    // MAX + 0 = MAX, carry = 0
+  ^~~~~~~~~~~
+../src/signed_adder.c:37:30: warning: integer overflow in expression [-Woverflow]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:37:18: warning: division by zero [-Wdiv-by-zero]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+../src/signed_adder.c:38:30: warning: integer overflow in expression [-Woverflow]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:38:18: warning: division by zero [-Wdiv-by-zero]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+make: *** [src/subdir.mk:23: src/signed_adder.o] Error 1
+14:10:08 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:19:23: warning: integer overflow in expression [-Woverflow]
+  print("%d",(INT32_MAX+1-INT32_MIN));
+                       ^
+../src/signed_adder.c:19:8: warning: passing argument 1 of 'print' makes integer from pointer without a cast [-Wint-conversion]
+  print("%d",(INT32_MAX+1-INT32_MIN));
+        ^~~~
+../src/signed_adder.c:13:6: note: expected 'int' but argument is of type 'char *'
+ void print(int a,int b,int k,int s,int c);
+      ^~~~~
+../src/signed_adder.c:19:2: error: too few arguments to function 'print'
+  print("%d",(INT32_MAX+1-INT32_MIN));
+  ^~~~~
+../src/signed_adder.c:13:6: note: declared here
+ void print(int a,int b,int k,int s,int c);
+      ^~~~~
+../src/signed_adder.c:37:30: warning: integer overflow in expression [-Woverflow]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:37:18: warning: division by zero [-Wdiv-by-zero]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+../src/signed_adder.c:38:30: warning: integer overflow in expression [-Woverflow]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:38:18: warning: division by zero [-Wdiv-by-zero]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+make: *** [src/subdir.mk:23: src/signed_adder.o] Error 1
+14:10:12 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:19:24: warning: integer overflow in expression [-Woverflow]
+  printf("%d",(INT32_MAX+1-INT32_MIN));
+                        ^
+../src/signed_adder.c:19:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+  printf("%d",(INT32_MAX+1-INT32_MIN));
+          ~^
+          %lld
+../src/signed_adder.c:37:30: warning: integer overflow in expression [-Woverflow]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:37:18: warning: division by zero [-Wdiv-by-zero]
+   int a = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+../src/signed_adder.c:38:30: warning: integer overflow in expression [-Woverflow]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                              ^
+../src/signed_adder.c:38:18: warning: division by zero [-Wdiv-by-zero]
+   int b = rand() % (INT32_MAX+1-INT32_MIN) + INT32_MIN;
+                  ^
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71552	   2580	  23328	  97460	  17cb4	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:10:30 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:11:04 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:19:24: warning: integer overflow in expression [-Woverflow]
+  printf("%d",(INT32_MAX+1-INT32_MIN));
+                        ^
+../src/signed_adder.c:19:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+  printf("%d",(INT32_MAX+1-INT32_MIN));
+          ~^
+          %lld
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71556	   2580	  23328	  97464	  17cb8	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:11:22 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:13:44 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:19:26: warning: integer overflow in expression [-Woverflow]
+  printf("%d\n",(INT32_MAX+1-INT32_MIN));
+                          ^
+../src/signed_adder.c:19:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+  printf("%d\n",(INT32_MAX+1-INT32_MIN));
+          ~^
+          %lld
+In file included from c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\_ansi.h:16:0,
+                 from c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29,
+                 from ../src/signed_adder.c:1:
+../src/signed_adder.c:20:15: error: expected ')' before numeric constant
+  printf("%d\n"RAND_MAX);
+               ^
+../src/signed_adder.c:20:11: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+  printf("%d\n"RAND_MAX);
+          ~^
+make: *** [src/subdir.mk:23: src/signed_adder.o] Error 1
+14:14:21 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71492	   2580	  23328	  97400	  17c78	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:16:42 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71556	   2580	  23328	  97464	  17cb8	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:16:45 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:38:7: warning: unused variable 'k' [-Wunused-variable]
+   int k = rand() % 2;
+       ^
+../src/signed_adder.c:37:7: warning: unused variable 'b' [-Wunused-variable]
+   int b = rand();
+       ^
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71492	   2580	  23328	  97400	  17c78	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:16:52 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:17:12 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:38:7: warning: unused variable 'k' [-Wunused-variable]
+   int k = rand() % 2;
+       ^
+../src/signed_adder.c:37:7: warning: unused variable 'b' [-Wunused-variable]
+   int b = rand();
+       ^
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71492	   2580	  23328	  97400	  17c78	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:17:16 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:17:38 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:18:15 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:19:27 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:38:7: warning: unused variable 'k' [-Wunused-variable]
+   int k = rand() % 2;
+       ^
+../src/signed_adder.c:37:7: warning: unused variable 'b' [-Wunused-variable]
+   int b = rand() - 1000000000;
+       ^
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71492	   2580	  23328	  97400	  17c78	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:19:45 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:20:09 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71556	   2580	  23328	  97464	  17cb8	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:20:14 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:22:45 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+../src/signed_adder.c: In function 'main':
+../src/signed_adder.c:37:17: error: 'num_tests' undeclared (first use in this function); did you mean 'num_tests_rand'?
+  for(int i=0; i<num_tests; i++){
+                 ^~~~~~~~~
+                 num_tests_rand
+../src/signed_adder.c:37:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/signed_adder.c:41:29: error: 'failed_tests' undeclared (first use in this function); did you mean 'failed_tests_rand'?
+   if(!check_adder(a,b,k)) ++failed_tests;
+                             ^~~~~~~~~~~~
+                             failed_tests_rand
+../src/signed_adder.c:35:6: warning: unused variable 'failed_tests_rand' [-Wunused-variable]
+  int failed_tests_rand = 0;
+      ^~~~~~~~~~~~~~~~~
+../src/signed_adder.c:34:6: warning: unused variable 'num_tests_rand' [-Wunused-variable]
+  int num_tests_rand = 100;
+      ^~~~~~~~~~~~~~
+../src/signed_adder.c:20:6: warning: unused variable 'failed_tests_corn' [-Wunused-variable]
+  int failed_tests_corn = 0;
+      ^~~~~~~~~~~~~~~~~
+../src/signed_adder.c:19:6: warning: unused variable 'num_tests_corn' [-Wunused-variable]
+  int num_tests_corn = 8;
+      ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/signed_adder.o] Error 1
+14:25:00 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71596	   2580	  23328	  97504	  17ce0	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:25:07 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:25:38 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71916	   2580	  23328	  97824	  17e20	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:25:44 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:26:30 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71916	   2580	  23328	  97824	  17e20	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+14:26:41 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:23:59 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:24:36 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:26:30 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71916	   2580	  23328	  97824	  17e20	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+16:26:36 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:37:16 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71916	   2580	  23328	  97824	  17e20	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+16:37:22 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:47:47 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:52:53 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:53:19 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71916	   2580	  23328	  97824	  17e20	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+17:54:38 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:56:45 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71916	   2580	  23328	  97824	  17e20	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+18:06:54 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:37:51 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72172	   2580	  23328	  98080	  17f20	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+18:39:17 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72172	   2580	  23328	  98080	  17f20	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+18:39:25 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:43:58 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72108	   2580	  23328	  98016	  17ee0	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+18:44:05 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72108	   2580	  23328	  98016	  17ee0	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+18:46:22 **** Auto Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.c"
+'Finished building: ../src/signed_adder.c'
+' '
+'Building target: sadder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "sadder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sadder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sadder.elf  |tee "sadder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71852	   2580	  23328	  97760	  17de0	sadder.elf
+'Finished building: sadder.elf.size'
+' '
+18:46:28 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

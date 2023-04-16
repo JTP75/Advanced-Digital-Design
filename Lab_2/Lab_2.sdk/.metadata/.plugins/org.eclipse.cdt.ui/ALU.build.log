@@ -1,0 +1,48 @@
+20:42:59 **** Incremental Build of configuration Debug for project ALU ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ALU.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ALU.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ALU_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ALU.d" -MT"src/ALU.o" -o "src/ALU.o" "../src/ALU.c"
+../src/ALU.c: In function 'CompTest':
+../src/ALU.c:155:57: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+    printf("Failed Comparison SLTU case! A>B, R=1 ::: A=%d, B=%d, R=%d\n",a,b,out.R);
+                                                        ~^
+                                                        %ld
+../src/ALU.c:155:63: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+    printf("Failed Comparison SLTU case! A>B, R=1 ::: A=%d, B=%d, R=%d\n",a,b,out.R);
+                                                              ~^
+                                                              %ld
+../src/ALU.c:155:69: warning: format '%d' expects argument of type 'int', but argument 4 has type 'int32_t {aka long int}' [-Wformat=]
+    printf("Failed Comparison SLTU case! A>B, R=1 ::: A=%d, B=%d, R=%d\n",a,b,out.R);
+                                                                    ~^        ~~~~~
+                                                                    %ld
+../src/ALU.c:157:57: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+    printf("Failed Comparison SLTU case! A<B, R=0 ::: A=%d, B=%d, R=%d\n",a,b,out.R);
+                                                        ~^
+                                                        %ld
+../src/ALU.c:157:63: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+    printf("Failed Comparison SLTU case! A<B, R=0 ::: A=%d, B=%d, R=%d\n",a,b,out.R);
+                                                              ~^
+                                                              %ld
+../src/ALU.c:157:69: warning: format '%d' expects argument of type 'int', but argument 4 has type 'int32_t {aka long int}' [-Wformat=]
+    printf("Failed Comparison SLTU case! A<B, R=0 ::: A=%d, B=%d, R=%d\n",a,b,out.R);
+                                                                    ~^        ~~~~~
+                                                                    %ld
+'Finished building: ../src/ALU.c'
+' '
+'Building target: ALU.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ALU_bsp/ps7_cortexa9_0/lib -o "ALU.elf"  ./src/ALU.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ALU.elf  |tee "ALU.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  73988	   2580	  23328	  99896	  18638	ALU.elf
+'Finished building: ALU.elf.size'
+' '
+
+20:43:00 Build Finished (took 951ms)
+

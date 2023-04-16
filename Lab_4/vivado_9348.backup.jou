@@ -1,0 +1,123 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 19 21:50:02 2023
+# Process ID: 9348
+# Current directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20272 C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_4\lab_4.xpr
+# Log file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/vivado.log
+# Journal file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd}
+delete_bd_objs [get_bd_nets CPU_mips_0_memoryAddress] [get_bd_nets CPU_mips_0_memoryData] [get_bd_nets memory_dataOut] [get_bd_nets CPU_mips_0_memoryWrite] [get_bd_nets rst_1] [get_bd_cells CPU_mips_0]
+save_bd_design
+set_property location {1 -165 -419} [get_bd_cells memory]
+set_property  ip_repo_paths  c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195 [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo [current_project]
+update_ip_catalog
+set_property is_enabled false [get_files  C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hdl/CPU_mem_wrapper.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CPU_mips_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CPU_mips_wrapper [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+save_bd_design
+close_bd_design [get_bd_designs CPU_mem]
+set_property is_enabled false [get_files  C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd]
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mips/CPU_mips.bd}
+generate_target Simulation [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mips/CPU_mips.bd]
+export_ip_user_files -of_objects [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mips/CPU_mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mips/CPU_mips.bd] -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files -ipstatic_source_dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/modelsim} {questa=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/questa} {riviera=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source CPU_mips_wrapper.tcl
+source CPU_mem_tb.tcl -notrace
+open_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mips_tb_rslt.wcfg}
+source CPU_mem_tb.tcl -notrace
+source CPU_mips_tb.tcl -notrace
+close_sim
+ipx::package_project -root_dir c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/ip_repo/CPU_mips1 -vendor xilinx.com -library user -taxonomy /UserIP -generated_files -import_files -set_current false
+ipx::unload_core c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/ip_repo/CPU_mips1/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/ip_repo/CPU_mips1 c:/users/pacel/desktop/work/pitt/semesters/spring_2023/ece_1195/ip_repo/CPU_mips1/component.xml
+current_project lab_4
+current_project tmp_edit_project
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+current_project lab_4
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project tmp_edit_project
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo
+set_property is_enabled true [get_files  C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/hdl/CPU_mem_wrapper.vhd]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CPU_mem_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CPU_mem_wrapper [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mips/CPU_mips.bd}
+close_bd_design [get_bd_designs CPU_mips]
+set_property is_enabled true [get_files  C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd]
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:CPU_mips_wrapper:1.0 CPU_mips_wrapper_0
+endgroup
+set_property location {2 -169 -84} [get_bd_cells CPU_mips_wrapper_0]
+set_property screensize {400 380} [get_bd_cells CPU_mips_wrapper_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins CPU_mips_wrapper_0/clk]
+connect_bd_net [get_bd_ports rst] [get_bd_pins CPU_mips_wrapper_0/rst]
+connect_bd_net [get_bd_pins memory/MemWrite] [get_bd_pins CPU_mips_wrapper_0/memoryWrite]
+connect_bd_net [get_bd_pins CPU_mips_wrapper_0/memoryDataIn] [get_bd_pins memory/dataOut]
+connect_bd_net [get_bd_pins CPU_mips_wrapper_0/memoryData] [get_bd_pins memory/dataIn]
+connect_bd_net [get_bd_pins CPU_mips_wrapper_0/memoryAddress] [get_bd_pins memory/addr]
+save_bd_design
+generate_target Simulation [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd]
+export_ip_user_files -of_objects [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd] -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files -ipstatic_source_dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/modelsim} {questa=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/questa} {riviera=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source CPU_mem_wrapper.tcl
+open_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+source CPU_mem_tb.tcl -notrace
+source CPU_mem_tb.tcl -notrace
+source CPU_mem_tb.tcl -notrace
+source CPU_mem_tb.tcl -notrace
+source CPU_mem_tb.tcl -notrace
+source CPU_mem_tb.tcl -notrace
+source CPU_mem_tb.tcl -notrace
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+close_sim

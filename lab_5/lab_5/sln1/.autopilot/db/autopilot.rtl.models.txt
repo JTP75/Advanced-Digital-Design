@@ -1,0 +1,6 @@
+HLS_accel_fadd_32bkb
+HLS_accel_fmul_32cud
+HLS_accel_a_0
+HLS_accel_out
+HLS_accel_CONTROL_BUS_s_axi
+HLS_accel

@@ -1,0 +1,8 @@
+18:46:28 **** Incremental Build of configuration Debug for project sadder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+18:46:29 Build Finished (took 182ms)
+

@@ -1,0 +1,23 @@
+21:03:58 **** Auto Build of configuration Debug for project signed_adder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/signed_adder.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/signed_adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab_1__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/signed_adder.d" -MT"src/signed_adder.o" -o "src/signed_adder.o" "../src/signed_adder.cpp"
+'Finished building: ../src/signed_adder.cpp'
+' '
+'Building target: signed_adder.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1__bsp/ps7_cortexa9_0/lib -o "signed_adder.elf"  ./src/signed_adder.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: signed_adder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size signed_adder.elf  |tee "signed_adder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 763285	   2832	  30044	 796161	  c2601	signed_adder.elf
+'Finished building: signed_adder.elf.size'
+' '
+
+21:03:59 Build Finished (took 1s.165ms)
+

@@ -1,0 +1,58 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Mar 20 13:44:44 2023
+| Host         : JUSTIN-LAPTOP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CPU_mem_CPU_mips_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of CPU_mem_CPU_mips_wrapper_0_0 (xilinx.com:user:CPU_mips_wrapper:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Mar 20 10:57:16 2023
+| Host         : JUSTIN-LAPTOP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CPU_mem_CPU_mips_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of CPU_mem_CPU_mips_wrapper_0_0 (xilinx.com:user:CPU_mips_wrapper:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Mar 20 10:47:09 2023
+| Host         : JUSTIN-LAPTOP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CPU_mem_CPU_mips_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of CPU_mem_CPU_mips_wrapper_0_0 (xilinx.com:user:CPU_mips_wrapper:1.0) from (Rev. 2) to (Rev. 3)
+

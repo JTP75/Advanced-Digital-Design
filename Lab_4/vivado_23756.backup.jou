@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 21 15:37:24 2023
+# Process ID: 23756
+# Current directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11720 C:\Users\pacel\Desktop\Work\Pitt\semesters\Spring_2023\ECE_1195\Lab_4\lab_4.xpr
+# Log file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/vivado.log
+# Journal file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/CPU_TL.bd}
+ipx::edit_ip_in_project -upgrade true -name CPU_mips_04_project -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.tmp/CPU_mips_04_project c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1/component.xml
+update_compile_order -fileset sources_1
+launch_simulation
+set_property library xil_defaultlib [get_files *.vhd]    
+launch_simulation
+set_property library xil_defaultlib [get_files *.vhd]
+launch_simulation
+close_project
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CPU_mem_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+open_bd_design {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd}
+current_bd_design [get_bd_designs CPU_TL]
+close_bd_design [get_bd_designs CPU_TL]
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd]
+export_ip_user_files -of_objects [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_mem/CPU_mem.bd] -directory C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files -ipstatic_source_dir C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/modelsim} {questa=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/questa} {riviera=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source CPU_mem_wrapper.tcl
+open_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+source CPU_mem_tb_2.tcl -notrace
+source Ex_program.tcl -notrace
+source CPU_mem_tb_2.tcl -notrace
+source CPU_mem_tb_2.tcl -notrace
+source CPU_mem_tb_2.tcl -notrace
+source CPU_mem_tb_2.tcl -notrace
+source CPU_mem_tb_2.tcl -notrace
+source CPU_mem_tb_2.tcl -notrace
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+10*9
+source CPU_mem_tb_2.tcl -notrace
+source CPU_mem_tb_2.tcl -notrace
+source CPU_mem_tb_2.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+source CPU_mem_tb_1.tcl -notrace
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+source CPU_mem_tb_2.tcl -notrace
+save_wave_config {C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/simwaves/CPU_mem_tb_rslt.wcfg}
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CPU_TL_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CPU_TL_wrapper [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1

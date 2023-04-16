@@ -1,0 +1,1131 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 21 13:09:55 2023
+# Process ID: 13432
+# Current directory: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.runs/CPU_TL_CPU_mips_wrapper_0_0_synth_1
+# Command line: vivado.exe -log CPU_TL_CPU_mips_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_TL_CPU_mips_wrapper_0_0.tcl
+# Log file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.runs/CPU_TL_CPU_mips_wrapper_0_0_synth_1/CPU_TL_CPU_mips_wrapper_0_0.vds
+# Journal file: C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.runs/CPU_TL_CPU_mips_wrapper_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source CPU_TL_CPU_mips_wrapper_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:CPU_mips_wrapper:1.0'. The one found in IP location 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo/CPU_mips1' will take precedence over the same IP in location c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/ip_repo
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.cache/ip 
+Command: synth_design -top CPU_TL_CPU_mips_wrapper_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+CRITICAL WARNING: [filemgmt 20-1741] File 'register.vhd' is used by one or more modules, but with different contents, and may lead to unpredictable results:
+* CPU_TL_CPU_mips_wrapper_0_0 (c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd)
+* CPU_TL_CPU_mips_wrapper_0_0 (c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd)
+Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13260 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 392.676 ; gain = 103.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CPU_TL_CPU_mips_wrapper_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/synth/CPU_TL_CPU_mips_wrapper_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'CPU_mips_wrapper' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips_wrapper.vhd:14' bound to instance 'U0' of component 'CPU_mips_wrapper' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/synth/CPU_TL_CPU_mips_wrapper_0_0.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_wrapper' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips_wrapper.vhd:26]
+INFO: [Synth 8-3491] module 'CPU_mips' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:14' bound to instance 'CPU_mips_i' of component 'CPU_mips' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips_wrapper.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:30]
+INFO: [Synth 8-3491] module 'CPU_mips_ALU_0_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ALU_0_0.vhd:56' bound to instance 'ALU_0' of component 'CPU_mips_ALU_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:426]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_ALU_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ALU_0_0.vhd:67]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ALU' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/ALU.vhd:4' bound to instance 'U0' of component 'ALU' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ALU_0_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'ALU' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/ALU.vhd:17]
+	Parameter n bound to: 32 - type: integer 
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Logic_Unit' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Logic_Unit.vhd:5' bound to instance 'LU' of component 'Logic_Unit' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/ALU.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'Logic_Unit' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Logic_Unit.vhd:16]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Logic_Unit' (1#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Logic_Unit.vhd:16]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Shift_Unit' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Shift_Unit.vhd:6' bound to instance 'SU' of component 'Shift_Unit' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/ALU.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'Shift_Unit' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Shift_Unit.vhd:18]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Shift_Unit' (2#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Shift_Unit.vhd:18]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Arith_Unit' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Arith_Unit.vhd:9' bound to instance 'AU' of component 'Arith_Unit' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/ALU.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'Arith_Unit' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Arith_Unit.vhd:27]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Arith_Unit' (3#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Arith_Unit.vhd:27]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Comparator' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Comparator.vhd:4' bound to instance 'CM' of component 'Comparator' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/ALU.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'Comparator' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Comparator.vhd:17]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Comparator' (4#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Comparator.vhd:17]
+INFO: [Synth 8-226] default block is never used [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/ALU.vhd:123]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (5#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/ALU.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_ALU_0_0' (6#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ALU_0_0.vhd:67]
+INFO: [Synth 8-3491] module 'CPU_mips_memdata_reg_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_memdata_reg_0.vhd:56' bound to instance 'A_reg' of component 'CPU_mips_memdata_reg_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:435]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_memdata_reg_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_memdata_reg_0.vhd:66]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'U0' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_memdata_reg_0.vhd:90]
+INFO: [Synth 8-638] synthesizing module '\reg ' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:18]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module '\reg ' (7#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_memdata_reg_0' (8#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_memdata_reg_0.vhd:66]
+INFO: [Synth 8-3491] module 'CPU_mips_memdata_reg1_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_memdata_reg1_0.vhd:56' bound to instance 'B_reg' of component 'CPU_mips_memdata_reg1_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_memdata_reg1_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_memdata_reg1_0.vhd:66]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'U0' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_memdata_reg1_0.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_memdata_reg1_0' (9#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_memdata_reg1_0.vhd:66]
+INFO: [Synth 8-3491] module 'CPU_mips_leading_ones_counter_0_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_leading_ones_counter_0_0.vhd:56' bound to instance 'L1_counter' of component 'CPU_mips_leading_ones_counter_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:451]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_leading_ones_counter_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_leading_ones_counter_0_0.vhd:63]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'leading_ones_counter' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:105' bound to instance 'U0' of component 'leading_ones_counter' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_leading_ones_counter_0_0.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'leading_ones_counter' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:113]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'leading_ones_counter' (10#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_leading_ones_counter_0_0' (11#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_leading_ones_counter_0_0.vhd:63]
+INFO: [Synth 8-3491] module 'CPU_mips_reg_0_2' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_0_2.vhd:56' bound to instance 'MPL_reg_hi' of component 'CPU_mips_reg_0_2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:456]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_reg_0_2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_0_2.vhd:66]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'U0' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_0_2.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_reg_0_2' (12#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_0_2.vhd:66]
+INFO: [Synth 8-3491] module 'CPU_mips_MPL_reg_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_MPL_reg_0.vhd:56' bound to instance 'MPL_reg_lo' of component 'CPU_mips_MPL_reg_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:464]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_MPL_reg_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_MPL_reg_0.vhd:66]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'U0' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_MPL_reg_0.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_MPL_reg_0' (13#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_MPL_reg_0.vhd:66]
+INFO: [Synth 8-3491] module 'CPU_mips_instr_funct_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_funct_0.v:56' bound to instance 'PC_31dt28' of component 'CPU_mips_instr_funct_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:472]
+INFO: [Synth 8-6157] synthesizing module 'CPU_mips_instr_funct_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_funct_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 31 - type: integer 
+	Parameter DIN_TO bound to: 28 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice' (14#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_mips_instr_funct_0' (15#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_funct_0.v:56]
+INFO: [Synth 8-3491] module 'CPU_mips_ShiftLeft_0_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ShiftLeft_0_0.vhd:56' bound to instance 'ShiftLeft_0' of component 'CPU_mips_ShiftLeft_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:477]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_ShiftLeft_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ShiftLeft_0_0.vhd:63]
+	Parameter n_in bound to: 32 - type: integer 
+	Parameter n_out bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:53' bound to instance 'U0' of component 'ShiftLeft' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ShiftLeft_0_0.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:62]
+	Parameter n_in bound to: 32 - type: integer 
+	Parameter n_out bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (16#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_ShiftLeft_0_0' (17#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ShiftLeft_0_0.vhd:63]
+INFO: [Synth 8-3491] module 'CPU_mips_ShiftLeft_0_1' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ShiftLeft_0_1.vhd:56' bound to instance 'ShiftLeft_1' of component 'CPU_mips_ShiftLeft_0_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:482]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_ShiftLeft_0_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ShiftLeft_0_1.vhd:63]
+	Parameter n_in bound to: 26 - type: integer 
+	Parameter n_out bound to: 28 - type: integer 
+INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:53' bound to instance 'U0' of component 'ShiftLeft' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ShiftLeft_0_1.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'ShiftLeft__parameterized1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:62]
+	Parameter n_in bound to: 26 - type: integer 
+	Parameter n_out bound to: 28 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft__parameterized1' (17#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_ShiftLeft_0_1' (18#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ShiftLeft_0_1.vhd:63]
+INFO: [Synth 8-3491] module 'CPU_mips_SignExt32_0_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_SignExt32_0_0.vhd:56' bound to instance 'SignExt32_0' of component 'CPU_mips_SignExt32_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:487]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_SignExt32_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_SignExt32_0_0.vhd:63]
+	Parameter n_in bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'SignExt32' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:5' bound to instance 'U0' of component 'SignExt32' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_SignExt32_0_0.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'SignExt32' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:13]
+	Parameter n_in bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SignExt32' (19#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_SignExt32_0_0' (20#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_SignExt32_0_0.vhd:63]
+INFO: [Synth 8-3491] module 'CPU_mips_ZeroExt32_0_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ZeroExt32_0_0.vhd:56' bound to instance 'ZeroExt32_0' of component 'CPU_mips_ZeroExt32_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:492]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_ZeroExt32_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ZeroExt32_0_0.vhd:63]
+	Parameter n_in bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'ZeroExt32' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:30' bound to instance 'U0' of component 'ZeroExt32' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ZeroExt32_0_0.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'ZeroExt32' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:38]
+	Parameter n_in bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ZeroExt32' (21#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_ZeroExt32_0_0' (22#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_ZeroExt32_0_0.vhd:63]
+INFO: [Synth 8-3491] module 'CPU_mips_xlconcat_0_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_xlconcat_0_0.v:56' bound to instance 'concat_jump' of component 'CPU_mips_xlconcat_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:497]
+INFO: [Synth 8-6157] synthesizing module 'CPU_mips_xlconcat_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_xlconcat_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlconcat_v2_1_1/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 28 - type: integer 
+	Parameter IN1_WIDTH bound to: 4 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (23#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlconcat_v2_1_1/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_mips_xlconcat_0_0' (24#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_xlconcat_0_0.v:56]
+INFO: [Synth 8-3491] module 'CPU_mips_instr_31dt26_4' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_4.v:56' bound to instance 'instr_funct' of component 'CPU_mips_instr_31dt26_4' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:503]
+INFO: [Synth 8-6157] synthesizing module 'CPU_mips_instr_31dt26_4' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_4.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 5 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized0' (24#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_mips_instr_31dt26_4' (25#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_4.v:56]
+INFO: [Synth 8-3491] module 'CPU_mips_instr_31dt26_5' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_5.v:56' bound to instance 'instr_imm' of component 'CPU_mips_instr_31dt26_5' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:508]
+INFO: [Synth 8-6157] synthesizing module 'CPU_mips_instr_31dt26_5' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_5.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized1' (25#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_mips_instr_31dt26_5' (26#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_5.v:56]
+INFO: [Synth 8-3491] module 'CPU_mips_instr_31dt26_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_0.v:56' bound to instance 'instr_jumpdest' of component 'CPU_mips_instr_31dt26_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:513]
+INFO: [Synth 8-6157] synthesizing module 'CPU_mips_instr_31dt26_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 25 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized2' (26#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_mips_instr_31dt26_0' (27#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_0.v:56]
+INFO: [Synth 8-3491] module 'CPU_mips_instr_25dt21_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_25dt21_0.v:56' bound to instance 'instr_opcode' of component 'CPU_mips_instr_25dt21_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:518]
+INFO: [Synth 8-6157] synthesizing module 'CPU_mips_instr_25dt21_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_25dt21_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized3' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 31 - type: integer 
+	Parameter DIN_TO bound to: 26 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized3' (27#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_mips_instr_25dt21_0' (28#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_25dt21_0.v:56]
+INFO: [Synth 8-3491] module 'CPU_mips_instr_31dt26_3' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_3.v:56' bound to instance 'instr_rd' of component 'CPU_mips_instr_31dt26_3' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:523]
+INFO: [Synth 8-6157] synthesizing module 'CPU_mips_instr_31dt26_3' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_3.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized4' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized4' (28#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_mips_instr_31dt26_3' (29#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_3.v:56]
+INFO: [Synth 8-3491] module 'CPU_mips_instr_31dt26_1' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_1.v:56' bound to instance 'instr_rs' of component 'CPU_mips_instr_31dt26_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:528]
+INFO: [Synth 8-6157] synthesizing module 'CPU_mips_instr_31dt26_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_1.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized5' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 25 - type: integer 
+	Parameter DIN_TO bound to: 21 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized5' (29#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_mips_instr_31dt26_1' (30#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_1.v:56]
+INFO: [Synth 8-3491] module 'CPU_mips_instr_31dt26_2' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_2.v:56' bound to instance 'instr_rt' of component 'CPU_mips_instr_31dt26_2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:533]
+INFO: [Synth 8-6157] synthesizing module 'CPU_mips_instr_31dt26_2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_2.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized6' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 20 - type: integer 
+	Parameter DIN_TO bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized6' (30#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_mips_instr_31dt26_2' (31#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_31dt26_2.v:56]
+INFO: [Synth 8-3491] module 'CPU_mips_instr_rd_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_rd_0.v:56' bound to instance 'instr_shamt' of component 'CPU_mips_instr_rd_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:538]
+INFO: [Synth 8-6157] synthesizing module 'CPU_mips_instr_rd_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_rd_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized7' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 10 - type: integer 
+	Parameter DIN_TO bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized7' (31#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_mips_instr_rd_0' (32#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_rd_0.v:56]
+INFO: [Synth 8-3491] module 'CPU_mips_logicsrc_4_1' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_logicsrc_4_1.vhd:56' bound to instance 'logicsrc_16' of component 'CPU_mips_logicsrc_4_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:543]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_logicsrc_4_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_logicsrc_4_1.vhd:62]
+	Parameter width bound to: 32 - type: integer 
+	Parameter value bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'logic_source' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:76' bound to instance 'U0' of component 'logic_source' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_logicsrc_4_1.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'logic_source' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:84]
+	Parameter width bound to: 32 - type: integer 
+	Parameter value bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'logic_source' (33#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_logicsrc_4_1' (34#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_logicsrc_4_1.vhd:62]
+INFO: [Synth 8-3491] module 'CPU_mips_logic_source_0_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_logic_source_0_0.vhd:56' bound to instance 'logicsrc_4' of component 'CPU_mips_logic_source_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:547]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_logic_source_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_logic_source_0_0.vhd:62]
+	Parameter width bound to: 32 - type: integer 
+	Parameter value bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'logic_source' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:76' bound to instance 'U0' of component 'logic_source' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_logic_source_0_0.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'logic_source__parameterized1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:84]
+	Parameter width bound to: 32 - type: integer 
+	Parameter value bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'logic_source__parameterized1' (34#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/util.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_logic_source_0_0' (35#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_logic_source_0_0.vhd:62]
+INFO: [Synth 8-3491] module 'CPU_mips_instr_reg_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_reg_0.vhd:56' bound to instance 'memdata_reg' of component 'CPU_mips_instr_reg_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:551]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_instr_reg_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_reg_0.vhd:66]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'U0' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_reg_0.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_instr_reg_0' (36#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_instr_reg_0.vhd:66]
+INFO: [Synth 8-3491] module 'CPU_mips_mips_controller_0_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mips_controller_0_0.vhd:56' bound to instance 'mips_controller_0' of component 'CPU_mips_mips_controller_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_mips_controller_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mips_controller_0_0.vhd:87]
+INFO: [Synth 8-3491] module 'mips_controller' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:4' bound to instance 'U0' of component 'mips_controller' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mips_controller_0_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'mips_controller' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'mips_controller' (37#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_mips_controller_0_0' (38#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mips_controller_0_0.vhd:87]
+INFO: [Synth 8-3491] module 'CPU_mips_xlslice_0_1' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_xlslice_0_1.v:56' bound to instance 'mslice_0' of component 'CPU_mips_xlslice_0_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:588]
+INFO: [Synth 8-6157] synthesizing module 'CPU_mips_xlslice_0_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_xlslice_0_1.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized8' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 64 - type: integer 
+	Parameter DIN_FROM bound to: 31 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized8' (38#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_mips_xlslice_0_1' (39#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_xlslice_0_1.v:56]
+INFO: [Synth 8-3491] module 'CPU_mips_xlslice_0_2' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_xlslice_0_2.v:56' bound to instance 'mslice_1' of component 'CPU_mips_xlslice_0_2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:593]
+INFO: [Synth 8-6157] synthesizing module 'CPU_mips_xlslice_0_2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_xlslice_0_2.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized9' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 64 - type: integer 
+	Parameter DIN_FROM bound to: 63 - type: integer 
+	Parameter DIN_TO bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized9' (39#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/xlslice_v1_0_1/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_mips_xlslice_0_2' (40#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_xlslice_0_2.v:56]
+INFO: [Synth 8-3491] module 'CPU_mips_multiplier_0_1' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_multiplier_0_1.vhd:56' bound to instance 'multiplier_0' of component 'CPU_mips_multiplier_0_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:598]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_multiplier_0_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_multiplier_0_1.vhd:67]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/multiplier.vhd:7' bound to instance 'U0' of component 'multiplier' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_multiplier_0_1.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'multiplier' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/multiplier.vhd:18]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'Arith_Unit' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Arith_Unit.vhd:9' bound to instance 'ADDU' of component 'Arith_Unit' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/multiplier.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'Arith_Unit__parameterized1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Arith_Unit.vhd:27]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Arith_Unit__parameterized1' (40#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Arith_Unit.vhd:27]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'MPL64' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/multiplier.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'reg__parameterized2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:18]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg__parameterized2' (40#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:18]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'MPR32' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/multiplier.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'reg__parameterized3' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:18]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg__parameterized3' (40#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:18]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'PROD64' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/multiplier.vhd:112]
+INFO: [Synth 8-3491] module 'control' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/controller.vhd:6' bound to instance 'CTRL' of component 'control' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/multiplier.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'control' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/controller.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'control' (41#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/controller.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'multiplier' (42#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/multiplier.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_multiplier_0_1' (43#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_multiplier_0_1.vhd:67]
+INFO: [Synth 8-3491] module 'CPU_mips_mux2_0_2' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux2_0_2.vhd:56' bound to instance 'mux2_RegDst' of component 'CPU_mips_mux2_0_2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:607]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_mux2_0_2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux2_0_2.vhd:65]
+	Parameter n bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:50' bound to instance 'U0' of component 'mux2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux2_0_2.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'mux2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:61]
+	Parameter n bound to: 5 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'mux2' (44#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_mux2_0_2' (45#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux2_0_2.vhd:65]
+INFO: [Synth 8-3491] module 'CPU_mips_mux2_0_1' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux2_0_1.vhd:56' bound to instance 'mux2_mem2reg' of component 'CPU_mips_mux2_0_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:614]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_mux2_0_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux2_0_1.vhd:65]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:50' bound to instance 'U0' of component 'mux2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux2_0_1.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:61]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized1' (45#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_mux2_0_1' (46#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux2_0_1.vhd:65]
+INFO: [Synth 8-3491] module 'CPU_mips_mux2_srcA_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux2_srcA_0.vhd:56' bound to instance 'mux2_memaddr' of component 'CPU_mips_mux2_srcA_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:621]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_mux2_srcA_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux2_srcA_0.vhd:65]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:50' bound to instance 'U0' of component 'mux2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux2_srcA_0.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_mux2_srcA_0' (47#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux2_srcA_0.vhd:65]
+INFO: [Synth 8-3491] module 'CPU_mips_mux3_0_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux3_0_0.vhd:56' bound to instance 'mux3_PCsrc' of component 'CPU_mips_mux3_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:628]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_mux3_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux3_0_0.vhd:66]
+	Parameter n bound to: 32 - type: integer 
+	Parameter nsel bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'mux3' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:108' bound to instance 'U0' of component 'mux3' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux3_0_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'mux3' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:121]
+	Parameter n bound to: 32 - type: integer 
+	Parameter nsel bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux3' (48#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_mux3_0_0' (49#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux3_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'CPU_mips_mux4_0_2' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux4_0_2.vhd:56' bound to instance 'mux4_outbus' of component 'CPU_mips_mux4_0_2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:636]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_mux4_0_2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux4_0_2.vhd:67]
+	Parameter n bound to: 32 - type: integer 
+	Parameter nsel bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'mux4' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:77' bound to instance 'U0' of component 'mux4' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux4_0_2.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'mux4' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:91]
+	Parameter n bound to: 32 - type: integer 
+	Parameter nsel bound to: 2 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'mux4' (50#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_mux4_0_2' (51#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux4_0_2.vhd:67]
+INFO: [Synth 8-3491] module 'CPU_mips_mux4_0_1' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux4_0_1.vhd:56' bound to instance 'mux4_srcA' of component 'CPU_mips_mux4_0_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:645]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_mux4_0_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux4_0_1.vhd:67]
+	Parameter n bound to: 32 - type: integer 
+	Parameter nsel bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'mux4' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:77' bound to instance 'U0' of component 'mux4' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux4_0_1.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_mux4_0_1' (52#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux4_0_1.vhd:67]
+INFO: [Synth 8-3491] module 'CPU_mips_mux4_0_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux4_0_0.vhd:56' bound to instance 'mux4_srcB' of component 'CPU_mips_mux4_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:654]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_mux4_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux4_0_0.vhd:67]
+	Parameter n bound to: 32 - type: integer 
+	Parameter nsel bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'mux4' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mux.vhd:77' bound to instance 'U0' of component 'mux4' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux4_0_0.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_mux4_0_0' (53#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux4_0_0.vhd:67]
+INFO: [Synth 8-3491] module 'CPU_mips_reg_0_1' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_0_1.vhd:56' bound to instance 'reg_ALU' of component 'CPU_mips_reg_0_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:663]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_reg_0_1' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_0_1.vhd:66]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'U0' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_0_1.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_reg_0_1' (54#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_0_1.vhd:66]
+INFO: [Synth 8-3491] module 'CPU_mips_reg_ALU_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_ALU_0.vhd:56' bound to instance 'reg_PC' of component 'CPU_mips_reg_ALU_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:671]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_reg_ALU_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_ALU_0.vhd:66]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'U0' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_ALU_0.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_reg_ALU_0' (55#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_ALU_0.vhd:66]
+INFO: [Synth 8-3491] module 'CPU_mips_reg_0_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_0_0.vhd:56' bound to instance 'reg_instr' of component 'CPU_mips_reg_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:679]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_reg_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_0_0.vhd:66]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'U0' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_0_0.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_reg_0_0' (56#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'CPU_mips_reg_bank32x32_0_0' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_bank32x32_0_0.vhd:56' bound to instance 'regbank' of component 'CPU_mips_reg_bank32x32_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:687]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_reg_bank32x32_0_0' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_bank32x32_0_0.vhd:70]
+	Parameter nregs bound to: 32 - type: integer 
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg_bank32x32' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:41' bound to instance 'U0' of component 'reg_bank32x32' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_bank32x32_0_0.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'reg_bank32x32' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:59]
+	Parameter nregs bound to: 32 - type: integer 
+	Parameter n bound to: 32 - type: integer 
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd:5' bound to instance 'x' of component 'reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:82]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter n bound to: 32 - type: integer 
+	Parameter n bound to: 32 - type: integer 
+	Parameter n bound to: 32 - type: integer 
+	Parameter n bound to: 32 - type: integer 
+	Parameter n bound to: 32 - type: integer 
+	Parameter n bound to: 32 - type: integer 
+	Parameter n bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'regs_out' is read in the process but is not in the sensitivity list [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'reg_bank32x32' (57#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_reg_bank32x32_0_0' (58#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_reg_bank32x32_0_0.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'CPU_mips_mux3_0_2' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux3_0_2.vhd:66]
+	Parameter n bound to: 32 - type: integer 
+	Parameter nsel bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_mux3_0_2' (59#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/CPU_mips_mux3_0_2.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips' (60#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'CPU_mips_wrapper' (61#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/CPU_mips_wrapper.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'CPU_TL_CPU_mips_wrapper_0_0' (62#1) [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/synth/CPU_TL_CPU_mips_wrapper_0_0.vhd:68]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[31]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[30]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized9 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[63]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[62]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[61]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[60]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[59]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[58]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[57]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[56]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[55]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[54]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[53]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[52]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[51]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[50]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[49]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[48]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[47]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[46]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[45]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[44]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[43]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[42]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[41]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[40]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[39]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[38]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[37]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[36]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[35]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[34]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[33]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized8 has unconnected port Din[32]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[31]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[30]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized7 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized6 has unconnected port Din[31]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized6 has unconnected port Din[30]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized6 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized6 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized6 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized6 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized6 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized6 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized6 has unconnected port Din[23]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 452.605 ; gain = 163.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 452.605 ; gain = 163.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 452.605 ; gain = 163.363
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/CPU_mips_ooc.xdc] for cell 'U0/CPU_mips_i'
+Finished Parsing XDC File [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/CPU_mips_ooc.xdc] for cell 'U0/CPU_mips_i'
+Parsing XDC File [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc] for cell 'U0'
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ip/CPU_TL_CPU_mips_wrapper_0_0/src/PYNQ-Z1_C.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.runs/CPU_TL_CPU_mips_wrapper_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.runs/CPU_TL_CPU_mips_wrapper_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 832.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 832.930 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.064 . Memory (MB): peak = 832.930 ; gain = 0.000
+CRITICAL WARNING: [filemgmt 20-1741] File 'register.vhd' is used by one or more modules, but with different contents, and may lead to unpredictable results:
+* CPU_TL_CPU_mips_wrapper_0_0 (c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/sim/register.vhd)
+* CPU_TL_CPU_mips_wrapper_0_0 (c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd)
+Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 832.930 ; gain = 543.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 832.930 ; gain = 543.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.runs/CPU_TL_CPU_mips_wrapper_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 832.930 ; gain = 543.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mips_controller'
+INFO: [Synth 8-5546] ROM "PCsrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEMwr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'R_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/Logic_Unit.vhd:19]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |          00000000000000000000001 |                            00000
+             instr_fetch |          00000000000000000000010 |                            00001
+            instr_decode |          00000000000000000000100 |                            00010
+        compute_mem_addr |          00000000000000000001000 |                            00011
+        mem_access_store |          00000000000000000010000 |                            00101
+         mem_access_load |          00000000000000000100000 |                            00100
+           mem_read_comp |          00000000000000001000000 |                            10110
+                 exec_sh |          00000000000000010000000 |                            00111
+                  iSTATE |          00000000000000100000000 |                            10000
+*
+             exec_m_init |          00000000000001000000000 |                            01010
+                  exec_m |          00000000000010000000000 |                            10001
+                   mcomp |          00000000000100000000000 |                            10100
+                    mflo |          00000000001000000000000 |                            01101
+                    mfhi |          00000000010000000000000 |                            01110
+                  exec_r |          00000000100000000000000 |                            00110
+                   rcomp |          00000001000000000000000 |                            10010
+                  exec_i |          00000010000000000000000 |                            01000
+                exec_lui |          00000100000000000000000 |                            01001
+                   icomp |          00001000000000000000000 |                            10011
+                     clo |          00010000000000000000000 |                            01100
+                   jcomp |          00100000000000000000000 |                            01111
+                  exec_b |          01000000000000000000000 |                            01011
+                   bcomp |          10000000000000000000000 |                            10101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'mips_controller'
+WARNING: [Synth 8-327] inferring latch for variable 'MEMwr_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:88]
+WARNING: [Synth 8-327] inferring latch for variable 'MEMrd_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:89]
+WARNING: [Synth 8-327] inferring latch for variable 'RBwr_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:90]
+WARNING: [Synth 8-327] inferring latch for variable 'mplrst_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:107]
+WARNING: [Synth 8-327] inferring latch for variable 'PCwr_cond_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:80]
+WARNING: [Synth 8-327] inferring latch for variable 'PCwr_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:80]
+WARNING: [Synth 8-327] inferring latch for variable 'MD_en_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:93]
+WARNING: [Synth 8-327] inferring latch for variable 'IRwr_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:94]
+WARNING: [Synth 8-327] inferring latch for variable 'A_en_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:95]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUR_en_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:97]
+WARNING: [Synth 8-327] inferring latch for variable 'MPLR_en_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:98]
+WARNING: [Synth 8-327] inferring latch for variable 'IorD_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:100]
+WARNING: [Synth 8-327] inferring latch for variable 'mem2rb_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:101]
+WARNING: [Synth 8-327] inferring latch for variable 'regDst_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:102]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUsrcA_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:103]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUsrcB_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:104]
+WARNING: [Synth 8-327] inferring latch for variable 'shift_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:99]
+WARNING: [Synth 8-327] inferring latch for variable 'MPL_ALU_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/mips_controller.vhd:106]
+WARNING: [Synth 8-327] inferring latch for variable 'x0_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:104]
+WARNING: [Synth 8-327] inferring latch for variable 'x1_reg' [c:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.srcs/sources_1/bd/CPU_TL/ipshared/221d/src/register.vhd:105]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 832.930 ; gain = 543.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     65 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	  31 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 42    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 16    
+	  36 Input     23 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	  15 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  24 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 97    
+	   4 Input      1 Bit        Muxes := 3     
+	  24 Input      1 Bit        Muxes := 8     
+	  23 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Logic_Unit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Shift_Unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+Module Arith_Unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Comparator 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module leading_ones_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	  31 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 90    
+Module mips_controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	  36 Input     23 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   7 Input      4 Bit        Muxes := 1     
+	  24 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  24 Input      1 Bit        Muxes := 8     
+	  23 Input      1 Bit        Muxes := 1     
+Module Arith_Unit__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     65 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module reg__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+Module reg__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module multiplier 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module mux2__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "U0/CTRL/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\CPU_mips_i/multiplier_0/U0/CTRL/state_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[31]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[30]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[29]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[28]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[27]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[26]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[25]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[24]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[23]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[22]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[21]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[20]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[19]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[18]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[17]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[16]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[15]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[14]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[13]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[12]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[11]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[10]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[9]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[8]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[7]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[6]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[5]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[4]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[3]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[2]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[1]) is unused and will be removed from module CPU_mips_wrapper.
+WARNING: [Synth 8-3332] Sequential element (CPU_mips_i/ALU_0/U0/LU/R_reg[0]) is unused and will be removed from module CPU_mips_wrapper.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:01:08 . Memory (MB): peak = 845.043 ; gain = 555.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:01:14 . Memory (MB): peak = 845.043 ; gain = 555.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:21 . Memory (MB): peak = 1027.594 ; gain = 738.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:22 . Memory (MB): peak = 1027.594 ; gain = 738.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:23 . Memory (MB): peak = 1027.594 ; gain = 738.352
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:01:23 . Memory (MB): peak = 1027.594 ; gain = 738.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:01:23 . Memory (MB): peak = 1027.594 ; gain = 738.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:01:23 . Memory (MB): peak = 1027.594 ; gain = 738.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:23 . Memory (MB): peak = 1027.594 ; gain = 738.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:01:23 . Memory (MB): peak = 1027.594 ; gain = 738.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    33|
+|2     |LUT1   |     4|
+|3     |LUT2   |   168|
+|4     |LUT3   |   206|
+|5     |LUT4   |    46|
+|6     |LUT5   |   111|
+|7     |LUT6   |   977|
+|8     |MUXF7  |   258|
+|9     |FDCE   |  1308|
+|10    |FDPE   |     1|
+|11    |FDRE   |   193|
+|12    |LD     |    86|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------+-----------------------------+------+
+|      |Instance                |Module                       |Cells |
++------+------------------------+-----------------------------+------+
+|1     |top                     |                             |  3391|
+|2     |  U0                    |CPU_mips_wrapper             |  3391|
+|3     |    CPU_mips_i          |CPU_mips                     |  3391|
+|4     |      ALU_0             |CPU_mips_ALU_0_0             |    14|
+|5     |        U0              |ALU                          |    14|
+|6     |          AU            |Arith_Unit                   |    14|
+|7     |      A_reg             |CPU_mips_memdata_reg_0       |    95|
+|8     |        U0              |reg_39                       |    95|
+|9     |      B_reg             |CPU_mips_memdata_reg1_0      |    32|
+|10    |        U0              |reg_38                       |    32|
+|11    |      MPL_reg_hi        |CPU_mips_reg_0_2             |    32|
+|12    |        U0              |reg_37                       |    32|
+|13    |      MPL_reg_lo        |CPU_mips_MPL_reg_0           |    32|
+|14    |        U0              |reg_36                       |    32|
+|15    |      memdata_reg       |CPU_mips_instr_reg_0         |    35|
+|16    |        U0              |reg_35                       |    35|
+|17    |      mips_controller_0 |CPU_mips_mips_controller_0_0 |   563|
+|18    |        U0              |mips_controller              |   563|
+|19    |      multiplier_0      |CPU_mips_multiplier_0_1      |   388|
+|20    |        U0              |multiplier                   |   388|
+|21    |          ADDU          |Arith_Unit__parameterized1   |    16|
+|22    |          CTRL          |control                      |    86|
+|23    |          MPL64         |reg__parameterized2          |   158|
+|24    |          MPR32         |reg__parameterized3          |    63|
+|25    |          PROD64        |reg__parameterized2_34       |    65|
+|26    |      reg_ALU           |CPU_mips_reg_0_1             |    32|
+|27    |        U0              |reg_33                       |    32|
+|28    |      reg_PC            |CPU_mips_reg_ALU_0           |    40|
+|29    |        U0              |reg_32                       |    40|
+|30    |      reg_instr         |CPU_mips_reg_0_0             |   208|
+|31    |        U0              |reg_31                       |   208|
+|32    |      regbank           |CPU_mips_reg_bank32x32_0_0   |  1920|
+|33    |        U0              |reg_bank32x32                |  1920|
+|34    |          \regs[0].x    |\reg                         |    32|
+|35    |          \regs[10].x   |reg_0                        |    32|
+|36    |          \regs[11].x   |reg_1                        |   160|
+|37    |          \regs[12].x   |reg_2                        |    32|
+|38    |          \regs[13].x   |reg_3                        |    32|
+|39    |          \regs[14].x   |reg_4                        |    32|
+|40    |          \regs[15].x   |reg_5                        |    96|
+|41    |          \regs[16].x   |reg_6                        |    32|
+|42    |          \regs[17].x   |reg_7                        |    32|
+|43    |          \regs[18].x   |reg_8                        |    32|
+|44    |          \regs[19].x   |reg_9                        |   160|
+|45    |          \regs[1].x    |reg_10                       |    32|
+|46    |          \regs[20].x   |reg_11                       |    32|
+|47    |          \regs[21].x   |reg_12                       |    32|
+|48    |          \regs[22].x   |reg_13                       |    32|
+|49    |          \regs[23].x   |reg_14                       |    96|
+|50    |          \regs[24].x   |reg_15                       |    32|
+|51    |          \regs[25].x   |reg_16                       |    32|
+|52    |          \regs[26].x   |reg_17                       |    32|
+|53    |          \regs[27].x   |reg_18                       |   224|
+|54    |          \regs[28].x   |reg_19                       |    32|
+|55    |          \regs[29].x   |reg_20                       |    32|
+|56    |          \regs[2].x    |reg_21                       |    32|
+|57    |          \regs[30].x   |reg_22                       |    32|
+|58    |          \regs[31].x   |reg_23                       |    96|
+|59    |          \regs[3].x    |reg_24                       |   160|
+|60    |          \regs[4].x    |reg_25                       |    32|
+|61    |          \regs[5].x    |reg_26                       |    32|
+|62    |          \regs[6].x    |reg_27                       |    32|
+|63    |          \regs[7].x    |reg_28                       |    96|
+|64    |          \regs[8].x    |reg_29                       |    32|
+|65    |          \regs[9].x    |reg_30                       |    32|
++------+------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:01:23 . Memory (MB): peak = 1027.594 ; gain = 738.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 53 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 1027.594 ; gain = 358.027
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:01:23 . Memory (MB): peak = 1027.594 ; gain = 738.352
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 377 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 64 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1027.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 86 instances were transformed.
+  LD => LDCE: 22 instances
+  LD => LDCE (inverted pins: G): 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+288 Infos, 163 Warnings, 11 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:26 . Memory (MB): peak = 1027.594 ; gain = 743.453
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1027.594 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.runs/CPU_TL_CPU_mips_wrapper_0_0_synth_1/CPU_TL_CPU_mips_wrapper_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP CPU_TL_CPU_mips_wrapper_0_0, cache-ID = 7e85a1a88bc2afeb
+INFO: [Coretcl 2-1174] Renamed 64 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1027.594 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_4/lab_4.runs/CPU_TL_CPU_mips_wrapper_0_0_synth_1/CPU_TL_CPU_mips_wrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_TL_CPU_mips_wrapper_0_0_utilization_synth.rpt -pb CPU_TL_CPU_mips_wrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 21 13:11:26 2023...

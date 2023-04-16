@@ -1,0 +1,59 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 937bb85151454ac7ad595d1de2f38359 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Lab_1_wrapper_behav xil_defaultlib.Lab_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3009] 'lab_1_auto_pc_0' remains a black-box since it has no binding entity [C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/sim/Lab_1.vhd:267]
+WARNING: [VRFC 10-3009] 'lab_1_auto_pc_1' remains a black-box since it has no binding entity [C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/sim/Lab_1.vhd:1082]
+WARNING: [VRFC 10-3009] 'lab_1_xbar_0' remains a black-box since it has no binding entity [C:/Users/pacel/Desktop/Work/Pitt/semesters/Spring_2023/ECE_1195/Lab_1/Lab_1.srcs/sources_1/bd/Lab_1/sim/Lab_1.vhd:2580]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling module xil_defaultlib.glbl
+Compiling architecture rtl of entity xil_defaultlib.adder [adder_default]
+Compiling architecture lab_1_adder_0_0_arch of entity xil_defaultlib.Lab_1_adder_0_0 [lab_1_adder_0_0_default]
+Compiling architecture rtl of entity xil_defaultlib.mm_regmap [\mm_regmap(width0=8,width1=8,wid...]
+Compiling architecture rtl of entity xil_defaultlib.axi_regmap [\axi_regmap(width0=8,width1=8,wi...]
+Compiling architecture lab_1_axi_regmap_0_0_arch of entity xil_defaultlib.Lab_1_axi_regmap_0_0 [lab_1_axi_regmap_0_0_default]
+Compiling architecture lab_1_ila_0_0_arch of entity xil_defaultlib.Lab_1_ila_0_0 [lab_1_ila_0_0_default]
+Compiling architecture bibuf_v of entity unisim.BIBUF [bibuf_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture ps7_v of entity unisim.PS7 [\PS7:lab_1_wrapper:lab_1_i:proce...]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.Lab_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 [\Lab_1_processing_system7_0_0_pr...]
+Compiling architecture structure of entity xil_defaultlib.Lab_1_processing_system7_0_0 [\Lab_1_processing_system7_0_0:la...]
+Compiling architecture structure of entity xil_defaultlib.m00_couplers_imp_1M2TKF0 [m00_couplers_imp_1m2tkf0_default]
+Compiling architecture structure of entity xil_defaultlib.m01_couplers_imp_T1HILW [m01_couplers_imp_t1hilw_default]
+Compiling architecture structure of entity xil_defaultlib.m02_couplers_imp_XT1YQ5 [m02_couplers_imp_xt1yq5_default]
+Compiling architecture structure of entity xil_defaultlib.s00_couplers_imp_11HVVQV [s00_couplers_imp_11hvvqv_default]
+Compiling architecture structure of entity xil_defaultlib.s01_couplers_imp_HG16SF [s01_couplers_imp_hg16sf_default]
+Compiling architecture structure of entity xil_defaultlib.Lab_1_ps7_0_axi_periph_0 [lab_1_ps7_0_axi_periph_0_default]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture lab_1_rst_ps7_0_100m_0_arch of entity xil_defaultlib.Lab_1_rst_ps7_0_100M_0 [lab_1_rst_ps7_0_100m_0_default]
+Compiling architecture structure of entity xil_defaultlib.Lab_1 [\Lab_1:lab_1_wrapper:lab_1_i:\]
+Compiling architecture structure of entity xil_defaultlib.lab_1_wrapper
+Built simulation snapshot Lab_1_wrapper_behav
