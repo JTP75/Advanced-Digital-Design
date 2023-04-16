@@ -34,4 +34,4 @@ A fully synchronous CPU that implements part of the MIPS instruction set. I desi
 ## Lab 5 - Matrix Multiplication Hardware Accelerator
 A hardware accelerator for multiplying matrices implemented with Vivado HLS. Intended for learning how to use Vivado HLS.
 ## Lab 6 - Image Convolution Hardware Accelerator
-A fully implemented hardware accelerator for grayscale image convolution. Runtime complexity is the same as the size of the input image. The onboard hardware implementation relies on a low-overhead Linux distribution. For results, see lab_6/lab6_report.pdf.
+A fully implemented hardware accelerator for grayscale image convolution. Runtime complexity is the same as the size of the input image. The onboard hardware implementation relies on a low-overhead Linux distribution. For results, see lab_6/lab6_report.pdf. Features both shift register and ring buffer implementations.
